@@ -1,15 +1,91 @@
 <?xml version="1.0"?>
 <root>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-api" currentVersion="1.14.0" previousVersion="1.12.0">
-    <package name="org.apache.jackrabbit.oak.api" delta="unchanged">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-api" currentVersion="1.16.0" previousVersion="1.14.0">
+    <package name="org.apache.jackrabbit.oak.api" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>3.1.2</newerVersion>
+      <newerVersion>3.2.0</newerVersion>
       <olderVersion>3.1.2</olderVersion>
-      <suggestedVersion>3.1.2</suggestedVersion>
+      <suggestedVersion>3.2.0</suggestedVersion>
       <attributes>
-        <version>3.1.2</version>
+        <version>3.2.0</version>
         <uses>javax.jcr,javax.security.auth.login</uses>
       </attributes>
+      <enum name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added">
+        <access name="final" delta="added"/>
+        <extends name="java.lang.Enum" delta="added"/>
+        <implements name="java.io.Serializable" delta="added"/>
+        <implements name="java.lang.Comparable" delta="added"/>
+        <field name="DISABLE" delta="added">
+          <access name="final" delta="added"/>
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added"/>
+        </field>
+        <field name="ENABLE" delta="added">
+          <access name="final" delta="added"/>
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added"/>
+        </field>
+        <field name="WARN" delta="added">
+          <access name="final" delta="added"/>
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added"/>
+        </field>
+        <method name="clone()" delta="added">
+          <access name="final" delta="added"/>
+          <access name="protected" delta="added"/>
+          <return name="java.lang.Object" delta="added"/>
+        </method>
+        <method name="compareTo(java.lang.Enum)" delta="added">
+          <access name="final" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="compareTo(java.lang.Object)" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="equals(java.lang.Object)" delta="added">
+          <access name="final" delta="added"/>
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="finalize()" delta="added">
+          <access name="final" delta="added"/>
+          <access name="protected" delta="added"/>
+          <return name="void" delta="added"/>
+        </method>
+        <method name="getDeclaringClass()" delta="added">
+          <access name="final" delta="added"/>
+          <return name="java.lang.Class" delta="added"/>
+        </method>
+        <method name="hashCode()" delta="added">
+          <access name="final" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="name()" delta="added">
+          <access name="final" delta="added"/>
+          <return name="java.lang.String" delta="added"/>
+        </method>
+        <method name="ordinal()" delta="added">
+          <access name="final" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="stringToEnum(java.lang.String)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added"/>
+        </method>
+        <method name="toString()" delta="added">
+          <return name="java.lang.String" delta="added"/>
+        </method>
+        <method name="valueOf(java.lang.String)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction" delta="added"/>
+        </method>
+        <method name="values()" delta="added">
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.api.StrictPathRestriction[]" delta="added"/>
+        </method>
+      </enum>
+      <version name="3.1.2" delta="removed"/>
+      <version name="3.2.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.api.blob" delta="unchanged">
       <mismatch>false</mismatch>
@@ -23,58 +99,34 @@
     </package>
     <package name="org.apache.jackrabbit.oak.api.jmx" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>4.8.0</newerVersion>
-      <olderVersion>4.7.1</olderVersion>
-      <suggestedVersion>4.8.0</suggestedVersion>
+      <newerVersion>4.9.0</newerVersion>
+      <olderVersion>4.8.0</olderVersion>
+      <suggestedVersion>4.9.0</suggestedVersion>
       <attributes>
-        <version>4.8.0</version>
+        <version>4.9.0</version>
         <uses>javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api</uses>
       </attributes>
       <interface name="org.apache.jackrabbit.oak.api.jmx.QueryEngineSettingsMBean" delta="minor">
-        <method name="getQueryValidatorJson()" delta="added">
+        <method name="getStrictPathRestriction()" delta="added">
           <access name="abstract" delta="added"/>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='Get the query validator data as a JSON string.'" delta="added"/>
-          </annotated>
           <return name="java.lang.String" delta="added"/>
         </method>
-        <method name="setQueryValidatorPattern(java.lang.String,java.lang.String,java.lang.String,boolean)" delta="added">
+        <method name="setStrictPathRestriction(java.lang.String)" delta="added">
           <access name="abstract" delta="added"/>
           <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='Set or remove a query validator pattern.'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='the key'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='the regular expression pattern (empty to remove the pattern)'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='a comment'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Description" delta="added">
-            <property name="value='whether matching queries should fail (true) or just log a warning (false)'" delta="added"/>
+            <property name="value='Set path restriction: Expected value is either of ENABLE/DISABLE/WARN.   ENABLE: enable path restriction- Index won't be used if index definition path restrictions are not compatible with query's path restriction.  DISABLE: path restrictions are not taken into account while querying.  WARN: path restrictions are not taken into account but a warning will be logged if query path restrictions are not compatible with index path restrictions.'" delta="added"/>
           </annotated>
           <annotated name="org.apache.jackrabbit.oak.api.jmx.Name" delta="added">
-            <property name="value='key'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Name" delta="added">
-            <property name="value='pattern'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Name" delta="added">
-            <property name="value='comment'" delta="added"/>
-          </annotated>
-          <annotated name="org.apache.jackrabbit.oak.api.jmx.Name" delta="added">
-            <property name="value='failQuery'" delta="added"/>
+            <property name="value='pathRestriction'" delta="added"/>
           </annotated>
           <return name="void" delta="added"/>
         </method>
       </interface>
-      <version name="4.7.1" delta="removed"/>
-      <version name="4.8.0" delta="added"/>
+      <version name="4.8.0" delta="removed"/>
+      <version name="4.9.0" delta="added"/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:35Z" bundleName="oak-auth-external" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:44Z" bundleName="oak-auth-external" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.external" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>2.3.1</newerVersion>
@@ -96,8 +148,8 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:35Z" bundleName="oak-auth-ldap" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:36Z" bundleName="oak-authorization-cug" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:44Z" bundleName="oak-auth-ldap" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:45Z" bundleName="oak-authorization-cug" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.cug" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>2.0.2</newerVersion>
@@ -109,8 +161,20 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-blob-cloud-azure" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-blob-cloud" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:45Z" bundleName="oak-authorization-principalbased" currentVersion="1.16.0" previousVersion="1.14.0">
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0.0</version>
+        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:41Z" bundleName="oak-blob-cloud-azure" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:41Z" bundleName="oak-blob-cloud" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.blob.cloud.s3.stats" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -119,7 +183,7 @@
       <attributes/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-blob-plugins" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-blob-plugins" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.plugins.blob.datastore.directaccess" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -130,22 +194,17 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-blob" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:30Z" bundleName="oak-commons" currentVersion="1.14.0" previousVersion="1.12.0">
-    <package name="org.apache.jackrabbit.oak.commons" delta="minor">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-blob" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-commons" currentVersion="1.16.0" previousVersion="1.14.0">
+    <package name="org.apache.jackrabbit.oak.commons" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.4.0</newerVersion>
-      <olderVersion>1.3.0</olderVersion>
+      <olderVersion>1.4.0</olderVersion>
       <suggestedVersion>1.4.0</suggestedVersion>
       <attributes>
         <version>1.4.0</version>
         <uses>com.google.common.base,com.google.common.collect,org.apache.commons.io,org.slf4j</uses>
       </attributes>
-      <class name="org.apache.jackrabbit.oak.commons.LazyValue" delta="minor">
-        <implements name="java.util.function.Supplier" delta="added"/>
-      </class>
-      <version name="1.3.0" delta="removed"/>
-      <version name="1.4.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.cache" delta="unchanged">
       <mismatch>false</mismatch>
@@ -194,7 +253,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-core-spi" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-core-spi" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.cache" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
@@ -283,112 +342,15 @@
         <version>1.1.0</version>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.spi.nodetype" delta="minor">
+    <package name="org.apache.jackrabbit.oak.spi.nodetype" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
-      <olderVersion>1.0.1</olderVersion>
+      <olderVersion>1.1.0</olderVersion>
       <suggestedVersion>1.1.0</suggestedVersion>
       <attributes>
         <version>1.1.0</version>
         <uses>javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit,org.apache.jackrabbit.oak.api</uses>
       </attributes>
-      <interface name="org.apache.jackrabbit.oak.spi.nodetype.DefinitionProvider" delta="changed">
-        <method name="getDefinition(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.api.PropertyState,boolean)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getDefinition(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.api.Tree)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <interface name="org.apache.jackrabbit.oak.spi.nodetype.EffectiveNodeType" delta="changed">
-        <method name="checkMandatoryItems(org.apache.jackrabbit.oak.api.Tree)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="checkRemoveProperty(org.apache.jackrabbit.oak.api.PropertyState)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="checkSetProperty(org.apache.jackrabbit.oak.api.PropertyState)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getAutoCreateNodeDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getAutoCreatePropertyDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getMandatoryNodeDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getMandatoryPropertyDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getNamedNodeDefinitions(java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getNamedPropertyDefinitions(java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getNodeDefinition(java.lang.String,org.apache.jackrabbit.oak.spi.nodetype.EffectiveNodeType)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
-        </method>
-        <method name="getNodeDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getPropertyDefinition(java.lang.String,boolean,int,boolean)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getPropertyDefinition(java.lang.String,int,boolean)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
-        </method>
-        <method name="getPropertyDefinitions()" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="includesNodeType(java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="includesNodeTypes(java.lang.String[])" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="supportsMixin(java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <interface name="org.apache.jackrabbit.oak.spi.nodetype.EffectiveNodeTypeProvider" delta="minor">
-        <method name="getEffectiveNodeType(javax.jcr.Node)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="getEffectiveNodeType(org.apache.jackrabbit.oak.api.Tree)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="isNodeType(java.lang.String,java.lang.Iterable,java.lang.String)" delta="added">
-          <access name="abstract" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <return name="boolean" delta="added"/>
-        </method>
-        <method name="isNodeType(java.lang.String,java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-        <method name="isNodeType(java.lang.String,java.util.Iterator,java.lang.String)" delta="minor">
-          <access name="abstract" delta="removed"/>
-        </method>
-        <method name="isNodeType(org.apache.jackrabbit.oak.api.Tree,java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <version name="1.0.1" delta="removed"/>
-      <version name="1.1.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.observation" delta="unchanged">
       <mismatch>false</mismatch>
@@ -430,7 +392,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-core" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:41Z" bundleName="oak-core" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.importer" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -441,9 +403,142 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:36Z" bundleName="oak-exercise" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:33Z" bundleName="oak-http" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:33Z" bundleName="oak-jcr" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:45Z" bundleName="oak-exercise" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:42Z" bundleName="oak-http" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-jackrabbit-api" currentVersion="1.16.0" previousVersion="2.18.2">
+    <package name="org.apache.jackrabbit.api" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.5.0</newerVersion>
+      <olderVersion>2.5.0</olderVersion>
+      <suggestedVersion>2.5.0</suggestedVersion>
+      <attributes>
+        <version>2.5.0</version>
+        <uses>javax.jcr,javax.jcr.lock,javax.jcr.nodetype,javax.jcr.version,javax.transaction.xa,org.apache.jackrabbit.api.binary,org.apache.jackrabbit.api.management,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.api.security.principal,org.apache.jackrabbit.api.security.user,org.xml.sax</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.binary" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0.0</version>
+        <uses>javax.jcr</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.jmx" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.3.0</newerVersion>
+      <olderVersion>2.3.0</olderVersion>
+      <suggestedVersion>2.3.0</suggestedVersion>
+      <attributes>
+        <version>2.3.0</version>
+        <uses>javax.jcr,javax.management.openmbean</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.management" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
+      <attributes>
+        <version>2.3.1</version>
+        <uses>javax.jcr</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.observation" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
+      <attributes>
+        <version>2.3.1</version>
+        <uses>javax.jcr,javax.jcr.observation</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.13.5</newerVersion>
+      <olderVersion>2.13.5</olderVersion>
+      <suggestedVersion>2.13.5</suggestedVersion>
+      <attributes>
+        <version>2.13.5</version>
+        <uses>javax.jcr.query</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.security" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.4.0</newerVersion>
+      <olderVersion>2.4.0</olderVersion>
+      <suggestedVersion>2.4.0</suggestedVersion>
+      <attributes>
+        <version>2.4.0</version>
+        <uses>javax.jcr,javax.jcr.security</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.security.authentication.token" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.3.0</newerVersion>
+      <olderVersion>2.3.0</olderVersion>
+      <suggestedVersion>2.3.0</suggestedVersion>
+      <attributes>
+        <version>2.3</version>
+        <uses>javax.jcr</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.security.authorization" delta="changed">
+      <mismatch>false</mismatch>
+      <newerVersion>2.4.1</newerVersion>
+      <olderVersion>2.4.0</olderVersion>
+      <suggestedVersion>2.4.1</suggestedVersion>
+      <attributes>
+        <version>2.4.1</version>
+        <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security</uses>
+      </attributes>
+      <interface name="org.apache.jackrabbit.api.security.authorization.PrincipalAccessControlList" delta="changed">
+        <method name="addEntry(java.lang.String,javax.jcr.security.Privilege[])" delta="changed">
+          <annotated name="org.jetbrains.annotations.NotNull" delta="removed"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+        </method>
+        <method name="addEntry(java.lang.String,javax.jcr.security.Privilege[],java.util.Map,java.util.Map)" delta="changed">
+          <annotated name="org.jetbrains.annotations.NotNull" delta="removed"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+        </method>
+      </interface>
+      <version name="2.4.0" delta="removed"/>
+      <version name="2.4.1" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.api.security.principal" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.4.0</newerVersion>
+      <olderVersion>2.4.0</olderVersion>
+      <suggestedVersion>2.4.0</suggestedVersion>
+      <attributes>
+        <version>2.4.0</version>
+        <uses>javax.jcr</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.security.user" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.4.2</newerVersion>
+      <olderVersion>2.4.2</olderVersion>
+      <suggestedVersion>2.4.2</suggestedVersion>
+      <attributes>
+        <version>2.4.2</version>
+        <uses>javax.jcr,javax.security.auth,org.apache.jackrabbit.api.security.principal</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.api.stats" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.2.0</olderVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
+      <attributes>
+        <version>1.2.0</version>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:42Z" bundleName="oak-jcr" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.jcr.observation.filter" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
@@ -455,7 +550,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:34Z" bundleName="oak-lucene" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:42Z" bundleName="oak-lucene" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.lucene.score" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.3.1</newerVersion>
@@ -1813,7 +1908,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-query-spi" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-query-spi" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.query.facet" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
@@ -1824,15 +1919,36 @@
         <uses>javax.jcr.query</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.spi.query" delta="unchanged">
+    <package name="org.apache.jackrabbit.oak.spi.query" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.0</newerVersion>
+      <newerVersion>1.3.0</newerVersion>
       <olderVersion>1.2.0</olderVersion>
-      <suggestedVersion>1.2.0</suggestedVersion>
+      <suggestedVersion>1.3.0</suggestedVersion>
       <attributes>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
         <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.query.fulltext,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard</uses>
       </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.query.QueryIndex$IndexPlan$Builder" delta="minor">
+        <field name="logWarningForPathFilterMismatch" delta="added">
+          <access name="protected" delta="added"/>
+          <return name="boolean" delta="added"/>
+        </field>
+        <method name="setLogWarningForPathFilterMismatch(boolean)" delta="added">
+          <return name="org.apache.jackrabbit.oak.spi.query.QueryIndex$IndexPlan$Builder" delta="added"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.spi.query.QueryIndex$IndexPlan" delta="minor">
+        <method name="logWarningForPathFilterMismatch()" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+      </interface>
+      <interface name="org.apache.jackrabbit.oak.spi.query.QueryLimits" delta="minor">
+        <method name="getStrictPathRestriction()" delta="added">
+          <return name="java.lang.String" delta="added"/>
+        </method>
+      </interface>
+      <version name="1.2.0" delta="removed"/>
+      <version name="1.3.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.query.fulltext" delta="unchanged">
       <mismatch>false</mismatch>
@@ -1844,8 +1960,8 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:35Z" bundleName="oak-search-mt" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:33Z" bundleName="oak-search" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:44Z" bundleName="oak-search-mt" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:42Z" bundleName="oak-search" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.lucene.score" delta="removed">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -2799,7 +2915,7 @@
       <attributes/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-security-spi" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-security-spi" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.plugins.tree" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>3.2.0</newerVersion>
@@ -2820,32 +2936,15 @@
         <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.xml</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="changed">
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.3.1</newerVersion>
-      <olderVersion>1.3.0</olderVersion>
+      <olderVersion>1.3.1</olderVersion>
       <suggestedVersion>1.3.1</suggestedVersion>
       <attributes>
         <version>1.3.1</version>
         <uses>javax.jcr,javax.management.openmbean,javax.security.auth,javax.security.auth.callback,javax.security.auth.login,javax.security.auth.spi,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jackrabbit.oak.stats</uses>
       </attributes>
-      <class name="org.apache.jackrabbit.oak.spi.security.authentication.OpenAuthenticationConfiguration" delta="changed">
-        <method name="getLoginContextProvider(org.apache.jackrabbit.oak.api.ContentRepository)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </class>
-      <interface name="org.apache.jackrabbit.oak.spi.security.authentication.AuthenticationConfiguration" delta="changed">
-        <method name="getLoginContextProvider(org.apache.jackrabbit.oak.api.ContentRepository)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <interface name="org.apache.jackrabbit.oak.spi.security.authentication.LoginModuleStatsCollector" delta="changed">
-        <method name="setLoginModuleMonitor(org.apache.jackrabbit.oak.spi.security.authentication.LoginModuleMonitor)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <version name="1.3.0" delta="removed"/>
-      <version name="1.3.1" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.callback" delta="unchanged">
       <mismatch>false</mismatch>
@@ -2867,38 +2966,15 @@
         <uses>com.google.common.collect,javax.jcr</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="changed">
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.6.1</newerVersion>
-      <olderVersion>1.6.0</olderVersion>
+      <olderVersion>1.6.1</olderVersion>
       <suggestedVersion>1.6.1</suggestedVersion>
       <attributes>
         <version>1.6.1</version>
         <uses>javax.jcr,org.apache.jackrabbit.api.security.authentication.token,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security</uses>
       </attributes>
-      <class name="org.apache.jackrabbit.oak.spi.security.authentication.token.CompositeTokenConfiguration" delta="changed">
-        <method name="getTokenProvider(org.apache.jackrabbit.oak.api.Root)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </class>
-      <class name="org.apache.jackrabbit.oak.spi.security.authentication.token.CompositeTokenProvider" delta="changed">
-        <method name="createToken(java.lang.String,java.util.Map)" delta="changed">
-          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
-        </method>
-        <method name="createToken(javax.jcr.Credentials)" delta="changed">
-          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
-        </method>
-        <method name="getTokenInfo(java.lang.String)" delta="changed">
-          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
-        </method>
-      </class>
-      <interface name="org.apache.jackrabbit.oak.spi.security.authentication.token.TokenConfiguration" delta="changed">
-        <method name="getTokenProvider(org.apache.jackrabbit.oak.api.Root)" delta="changed">
-          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
-        </method>
-      </interface>
-      <version name="1.6.0" delta="removed"/>
-      <version name="1.6.1" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authorization" delta="unchanged">
       <mismatch>false</mismatch>
@@ -2920,15 +2996,43 @@
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authorization,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.security.authorization.restriction,org.apache.jackrabbit.oak.spi.security.privilege</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.spi.security.authorization.permission" delta="unchanged">
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization.permission" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>4.1.0</newerVersion>
+      <newerVersion>4.2.0</newerVersion>
       <olderVersion>4.1.0</olderVersion>
-      <suggestedVersion>4.1.0</suggestedVersion>
+      <suggestedVersion>4.2.0</suggestedVersion>
       <attributes>
-        <version>4.1.0</version>
-        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.security.privilege,org.apache.jackrabbit.oak.spi.state</uses>
+        <version>4.2.0</version>
+        <uses>javax.jcr.security,org.apache.jackrabbit.api.security,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.security.privilege,org.apache.jackrabbit.oak.spi.state</uses>
       </attributes>
+      <interface name="org.apache.jackrabbit.oak.spi.security.authorization.permission.AggregationFilter" delta="added">
+        <access name="abstract" delta="added"/>
+        <field name="DEFAULT" delta="added">
+          <access name="final" delta="added"/>
+          <access name="static" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.spi.security.authorization.permission.AggregationFilter" delta="added"/>
+        </field>
+        <method name="stop(javax.jcr.security.AccessControlManager,java.lang.String)" delta="added">
+          <access name="abstract" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="stop(org.apache.jackrabbit.api.security.JackrabbitAccessControlManager,java.util.Set)" delta="added">
+          <access name="abstract" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="stop(org.apache.jackrabbit.oak.spi.security.authorization.permission.AggregatedPermissionProvider,java.util.Set)" delta="added">
+          <access name="abstract" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <return name="boolean" delta="added"/>
+        </method>
+      </interface>
+      <version name="4.1.0" delta="removed"/>
+      <version name="4.2.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.restriction" delta="unchanged">
       <mismatch>false</mismatch>
@@ -3001,10 +3105,43 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-segment-tar" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:34Z" bundleName="oak-solr-core" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:35Z" bundleName="oak-solr-osgi" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-store-composite" currentVersion="1.14.0" previousVersion="1.12.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:42Z" bundleName="oak-segment-tar" currentVersion="1.16.0" previousVersion="1.14.0">
+    <package name="org.apache.jackrabbit.oak.segment.spi" delta="added">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.0.0</suggestedVersion>
+      <attributes>
+        <uses>org.apache.jackrabbit.oak.api</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.segment.spi.RepositoryNotReachableException" delta="added">
+        <extends name="org.apache.jackrabbit.oak.api.IllegalRepositoryStateException" delta="added"/>
+        <method name="&lt;init&gt;(java.lang.Throwable)" delta="added">
+          <return name="void" delta="added"/>
+        </method>
+        <method name="clone()" delta="added">
+          <access name="protected" delta="added"/>
+          <return name="java.lang.Object" delta="added"/>
+        </method>
+        <method name="equals(java.lang.Object)" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="finalize()" delta="added">
+          <access name="protected" delta="added"/>
+          <return name="void" delta="added"/>
+        </method>
+        <method name="hashCode()" delta="added">
+          <return name="int" delta="added"/>
+        </method>
+        <method name="toString()" delta="added">
+          <return name="java.lang.String" delta="added"/>
+        </method>
+      </class>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:43Z" bundleName="oak-solr-core" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:43Z" bundleName="oak-solr-osgi" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:41Z" bundleName="oak-store-composite" currentVersion="1.16.0" previousVersion="1.14.0">
     <package name="org.apache.jackrabbit.oak.composite" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.3.0</newerVersion>
@@ -3025,6 +3162,6 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:32Z" bundleName="oak-store-document" currentVersion="1.14.0" previousVersion="1.12.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:31Z" bundleName="oak-store-spi" currentVersion="1.14.0" previousVersion="1.12.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:41Z" bundleName="oak-store-document" currentVersion="1.16.0" previousVersion="1.14.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T15:40Z" bundleName="oak-store-spi" currentVersion="1.16.0" previousVersion="1.14.0"/>
 </root>
