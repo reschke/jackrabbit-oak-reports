@@ -1,0 +1,8 @@
+commit acfe287791521d657f04822fd7d3aedbe91d4238
+Merge: b1354715c6 0ad08463b6
+Author: Jukka Zitting <jukka@apache.org>
+Date:   Thu May 8 22:39:12 2014 +0000
+
+    1.0.0: Fix tag.
+    
+    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.0.0@1593444 13f79535-47bb-0310-9956-ffa450edef68
