@@ -945,30 +945,30 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Jackrabbit Oak 1.0.0:
 [INFO] 
-[INFO] Oak Parent POM ..................................... SUCCESS [  0.897 s]
-[INFO] Oak Commons ........................................ SUCCESS [  0.466 s]
-[INFO] Oak Blob Store ..................................... SUCCESS [  0.157 s]
-[INFO] Oak MicroKernel API ................................ SUCCESS [  0.023 s]
-[INFO] Oak MicroKernel .................................... SUCCESS [  0.052 s]
-[INFO] Oak MicroKernel Remoting ........................... SUCCESS [  0.166 s]
-[INFO] Oak Core ........................................... SUCCESS [  0.377 s]
-[INFO] Oak JCR Binding .................................... SUCCESS [  0.138 s]
-[INFO] Oak upgrade ........................................ SUCCESS [  0.051 s]
-[INFO] Oak HTTP Binding ................................... SUCCESS [  0.063 s]
-[INFO] Oak Lucene ......................................... SUCCESS [  0.312 s]
-[INFO] Oak Solr core ...................................... SUCCESS [  0.454 s]
-[INFO] Oak Solr OSGi ...................................... SUCCESS [  0.190 s]
-[INFO] Oak External Authentication Support ................ SUCCESS [  0.059 s]
-[INFO] Oak LDAP Authentication Support .................... SUCCESS [  0.292 s]
-[INFO] Oak Runnable Jar ................................... SUCCESS [  0.206 s]
-[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  0.044 s]
-[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  0.429 s]
-[INFO] Oak Integration Tests .............................. SUCCESS [  0.006 s]
-[INFO] Oak PojoSR ......................................... SUCCESS [  0.088 s]
+[INFO] Oak Parent POM ..................................... SUCCESS [  0.786 s]
+[INFO] Oak Commons ........................................ SUCCESS [  0.393 s]
+[INFO] Oak Blob Store ..................................... SUCCESS [  0.136 s]
+[INFO] Oak MicroKernel API ................................ SUCCESS [  0.019 s]
+[INFO] Oak MicroKernel .................................... SUCCESS [  0.039 s]
+[INFO] Oak MicroKernel Remoting ........................... SUCCESS [  0.130 s]
+[INFO] Oak Core ........................................... SUCCESS [  0.391 s]
+[INFO] Oak JCR Binding .................................... SUCCESS [  0.137 s]
+[INFO] Oak upgrade ........................................ SUCCESS [  0.046 s]
+[INFO] Oak HTTP Binding ................................... SUCCESS [  0.051 s]
+[INFO] Oak Lucene ......................................... SUCCESS [  0.287 s]
+[INFO] Oak Solr core ...................................... SUCCESS [  0.360 s]
+[INFO] Oak Solr OSGi ...................................... SUCCESS [  0.153 s]
+[INFO] Oak External Authentication Support ................ SUCCESS [  0.048 s]
+[INFO] Oak LDAP Authentication Support .................... SUCCESS [  0.246 s]
+[INFO] Oak Runnable Jar ................................... SUCCESS [  0.171 s]
+[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  0.037 s]
+[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  0.353 s]
+[INFO] Oak Integration Tests .............................. SUCCESS [  0.004 s]
+[INFO] Oak PojoSR ......................................... SUCCESS [  0.080 s]
 [INFO] Jackrabbit Oak ..................................... SUCCESS [  0.005 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.804 s
-[INFO] Finished at: 2022-11-21T14:02:48+01:00
+[INFO] Total time:  4.931 s
+[INFO] Finished at: 2022-11-21T14:31:47+01:00
 [INFO] ------------------------------------------------------------------------
