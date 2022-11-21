@@ -1,5 +1,5 @@
-commit ad560b01ca0dc68eca58793c5e29c9a942660cbc
-Author: smiroslav <miroslav@apache.org>
-Date:   Thu Jan 6 12:30:47 2022 +0100
+commit 88823952df70ba4131481537596e334e3e8029f5
+Author: Marcel Reutegger <marcel.reutegger@gmail.com>
+Date:   Tue Jul 12 16:13:18 2022 +0200
 
-    [maven-release-plugin] prepare release jackrabbit-oak-1.42.0
+    [maven-release-plugin] prepare release jackrabbit-oak-1.44.0
