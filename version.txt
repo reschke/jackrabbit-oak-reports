@@ -1,5 +1,7 @@
-commit 88823952df70ba4131481537596e334e3e8029f5
-Author: Marcel Reutegger <marcel.reutegger@gmail.com>
-Date:   Tue Jul 12 16:13:18 2022 +0200
+commit cf8c866673f07929f286957fa81a9fd9d0608902
+Author: Amit Jain <amitj@apache.org>
+Date:   Mon Nov 21 15:55:34 2022 +0530
 
-    [maven-release-plugin] prepare release jackrabbit-oak-1.44.0
+    OAK-10008: Reduce heap requirement for test DocumentStoreIndexeIT#parallelReindexWithLZ4 (#761)
+    
+    - Reduce split size to 2
