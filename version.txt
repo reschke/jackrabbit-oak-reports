@@ -1,7 +1,7 @@
-commit e308717b9c6b1fc93d37f5a50f8f7a565889c176
+commit b5a397ffa6af6b435a933f74fb07c0101654564a
 Author: Davide Giannella <davide@apache.org>
-Date:   Tue Apr 9 14:26:40 2019 +0000
+Date:   Wed Jun 5 15:05:55 2019 +0000
 
-    [maven-release-plugin] copy for tag jackrabbit-oak-1.12.0
+    [maven-release-plugin] copy for tag jackrabbit-oak-1.14.0
     
-    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.12.0@1857208 13f79535-47bb-0310-9956-ffa450edef68
+    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.14.0@1860668 13f79535-47bb-0310-9956-ffa450edef68
