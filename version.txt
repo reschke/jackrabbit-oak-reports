@@ -1,7 +1,7 @@
-commit 4f57db4c01189c99721bb45cf9f91a831afa16d5
+commit 4b01756b18340733f50a4d2705d7b2f487d4e66c
 Author: Marcel Reutegger <mreutegg@apache.org>
-Date:   Fri May 22 10:10:05 2020 +0000
+Date:   Fri Jul 10 07:23:38 2020 +0000
 
-    [maven-release-plugin] copy for tag jackrabbit-oak-1.30.0
+    [maven-release-plugin] copy for tag jackrabbit-oak-1.32.0
     
-    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.30.0@1878023 13f79535-47bb-0310-9956-ffa450edef68
+    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.32.0@1879741 13f79535-47bb-0310-9956-ffa450edef68
