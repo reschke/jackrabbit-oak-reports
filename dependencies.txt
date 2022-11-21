@@ -3,12 +3,12 @@
 [INFO] Reactor Build Order:
 [INFO] 
 [INFO] Oak Parent POM                                                     [pom]
-[INFO] Oak MicroKernel API (Deprecated)                                [bundle]
 [INFO] Oak Commons                                                     [bundle]
 [INFO] Oak Blob Store                                                  [bundle]
 [INFO] Oak Cloud Blob Store                                            [bundle]
-[INFO] Oak MicroKernel                                                 [bundle]
 [INFO] Oak Core                                                        [bundle]
+[INFO] Oak Segment                                                     [bundle]
+[INFO] Oak Integration Tests                                              [jar]
 [INFO] Oak JCR Binding                                                 [bundle]
 [INFO] Oak upgrade                                                        [jar]
 [INFO] Oak HTTP Binding                                                [bundle]
@@ -18,65 +18,54 @@
 [INFO] Oak External Authentication Support                             [bundle]
 [INFO] Oak LDAP Authentication Support                                 [bundle]
 [INFO] Oak TarMK Standby                                               [bundle]
+[INFO] Oak Remote API                                                  [bundle]
+[INFO] Oak CUG Authorization                                           [bundle]
 [INFO] Oak Runnable Jar                                                   [jar]
-[INFO] Oak Integration Tests for MicroKernel implementations              [jar]
 [INFO] Oak Integration Tests for OSGi deployments                         [jar]
-[INFO] Oak Integration Tests                                              [pom]
 [INFO] Oak PojoSR                                                         [jar]
+[INFO] Oak Exercises                                                   [bundle]
+[INFO] Oak Web Application Example                                        [war]
+[INFO] Oak Standalone Example                                             [jar]
+[INFO] Oak Examples                                                       [pom]
 [INFO] Jackrabbit Oak                                                     [pom]
-[INFO] Oak CUG                                                         [bundle]
 [INFO] 
 [INFO] ------------------< org.apache.jackrabbit:oak-parent >------------------
-[INFO] Building Oak Parent POM 1.2.0                                     [1/23]
+[INFO] Building Oak Parent POM 1.4.0                                     [1/26]
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-parent ---
-[INFO] org.apache.jackrabbit:oak-parent:pom:1.2.0
-[INFO] 
-[INFO] ------------------< org.apache.jackrabbit:oak-mk-api >------------------
-[INFO] Building Oak MicroKernel API (Deprecated) 1.2.0                   [2/23]
-[INFO] -------------------------------[ bundle ]-------------------------------
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-mk-api ---
-[INFO] org.apache.jackrabbit:oak-mk-api:bundle:1.2.0
-[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
-[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
-[INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
-[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] \- junit:junit:jar:4.10:test
-[INFO]    \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] org.apache.jackrabbit:oak-parent:pom:1.4.0
 [INFO] 
 [INFO] -----------------< org.apache.jackrabbit:oak-commons >------------------
-[INFO] Building Oak Commons 1.2.0                                        [3/23]
+[INFO] Building Oak Commons 1.4.0                                        [2/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-commons ---
-[INFO] org.apache.jackrabbit:oak-commons:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-commons:bundle:1.4.0
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] |  \- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- com.google.guava:guava:jar:15.0:compile
-[INFO] +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
 [INFO] +- commons-io:commons-io:jar:2.4:compile
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
-[INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- org.apache.commons:commons-math3:jar:3.2:compile
+[INFO] \- org.apache.commons:commons-lang3:jar:3.3.2:test
 [INFO] 
 [INFO] -------------------< org.apache.jackrabbit:oak-blob >-------------------
-[INFO] Building Oak Blob Store 1.2.0                                     [4/23]
+[INFO] Building Oak Blob Store 1.4.0                                     [3/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-blob ---
-[INFO] org.apache.jackrabbit:oak-blob:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-blob:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  \- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
 [INFO] +- com.google.guava:guava:jar:15.0:compile
 [INFO] +- commons-io:commons-io:jar:2.4:compile
 [INFO] +- org.apache.jclouds.provider:aws-s3:jar:1.7.0:compile
@@ -95,183 +84,80 @@
 [INFO] |     \- org.apache.jclouds:jclouds-blobstore:jar:1.7.0:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
-[INFO] \- org.apache.jackrabbit:oak-commons:jar:tests:1.2.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:tests:1.4.0:test
+[INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] 
 [INFO] ----------------< org.apache.jackrabbit:oak-blob-cloud >----------------
-[INFO] Building Oak Cloud Blob Store 1.2.0                               [5/23]
+[INFO] Building Oak Cloud Blob Store 1.4.0                               [4/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-blob-cloud ---
-[INFO] org.apache.jackrabbit:oak-blob-cloud:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-blob-cloud:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
 [INFO] +- javax.jcr:jcr:jar:2.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] |  \- com.google.guava:guava:jar:15.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
 [INFO] |  +- commons-io:commons-io:jar:2.2:compile
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
-[INFO] +- com.amazonaws:aws-java-sdk:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-support:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-simpledb:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-simpleworkflow:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-storagegateway:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-route53:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-s3:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-importexport:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-sts:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-sqs:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-rds:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-redshift:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-elasticbeanstalk:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-glacier:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-iam:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-datapipeline:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-elasticloadbalancing:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-emr:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-elasticache:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-elastictranscoder:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-ec2:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-dynamodb:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-sns:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudtrail:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudwatch:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-logs:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cognitoidentity:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cognitosync:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-directconnect:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudformation:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudfront:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-kinesis:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-opsworks:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-ses:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-autoscaling:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudsearch:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-cloudwatchmetrics:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-swf-libraries:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-codedeploy:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-kms:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-config:jar:1.9.11:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-lambda:jar:1.9.11:compile
-[INFO] |  \- com.amazonaws:aws-java-sdk-core:jar:1.9.11:compile
+[INFO] +- com.amazonaws:aws-java-sdk-s3:jar:1.10.27:compile
+[INFO] |  +- com.amazonaws:aws-java-sdk-kms:jar:1.10.27:compile
+[INFO] |  \- com.amazonaws:aws-java-sdk-core:jar:1.10.27:compile
 [INFO] |     +- commons-logging:commons-logging:jar:1.1.3:compile
-[INFO] |     +- org.apache.httpcomponents:httpclient:jar:4.3.4:compile
-[INFO] |     |  +- org.apache.httpcomponents:httpcore:jar:4.3.2:compile
+[INFO] |     +- org.apache.httpcomponents:httpclient:jar:4.3.6:compile
+[INFO] |     |  +- org.apache.httpcomponents:httpcore:jar:4.3.3:compile
 [INFO] |     |  \- commons-codec:commons-codec:jar:1.6:compile
-[INFO] |     +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.2:compile
-[INFO] |     |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
-[INFO] |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.3.2:compile
-[INFO] |     \- joda-time:joda-time:jar:2.12.1:compile (version selected from constraint [2.2,))
+[INFO] |     +- com.fasterxml.jackson.core:jackson-databind:jar:2.5.3:compile
+[INFO] |     |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0:compile
+[INFO] |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.5.3:compile
+[INFO] |     \- joda-time:joda-time:jar:2.8.1:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:tests:2.10.0:test
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:tests:2.12.1:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
 [INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] 
-[INFO] --------------------< org.apache.jackrabbit:oak-mk >--------------------
-[INFO] Building Oak MicroKernel 1.2.0                                    [6/23]
-[INFO] -------------------------------[ bundle ]-------------------------------
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-mk ---
-[INFO] org.apache.jackrabbit:oak-mk:bundle:1.2.0
-[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
-[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
-[INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
-[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] +- com.google.guava:guava:jar:15.0:compile
-[INFO] +- com.h2database:h2:jar:1.4.185:compile
-[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- commons-io:commons-io:jar:1.4:compile
-[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1:test
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
-[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
-[INFO] \- org.apache.jackrabbit:oak-commons:jar:tests:1.2.0:test
-[INFO] 
 [INFO] -------------------< org.apache.jackrabbit:oak-core >-------------------
-[INFO] Building Oak Core 1.2.0                                           [7/23]
+[INFO] Building Oak Core 1.4.0                                           [5/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-core ---
-[INFO] org.apache.jackrabbit:oak-core:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-core:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-blob-cloud:jar:1.2.0:compile
-[INFO] |  \- com.amazonaws:aws-java-sdk:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-support:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-simpledb:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-simpleworkflow:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-storagegateway:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-route53:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-importexport:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-sts:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-sqs:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-rds:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-redshift:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-elasticbeanstalk:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-glacier:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-iam:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-datapipeline:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-elasticloadbalancing:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-emr:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-elasticache:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-elastictranscoder:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-ec2:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-dynamodb:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-sns:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudtrail:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudwatch:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-logs:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cognitoidentity:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cognitosync:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-directconnect:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudformation:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudfront:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-kinesis:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-opsworks:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-ses:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-autoscaling:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudsearch:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-cloudwatchmetrics:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-swf-libraries:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-codedeploy:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-kms:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-config:jar:1.9.11:compile
-[INFO] |     +- com.amazonaws:aws-java-sdk-lambda:jar:1.9.11:compile
-[INFO] |     \- com.amazonaws:aws-java-sdk-core:jar:1.9.11:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-blob-cloud:jar:1.4.0:compile
+[INFO] |  \- com.amazonaws:aws-java-sdk-s3:jar:1.10.27:compile
+[INFO] |     +- com.amazonaws:aws-java-sdk-kms:jar:1.10.27:compile
+[INFO] |     \- com.amazonaws:aws-java-sdk-core:jar:1.10.27:compile
 [INFO] |        +- commons-logging:commons-logging:jar:1.1.3:compile
-[INFO] |        +- org.apache.httpcomponents:httpclient:jar:4.3.4:compile
-[INFO] |        |  \- org.apache.httpcomponents:httpcore:jar:4.3.2:compile
-[INFO] |        +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.2:compile
-[INFO] |        |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
-[INFO] |        |  \- com.fasterxml.jackson.core:jackson-core:jar:2.3.2:compile
-[INFO] |        \- joda-time:joda-time:jar:2.12.1:compile (version selected from constraint [2.2,))
+[INFO] |        +- org.apache.httpcomponents:httpclient:jar:4.3.6:compile
+[INFO] |        |  \- org.apache.httpcomponents:httpcore:jar:4.3.3:compile
+[INFO] |        +- com.fasterxml.jackson.core:jackson-databind:jar:2.5.3:compile
+[INFO] |        |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0:compile
+[INFO] |        |  \- com.fasterxml.jackson.core:jackson-core:jar:2.5.3:compile
+[INFO] |        \- joda-time:joda-time:jar:2.8.1:compile
 [INFO] +- com.google.guava:guava:jar:15.0:compile
 [INFO] +- commons-codec:commons-codec:jar:1.5:compile
 [INFO] +- commons-io:commons-io:jar:2.4:compile
-[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-aws-ext:jar:2.10.0:compile
-[INFO] |  +- com.amazonaws:aws-java-sdk-s3:jar:1.9.22:compile
-[INFO] |  \- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:compile
-[INFO] +- org.mongodb:mongo-java-driver:jar:2.13.0:compile
+[INFO] +- io.dropwizard.metrics:metrics-core:jar:3.1.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-aws-ext:jar:2.12.1:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.12.1:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:compile
 [INFO] +- org.apache.jclouds.provider:aws-s3:jar:1.7.0:compile
 [INFO] |  \- org.apache.jclouds.api:s3:jar:1.7.0:compile
 [INFO] |     +- com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
@@ -286,145 +172,293 @@
 [INFO] |     |     +- javax.annotation:jsr250-api:jar:1.0:compile
 [INFO] |     |     \- com.google.code.gson:gson:jar:2.2.4:compile
 [INFO] |     \- org.apache.jclouds:jclouds-blobstore:jar:1.7.0:compile
-[INFO] +- com.esotericsoftware.kryo:kryo:jar:2.22:compile
-[INFO] +- org.apache.directmemory:directmemory-cache:jar:0.2:compile
-[INFO] +- com.h2database:h2:jar:1.4.185:compile
+[INFO] +- com.h2database:h2:jar:1.4.190:compile
 [INFO] +- javax.jcr:jcr:jar:2.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
-[INFO] +- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |  \- commons-pool:commons-pool:jar:1.5.4:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- org.mockito:mockito-core:jar:1.9.5:test
-[INFO] |  \- org.objenesis:objenesis:jar:1.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- junit-addons:junit-addons:jar:1.4:test
+[INFO] +- org.mockito:mockito-core:jar:1.10.19:test
+[INFO] |  \- org.objenesis:objenesis:jar:2.1:test
 [INFO] +- org.easymock:easymock:jar:3.1:test
 [INFO] |  \- cglib:cglib-nodep:jar:2.2.2:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
-[INFO] \- org.apache.jackrabbit:oak-blob:jar:tests:1.2.0:test
+[INFO] +- org.apache.jackrabbit:oak-blob:jar:tests:1.4.0:test
+[INFO] +- commons-lang:commons-lang:jar:2.6:test
+[INFO] +- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.3.0:test
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.osgi:jar:2.2.0:test
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- org.apache.commons:commons-math3:jar:3.2:test
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:test
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:test
+[INFO] \- com.googlecode.json-simple:json-simple:jar:1.1.1:test
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-segment >------------------
+[INFO] Building Oak Segment 1.4.0                                        [6/26]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-segment ---
+[INFO] org.apache.jackrabbit:oak-segment:bundle:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-blob-cloud:jar:1.4.0:provided
+[INFO] |  \- com.amazonaws:aws-java-sdk-s3:jar:1.10.27:provided
+[INFO] |     +- com.amazonaws:aws-java-sdk-kms:jar:1.10.27:provided
+[INFO] |     \- com.amazonaws:aws-java-sdk-core:jar:1.10.27:provided
+[INFO] |        +- commons-logging:commons-logging:jar:1.1.3:provided
+[INFO] |        +- org.apache.httpcomponents:httpclient:jar:4.3.6:provided
+[INFO] |        |  \- org.apache.httpcomponents:httpcore:jar:4.3.3:provided
+[INFO] |        +- com.fasterxml.jackson.core:jackson-databind:jar:2.5.3:provided
+[INFO] |        |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0:provided
+[INFO] |        |  \- com.fasterxml.jackson.core:jackson-core:jar:2.5.3:provided
+[INFO] |        \- joda-time:joda-time:jar:2.8.1:provided
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:provided
+[INFO] |  \- commons-codec:commons-codec:jar:1.5:provided
+[INFO] +- javax.jcr:jcr:jar:2.0:provided
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:provided
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:provided
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:provided
+[INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:provided
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- commons-io:commons-io:jar:2.4:compile
+[INFO] +- com.google.guava:guava:jar:15.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
+[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
+[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
+[INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
+[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
+[INFO] +- org.apache.jackrabbit:oak-core:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.3.0:test
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.osgi:jar:2.2.0:test
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- commons-lang:commons-lang:jar:2.6:test
+[INFO] +- org.easymock:easymock:jar:3.1:test
+[INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.2:test
+[INFO] +- org.apache.commons:commons-math3:jar:3.2:test
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- junit-addons:junit-addons:jar:1.4:test
+[INFO] \- org.mockito:mockito-core:jar:1.10.19:test
+[INFO] 
+[INFO] --------------------< org.apache.jackrabbit:oak-it >--------------------
+[INFO] Building Oak Integration Tests 1.4.0                              [7/26]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-it ---
+[INFO] org.apache.jackrabbit:oak-it:jar:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:test
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:test
+[INFO] |  +- com.google.guava:guava:jar:15.0:test
+[INFO] |  +- commons-codec:commons-codec:jar:1.5:test
+[INFO] |  +- commons-io:commons-io:jar:2.4:test
+[INFO] |  +- javax.jcr:jcr:jar:2.0:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:test
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:test
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-core:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-segment:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:test
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:test
+[INFO] +- commons-lang:commons-lang:jar:2.6:test
+[INFO] +- com.h2database:h2:jar:1.4.190:test
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:test
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:test
+[INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] 
 [INFO] -------------------< org.apache.jackrabbit:oak-jcr >--------------------
-[INFO] Building Oak JCR Binding 1.2.0                                    [8/23]
+[INFO] Building Oak JCR Binding 1.4.0                                    [8/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-jcr ---
-[INFO] org.apache.jackrabbit:oak-jcr:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-jcr:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
 [INFO] +- javax.jcr:jcr:jar:2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
 [INFO] |  \- commons-io:commons-io:jar:2.4:compile
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.2.0:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-segment:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-it:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] +- com.google.guava:guava:jar:15.0:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- org.mongodb:mongo-java-driver:jar:2.13.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
-[INFO] +- com.h2database:h2:jar:1.4.185:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.10.0:compile
+[INFO] +- com.h2database:h2:jar:1.4.190:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.12.1:compile
 [INFO] |  \- concurrent:concurrent:jar:1.3.4:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.10.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.12.1:test
 [INFO] |  +- commons-collections:commons-collections:jar:3.2.1:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.10.0:test
-[INFO] |  +- org.apache.tika:tika-core:jar:1.3:test
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.3:test
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:test
+[INFO] |  +- org.apache.tika:tika-core:jar:1.7:test
 [INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:test
 [INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:test
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.10.0:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-webdav:jar:2.10.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.12.1:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:tests:2.12.1:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-webdav:jar:2.12.1:test
 [INFO] |  |  \- commons-httpclient:commons-httpclient:jar:3.1:test
 [INFO] |  \- commons-fileupload:commons-fileupload:jar:1.2.1:test
 [INFO] +- org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.0.1:test
 [INFO] +- org.apache.commons:commons-math3:jar:3.2:test
 [INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:test
-[INFO] +- commons-dbcp:commons-dbcp:jar:1.4:test
-[INFO] |  \- commons-pool:commons-pool:jar:1.5.4:test
-[INFO] \- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.2.0:test
-[INFO]    \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:test
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:test
+[INFO] +- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.3.0:test
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.osgi:jar:2.2.0:test
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- commons-lang:commons-lang:jar:2.6:test
+[INFO] \- net.lingala.zip4j:zip4j:jar:1.3.2:test
 [INFO] 
 [INFO] -----------------< org.apache.jackrabbit:oak-upgrade >------------------
-[INFO] Building Oak upgrade 1.2.0                                        [9/23]
+[INFO] Building Oak upgrade 1.4.0                                        [9/26]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-upgrade ---
-[INFO] org.apache.jackrabbit:oak-upgrade:jar:1.2.0
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
+[INFO] org.apache.jackrabbit:oak-upgrade:jar:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-blob-cloud:jar:1.4.0:compile
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
+[INFO] |  \- com.amazonaws:aws-java-sdk-s3:jar:1.10.27:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
 [INFO] |  +- com.google.guava:guava:jar:15.0:compile
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
 [INFO] |  +- commons-io:commons-io:jar:2.4:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.10.0:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.12.1:compile
 [INFO] |  +- concurrent:concurrent:jar:1.3.4:compile
 [INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.10.0:compile
-[INFO] |  +- org.apache.tika:tika-core:jar:1.3:compile
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.3:compile
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:compile
+[INFO] |  +- org.apache.tika:tika-core:jar:1.7:compile
 [INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
 [INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:compile
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-spi:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:compile
+[INFO] +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] +- net.sf.jopt-simple:jopt-simple:jar:4.6:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:compile
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:compile
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:test
-[INFO] +- com.h2database:h2:jar:1.4.185:test
-[INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
-[INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- org.hamcrest:hamcrest-all:jar:1.3:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] +- com.h2database:h2:jar:1.4.190:test
+[INFO] +- com.amazonaws:aws-java-sdk:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-support:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-simpledb:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-simpleworkflow:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-storagegateway:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-route53:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-importexport:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-sts:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-sqs:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-rds:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-redshift:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-elasticbeanstalk:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-glacier:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-iam:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-datapipeline:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-elasticloadbalancing:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-emr:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-elasticache:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-elastictranscoder:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-ec2:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-dynamodb:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-sns:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudtrail:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudwatch:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-logs:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cognitoidentity:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cognitosync:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-directconnect:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudformation:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudfront:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-kinesis:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-opsworks:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-ses:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-autoscaling:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudsearch:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-cloudwatchmetrics:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-swf-libraries:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-codedeploy:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-kms:jar:1.9.11:compile
+[INFO] |  +- com.amazonaws:aws-java-sdk-config:jar:1.9.11:test
+[INFO] |  +- com.amazonaws:aws-java-sdk-lambda:jar:1.9.11:test
+[INFO] |  \- com.amazonaws:aws-java-sdk-core:jar:1.9.11:compile
+[INFO] |     +- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] |     +- org.apache.httpcomponents:httpclient:jar:4.3.4:compile
+[INFO] |     |  \- org.apache.httpcomponents:httpcore:jar:4.3.2:compile
+[INFO] |     \- com.fasterxml.jackson.core:jackson-databind:jar:2.3.2:compile
+[INFO] |        +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
+[INFO] |        \- com.fasterxml.jackson.core:jackson-core:jar:2.3.2:compile
+[INFO] \- joda-time:joda-time:jar:2.2:test
 [INFO] 
 [INFO] -------------------< org.apache.jackrabbit:oak-http >-------------------
-[INFO] Building Oak HTTP Binding 1.2.0                                  [10/23]
+[INFO] Building Oak HTTP Binding 1.4.0                                  [10/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-http ---
-[INFO] org.apache.jackrabbit:oak-http:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-http:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
 [INFO] |  +- com.google.guava:guava:jar:15.0:compile
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
 [INFO] |  +- commons-io:commons-io:jar:2.4:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
 [INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
 [INFO] +- org.apache.tika:tika-core:jar:1.1:compile
 [INFO] +- com.fasterxml.jackson.core:jackson-core:jar:2.0.0:compile
 [INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.0.0:compile
@@ -432,32 +466,28 @@
 [INFO] +- com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.0.2:compile
 [INFO] +- javax.servlet:servlet-api:jar:2.5:provided
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] \- junit:junit:jar:4.10:test
-[INFO]    \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] \- junit:junit:jar:4.12:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] 
 [INFO] ------------------< org.apache.jackrabbit:oak-lucene >------------------
-[INFO] Building Oak Lucene 1.2.0                                        [11/23]
+[INFO] Building Oak Lucene 1.4.0                                        [11/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-lucene ---
-[INFO] org.apache.jackrabbit:oak-lucene:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-lucene:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
 [INFO] |  +- com.google.guava:guava:jar:15.0:compile
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
 [INFO] |  +- commons-io:commons-io:jar:2.4:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
 [INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] +- org.apache.tika:tika-core:jar:1.5:compile
 [INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:provided
 [INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:provided
@@ -465,26 +495,33 @@
 [INFO] |  \- org.apache.lucene:lucene-sandbox:jar:4.7.1:provided
 [INFO] +- org.apache.lucene:lucene-queries:jar:4.7.1:provided
 [INFO] +- org.apache.lucene:lucene-suggest:jar:4.7.1:provided
-[INFO] |  \- org.apache.lucene:lucene-misc:jar:4.7.1:provided
+[INFO] +- org.apache.lucene:lucene-highlighter:jar:4.7.1:compile
+[INFO] +- org.apache.lucene:lucene-memory:jar:4.7.1:compile
+[INFO] +- org.apache.lucene:lucene-misc:jar:4.7.1:compile
+[INFO] +- org.apache.lucene:lucene-facet:jar:4.7.1:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-jcr:test-jar:tests:1.2.0:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.10.0:test
-[INFO] |  \- concurrent:concurrent:jar:1.3.4:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.10.0:test
-[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.10.0:test
-[INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:test
-[INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.12.1:test
+[INFO] |  \- concurrent:concurrent:jar:1.3.4:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.12.1:test
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:test
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.3:test
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:test
+[INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:test
+[INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
 [INFO] +- org.apache.tika:tika-parsers:jar:1.5:test
 [INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.1:test
 [INFO] |  |  \- org.gagravarr:vorbis-java-core:jar:tests:0.1:test
@@ -519,36 +556,38 @@
 [INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.1:test
 [INFO] |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:test
 [INFO] |  \- com.uwyn:jhighlight:jar:1.0:test
-[INFO] \- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.2.0:test
-[INFO]    \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.3.0:test
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.osgi:jar:2.2.0:test
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.0.1:test
+[INFO] +- org.hamcrest:hamcrest-all:jar:1.3:test
+[INFO] \- org.mockito:mockito-core:jar:1.10.19:test
+[INFO]    \- org.objenesis:objenesis:jar:2.1:test
 [INFO] 
 [INFO] ----------------< org.apache.jackrabbit:oak-solr-core >-----------------
-[INFO] Building Oak Solr core 1.2.0                                     [12/23]
+[INFO] Building Oak Solr core 1.4.0                                     [12/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-solr-core ---
-[INFO] org.apache.jackrabbit:oak-solr-core:bundle:1.2.0
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.2.0:test
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:provided
+[INFO] org.apache.jackrabbit:oak-solr-core:bundle:1.4.0
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.4.0:test
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:provided
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:provided
 [INFO] |  +- commons-io:commons-io:jar:2.4:provided
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:provided
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:provided
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:provided
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:provided
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-jcr:test-jar:tests:1.2.0:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.10.0:test
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:provided
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.12.1:test
 [INFO] |  \- concurrent:concurrent:jar:1.3.4:test
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.10.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:tests:2.12.1:test
 [INFO] |  +- commons-collections:commons-collections:jar:3.2.1:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.10.0:test
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.3:test
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:test
 [INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:test
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:provided
@@ -599,9 +638,9 @@
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- javax.jcr:jcr:jar:2.0:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:provided
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:provided
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] +- com.google.guava:guava:jar:15.0:provided
 [INFO] +- org.apache.solr:solr-core:jar:4.7.1:provided
 [INFO] |  +- org.apache.lucene:lucene-analyzers-kuromoji:jar:4.7.1:provided
@@ -662,37 +701,30 @@
 [INFO]    \- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] 
 [INFO] ----------------< org.apache.jackrabbit:oak-solr-osgi >-----------------
-[INFO] Building Oak Solr OSGi 1.2.0                                     [13/23]
+[INFO] Building Oak Solr OSGi 1.4.0                                     [13/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-solr-osgi ---
-[INFO] org.apache.jackrabbit:oak-solr-osgi:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-solr-osgi:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:provided
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:provided
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:provided
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:provided
 [INFO] |  +- com.google.guava:guava:jar:15.0:runtime
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:runtime
 [INFO] |  +- commons-io:commons-io:jar:2.4:runtime
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:provided
-[INFO] |  |  \- junit:junit:jar:4.10:runtime
-[INFO] |  |     \- org.hamcrest:hamcrest-core:jar:1.1:runtime
 [INFO] |  +- javax.jcr:jcr:jar:2.0:provided
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:provided
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:runtime
-[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.4:provided
-[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:provided
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:provided
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:runtime
 [INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:runtime
-[INFO] +- org.apache.jackrabbit:oak-solr-core:jar:1.2.0:runtime
+[INFO] +- org.apache.jackrabbit:oak-solr-core:jar:1.4.0:runtime
 [INFO] +- org.apache.solr:solr-core:jar:4.7.1:runtime
 [INFO] |  +- org.apache.lucene:lucene-analyzers-kuromoji:jar:4.7.1:runtime
 [INFO] |  +- org.apache.lucene:lucene-analyzers-phonetic:jar:4.7.1:runtime
 [INFO] |  +- org.apache.lucene:lucene-codecs:jar:4.7.1:runtime
 [INFO] |  +- org.apache.lucene:lucene-expressions:jar:4.7.1:runtime
 [INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:runtime
-[INFO] |  +- com.carrotsearch:hppc:jar:0.5.2:runtime
 [INFO] |  +- com.google.protobuf:protobuf-java:jar:2.5.0:runtime
 [INFO] |  +- com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:jar:1.2:runtime
 [INFO] |  +- commons-configuration:commons-configuration:jar:1.6:runtime
@@ -725,6 +757,7 @@
 [INFO] |  \- org.restlet.jee:org.restlet.ext.servlet:jar:2.1.1:runtime
 [INFO] +- org.apache.solr:solr-solrj:jar:4.7.1:runtime
 [INFO] +- org.noggit:noggit:jar:0.5:runtime
+[INFO] +- com.carrotsearch:hppc:jar:0.5.2:runtime
 [INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:runtime
 [INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:runtime
 [INFO] +- org.apache.lucene:lucene-queryparser:jar:4.7.1:runtime
@@ -747,56 +780,60 @@
 [INFO] \- org.apache.zookeeper:zookeeper:jar:3.4.5:runtime
 [INFO]    +- org.slf4j:slf4j-log4j12:jar:1.6.1:runtime
 [INFO]    +- jline:jline:jar:0.9.94:runtime
+[INFO]    |  \- junit:junit:jar:4.12:runtime
+[INFO]    |     \- org.hamcrest:hamcrest-core:jar:1.3:runtime
 [INFO]    \- org.jboss.netty:netty:jar:3.2.2.Final:runtime
 [INFO] 
 [INFO] --------------< org.apache.jackrabbit:oak-auth-external >---------------
-[INFO] Building Oak External Authentication Support 1.2.0               [14/23]
+[INFO] Building Oak External Authentication Support 1.4.0               [14/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-auth-external ---
-[INFO] org.apache.jackrabbit:oak-auth-external:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-auth-external:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.jaas:jar:0.0.2:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  \- commons-codec:commons-codec:jar:1.5:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
 [INFO] +- com.google.guava:guava:jar:15.0:compile
 [INFO] +- javax.jcr:jcr:jar:2.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.2.0:test
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.easymock:easymock:jar:3.1:test
 [INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
 [INFO] |  \- org.objenesis:objenesis:jar:1.2:test
-[INFO] +- com.h2database:h2:jar:1.4.185:test
+[INFO] +- com.h2database:h2:jar:1.4.190:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
-[INFO] \- commons-io:commons-io:jar:2.4:test
+[INFO] +- commons-io:commons-io:jar:2.4:test
+[INFO] \- org.apache.sling:org.apache.sling.testing.osgi-mock:jar:1.3.0:test
+[INFO]    +- org.apache.sling:org.apache.sling.commons.osgi:jar:2.2.0:test
+[INFO]    \- org.apache.commons:commons-lang3:jar:3.0.1:test
 [INFO] 
 [INFO] ----------------< org.apache.jackrabbit:oak-auth-ldap >-----------------
-[INFO] Building Oak LDAP Authentication Support 1.2.0                   [15/23]
+[INFO] Building Oak LDAP Authentication Support 1.4.0                   [15/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-auth-ldap ---
-[INFO] org.apache.jackrabbit:oak-auth-ldap:bundle:1.2.0
-[INFO] +- org.apache.directory.api:api-all:jar:1.0.0-M20:provided
-[INFO] |  +- xpp3:xpp3:jar:1.1.4c:provided
-[INFO] |  +- dom4j:dom4j:jar:1.6.1:provided
+[INFO] org.apache.jackrabbit:oak-auth-ldap:bundle:1.4.0
+[INFO] +- org.apache.directory.api:api-all:jar:1.0.0-M30:provided
+[INFO] |  +- org.apache.servicemix.bundles:org.apache.servicemix.bundles.xpp3:jar:1.1.4c_6:provided
+[INFO] |  +- org.apache.servicemix.bundles:org.apache.servicemix.bundles.dom4j:jar:1.6.1_5:provided
 [INFO] |  +- xml-apis:xml-apis:jar:1.0.b2:provided
 [INFO] |  +- commons-collections:commons-collections:jar:3.2.1:provided
+[INFO] |  +- org.apache.servicemix.bundles:org.apache.servicemix.bundles.antlr:jar:2.7.7_5:provided
 [INFO] |  \- commons-io:commons-io:jar:2.4:compile
 [INFO] +- commons-pool:commons-pool:jar:1.6:provided
 [INFO] +- commons-lang:commons-lang:jar:2.6:provided
@@ -805,84 +842,97 @@
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] |  \- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] +- org.apache.jackrabbit:oak-auth-external:jar:1.2.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-auth-external:jar:1.4.0:compile
 [INFO] +- com.google.guava:guava:jar:15.0:compile
 [INFO] +- javax.jcr:jcr:jar:2.0:compile
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.easymock:easymock:jar:3.1:test
 [INFO] |  +- cglib:cglib-nodep:jar:2.2.2:test
 [INFO] |  \- org.objenesis:objenesis:jar:1.2:test
 [INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
-[INFO] +- org.apache.directory.server:apacheds-server-unit:jar:1.5.5:test
-[INFO] |  +- org.apache.directory.server:apacheds-server-jndi:jar:1.5.5:test
-[INFO] |  |  +- org.apache.directory.server:apacheds-protocol-ldap:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.shared:shared-asn1-codec:jar:0.9.15:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-bootstrap-partition:jar:1.5.5:test
-[INFO] |  |  |  |  \- org.apache.directory.server:apacheds-schema-extras:jar:1.5.5:test
-[INFO] |  |  |  \- org.apache.directory.server:apacheds-protocol-shared:jar:1.5.5:test
-[INFO] |  |  \- org.apache.directory.server:apacheds-core-jndi:jar:1.5.5:test
-[INFO] |  +- org.apache.directory.server:apacheds-interceptor-kerberos:jar:1.5.5:test
-[INFO] |  |  +- org.apache.directory.server:apacheds-core:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-xdbm-search:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-xdbm-tools:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-schema-bootstrap:jar:1.5.5:test
-[INFO] |  |  |  |  \- org.apache.directory.server:apacheds-jdbm:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-core-entry:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-schema-registries:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-core-shared:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-core-constants:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-utils:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-jdbm-store:jar:1.5.5:test
-[INFO] |  |  |  |  \- org.apache.directory.server:apacheds-core-avl:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-xdbm-base:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.server:apacheds-bootstrap-extract:jar:1.5.5:test
-[INFO] |  |  |  +- org.apache.directory.shared:shared-cursor:jar:0.9.15:test
-[INFO] |  |  |  \- bouncycastle:bcprov-jdk15:jar:140:test
-[INFO] |  |  \- org.apache.directory.server:apacheds-kerberos-shared:jar:1.5.5:test
-[INFO] |  +- org.apache.directory.server:apacheds-core-unit:jar:1.5.5:test
-[INFO] |  \- org.apache.directory.shared:shared-ldap:jar:0.9.15:test
-[INFO] |     +- org.apache.directory.shared:shared-asn1:jar:0.9.15:test
-[INFO] |     \- org.apache.directory.shared:shared-ldap-constants:jar:0.9.15:test
-[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.2.0:test
-[INFO] \- org.apache.jackrabbit:oak-auth-external:jar:tests:1.2.0:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-auth-external:jar:tests:1.4.0:test
+[INFO] +- org.apache.directory.server:apacheds-core:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-i18n:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-admin:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-authn:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-number:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-authz:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-changelog:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-collective:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-event:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-exception:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-journal:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-normalization:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-operational:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-referral:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-schema:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-subtree:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-interceptors-trigger:jar:2.0.0-M20:test
+[INFO] |  \- org.bouncycastle:bcprov-jdk15on:jar:1.52:test
+[INFO] +- org.apache.directory.server:apacheds-core-annotations:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.server:apacheds-jdbm-partition:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.mavibot:mavibot:jar:1.0.0-M7:test
+[INFO] |  \- org.apache.directory.server:apacheds-mavibot-partition:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-core-api:jar:2.0.0-M20:test
+[INFO] |  \- net.sf.ehcache:ehcache:jar:2.8.5:test
+[INFO] +- org.apache.directory.server:apacheds-core-avl:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.api:api-ldap-model:jar:1.0.0-M30:test
+[INFO] |  \- org.apache.directory.api:api-util:jar:1.0.0-M30:test
+[INFO] +- org.apache.directory.server:apacheds-core-constants:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-core-jndi:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-interceptor-kerberos:jar:2.0.0-M20:test
+[INFO] |  \- org.apache.directory.api:api-asn1-api:jar:1.0.0-M30:test
+[INFO] +- org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M20:test
+[INFO] |  +- org.apache.directory.api:api-asn1-ber:jar:1.0.0-M30:test
+[INFO] |  \- org.apache.directory.api:api-i18n:jar:1.0.0-M30:test
+[INFO] +- org.apache.directory.server:apacheds-ldif-partition:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-dhcp:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-dns:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-kerberos:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-ldap:jar:2.0.0-M20:test
+[INFO] |  \- org.apache.directory.jdbm:apacheds-jdbm1:jar:2.0.0-M3:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-ntp:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-protocol-shared:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-server-annotations:jar:2.0.0-M20:test
+[INFO] |  \- org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M30:test
+[INFO] +- org.apache.directory.server:apacheds-server-config:jar:2.0.0-M20:test
+[INFO] +- org.apache.directory.server:apacheds-server-jndi:jar:2.0.0-M20:test
+[INFO] \- org.apache.directory.server:apacheds-xdbm-partition:jar:2.0.0-M20:test
 [INFO] 
 [INFO] --------------< org.apache.jackrabbit:oak-tarmk-standby >---------------
-[INFO] Building Oak TarMK Standby 1.2.0                                 [16/23]
+[INFO] Building Oak TarMK Standby 1.4.0                                 [16/26]
 [INFO] -------------------------------[ bundle ]-------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-tarmk-standby ---
-[INFO] org.apache.jackrabbit:oak-tarmk-standby:bundle:1.2.0
+[INFO] org.apache.jackrabbit:oak-tarmk-standby:bundle:1.4.0
 [INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
 [INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
 [INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:provided
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:provided
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:provided
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:provided
 [INFO] |  +- com.google.guava:guava:jar:15.0:provided
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:provided
 [INFO] |  +- commons-io:commons-io:jar:2.4:provided
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:provided
 [INFO] |  +- javax.jcr:jcr:jar:2.0:provided
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:provided
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:provided
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:provided
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:provided
-[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.2.0:provided
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:provided
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:provided
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-blob:jar:1.4.0:provided
 [INFO] +- io.netty:netty-common:jar:4.0.23.Final:provided
 [INFO] +- io.netty:netty-buffer:jar:4.0.23.Final:provided
 [INFO] +- io.netty:netty-transport:jar:4.0.23.Final:provided
@@ -890,41 +940,125 @@
 [INFO] +- io.netty:netty-handler:jar:4.0.23.Final:provided
 [INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:tests:1.4.0:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.apache.commons:commons-lang3:jar:3.3.2:test
 [INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
 [INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] \- org.apache.jackrabbit:jackrabbit-data:jar:2.9.0:test
 [INFO]    \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
 [INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-remote >------------------
+[INFO] Building Oak Remote API 1.4.0                                    [17/26]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-remote ---
+[INFO] org.apache.jackrabbit:oak-remote:bundle:1.4.0
+[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
+[INFO] +- com.google.guava:guava:jar:15.0:provided
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:provided
+[INFO] +- javax.jcr:jcr:jar:2.0:provided
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:provided
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:provided
+[INFO] |  +- commons-codec:commons-codec:jar:1.5:provided
+[INFO] |  +- commons-io:commons-io:jar:2.4:provided
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:provided
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:provided
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:provided
+[INFO] +- org.apache.jackrabbit:oak-it:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-segment:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:provided
+[INFO] +- com.fasterxml.jackson.core:jackson-core:jar:2.0.0:provided
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.0.0:provided
+[INFO] |  \- com.fasterxml.jackson.core:jackson-annotations:jar:2.0.0:provided
+[INFO] +- javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[INFO] +- org.eclipse.jetty:jetty-server:jar:8.1.10.v20130312:test
+[INFO] |  +- org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016:test
+[INFO] |  +- org.eclipse.jetty:jetty-continuation:jar:8.1.10.v20130312:test
+[INFO] |  \- org.eclipse.jetty:jetty-http:jar:8.1.10.v20130312:test
+[INFO] |     \- org.eclipse.jetty:jetty-io:jar:8.1.10.v20130312:test
+[INFO] |        \- org.eclipse.jetty:jetty-util:jar:8.1.10.v20130312:test
+[INFO] +- org.eclipse.jetty:jetty-servlet:jar:8.1.10.v20130312:test
+[INFO] |  \- org.eclipse.jetty:jetty-security:jar:8.1.10.v20130312:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.mockito:mockito-all:jar:1.10.19:test
+[INFO] +- com.mashape.unirest:unirest-java:jar:1.3.27:test
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.3.6:test
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.3.3:test
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.1.3:test
+[INFO] |  +- org.apache.httpcomponents:httpasyncclient:jar:4.0.2:test
+[INFO] |  |  \- org.apache.httpcomponents:httpcore-nio:jar:4.3.2:test
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.3.6:test
+[INFO] |  \- org.json:json:jar:20140107:test
+[INFO] +- org.apache.jackrabbit:oak-core:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:test
+[INFO] +- org.slf4j:slf4j-nop:jar:1.7.6:test
+[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.10:compile
+[INFO] +- commons-lang:commons-lang:jar:2.6:test
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:test
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:test
+[INFO] \- com.h2database:h2:jar:1.4.190:test
+[INFO] 
+[INFO] ------------< org.apache.jackrabbit:oak-authorization-cug >-------------
+[INFO] Building Oak CUG Authorization 1.4.0                             [18/26]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-authorization-cug ---
+[INFO] org.apache.jackrabbit:oak-authorization-cug:bundle:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
+[INFO] |  \- commons-io:commons-io:jar:2.4:compile
+[INFO] +- com.google.guava:guava:jar:15.0:compile
+[INFO] +- javax.jcr:jcr:jar:2.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
+[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
+[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
+[INFO] +- biz.aQute.bnd:bndlib:jar:2.2.0:provided
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] \- org.apache.jackrabbit:oak-jcr:jar:tests:1.4.0:test
+[INFO] 
 [INFO] -------------------< org.apache.jackrabbit:oak-run >--------------------
-[INFO] Building Oak Runnable Jar 1.2.0                                  [17/23]
+[INFO] Building Oak Runnable Jar 1.4.0                                  [19/26]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-run ---
-[INFO] org.apache.jackrabbit:oak-run:jar:1.2.0
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:compile
+[INFO] org.apache.jackrabbit:oak-run:jar:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:compile
 [INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] |  |  \- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  |  \- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] |  +- com.google.guava:guava:jar:15.0:compile
 [INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] +- org.apache.jackrabbit:oak-http:jar:1.2.0:compile
-[INFO] |  +- org.apache.tika:tika-core:jar:1.1:compile
+[INFO] +- org.apache.jackrabbit:oak-http:jar:1.4.0:compile
 [INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.0.0:compile
 [INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.0.0:compile
 [INFO] |  |  \- com.fasterxml.jackson.core:jackson-annotations:jar:2.0.0:compile
 [INFO] |  \- com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.0.2:compile
-[INFO] +- org.apache.jackrabbit:oak-upgrade:jar:1.2.0:compile
-[INFO] |  \- org.apache.jackrabbit:jackrabbit-spi:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-solr-core:jar:1.2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-remote:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-authorization-cug:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.4.0:compile
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:compile
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:compile
+[INFO] |  \- org.apache.lucene:lucene-misc:jar:4.7.1:compile
+[INFO] +- org.apache.jackrabbit:oak-solr-core:jar:1.4.0:compile
 [INFO] +- org.apache.solr:solr-solrj:jar:4.7.1:compile
 [INFO] |  +- log4j:log4j:jar:1.2.16:compile
 [INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.3.1:compile
@@ -939,10 +1073,7 @@
 [INFO] |  +- org.apache.lucene:lucene-codecs:jar:4.7.1:compile
 [INFO] |  +- org.apache.lucene:lucene-expressions:jar:4.7.1:compile
 [INFO] |  +- org.apache.lucene:lucene-grouping:jar:4.7.1:compile
-[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:compile
 [INFO] |  +- org.apache.lucene:lucene-join:jar:4.7.1:compile
-[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:compile
-[INFO] |  +- org.apache.lucene:lucene-misc:jar:4.7.1:compile
 [INFO] |  +- org.apache.lucene:lucene-spatial:jar:4.7.1:compile
 [INFO] |  +- com.carrotsearch:hppc:jar:0.5.2:compile
 [INFO] |  +- com.google.protobuf:protobuf-java:jar:2.5.0:compile
@@ -976,22 +1107,24 @@
 [INFO] |  +- org.ow2.asm:asm-commons:jar:4.1:compile
 [INFO] |  +- org.restlet.jee:org.restlet:jar:2.1.1:compile
 [INFO] |  \- org.restlet.jee:org.restlet.ext.servlet:jar:2.1.1:compile
-[INFO] +- org.apache.jackrabbit:oak-tarmk-standby:jar:1.2.0:compile
-[INFO] +- com.h2database:h2:jar:1.4.185:compile
-[INFO] +- org.mongodb:mongo-java-driver:jar:2.13.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.10.0:compile
-[INFO] |  \- org.apache.jackrabbit:jackrabbit-webdav:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:oak-tarmk-standby:jar:1.4.0:compile
+[INFO] +- org.apache.tomcat:tomcat-jdbc:jar:7.0.64:compile
+[INFO] |  \- org.apache.tomcat:tomcat-juli:jar:7.0.64:compile
+[INFO] +- com.h2database:h2:jar:1.4.190:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-webdav:jar:2.12.1:compile
 [INFO] |     \- commons-httpclient:commons-httpclient:jar:3.1:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-core:jar:2.12.1:compile
 [INFO] |  +- concurrent:concurrent:jar:1.3.4:compile
 [INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
 [INFO] |  +- commons-dbcp:commons-dbcp:jar:1.3:compile
 [INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.10.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:compile
 [INFO] |  +- org.apache.derby:derby:jar:10.5.3.0_1:compile
 [INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
 [INFO] +- org.apache.commons:commons-math:jar:2.0:compile
 [INFO] +- org.apache.commons:commons-compress:jar:1.8:compile
 [INFO] |  \- org.tukaani:xz:jar:1.5:compile
@@ -1004,78 +1137,93 @@
 [INFO] +- jline:jline:jar:2.11:compile
 [INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
 [INFO] +- org.mapdb:mapdb:jar:1.0.6:compile
+[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
+[INFO] +- org.apache.tika:tika-parsers:jar:1.5:compile
+[INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.1:compile
+[INFO] |  |  \- org.gagravarr:vorbis-java-core:jar:tests:0.1:test,provided
+[INFO] |  +- edu.ucar:netcdf:jar:4.2-min:compile
+[INFO] |  +- org.apache.james:apache-mime4j-core:jar:0.7.2:compile
+[INFO] |  +- org.apache.james:apache-mime4j-dom:jar:0.7.2:compile
+[INFO] |  +- org.apache.pdfbox:pdfbox:jar:1.8.4:compile
+[INFO] |  |  +- org.apache.pdfbox:fontbox:jar:1.8.4:compile
+[INFO] |  |  +- org.apache.pdfbox:jempbox:jar:1.8.4:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] |  +- org.bouncycastle:bcmail-jdk15:jar:1.45:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk15:jar:1.45:compile
+[INFO] |  +- org.apache.poi:poi:jar:3.10-beta2:compile
+[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.10-beta2:compile
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.10-beta2:compile
+[INFO] |  |  \- org.apache.poi:poi-ooxml-schemas:jar:3.10-beta2:compile
+[INFO] |  |     \- org.apache.xmlbeans:xmlbeans:jar:2.3.0:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO] |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:compile
+[INFO] |  +- org.ow2.asm:asm-debug-all:jar:4.1:compile
+[INFO] |  +- com.googlecode.mp4parser:isoparser:jar:1.0-RC-1:compile
+[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.6.11:compile
+[INFO] |  +- com.drewnoakes:metadata-extractor:jar:2.6.2:compile
+[INFO] |  |  +- com.adobe.xmp:xmpcore:jar:5.1.2:compile
+[INFO] |  |  \- xerces:xercesImpl:jar:2.8.1:compile
+[INFO] |  |     \- xml-apis:xml-apis:jar:1.3.03:compile
+[INFO] |  +- de.l3s.boilerpipe:boilerpipe:jar:1.1.0:compile
+[INFO] |  +- rome:rome:jar:0.9:compile
+[INFO] |  |  \- jdom:jdom:jar:1.0:compile
+[INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.1:compile
+[INFO] |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:compile
+[INFO] |  \- com.uwyn:jhighlight:jar:1.0:compile
+[INFO] +- org.apache.tika:tika-core:jar:1.5:compile
+[INFO] +- org.apache.commons:commons-csv:jar:1.1:compile
+[INFO] +- io.dropwizard.metrics:metrics-core:jar:3.1.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-aws-ext:jar:2.12.1:compile
+[INFO] |  +- com.amazonaws:aws-java-sdk-s3:jar:1.10.27:compile
+[INFO] |  |  +- com.amazonaws:aws-java-sdk-kms:jar:1.10.27:compile
+[INFO] |  |  \- com.amazonaws:aws-java-sdk-core:jar:1.10.27:compile
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-data:test-jar:tests:2.12.1:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:compile
 [INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:compile
 [INFO] +- org.apache.lucene:lucene-queryparser:jar:4.7.1:compile
 [INFO] |  \- org.apache.lucene:lucene-sandbox:jar:4.7.1:compile
 [INFO] +- org.apache.lucene:lucene-queries:jar:4.7.1:compile
 [INFO] +- org.apache.lucene:lucene-suggest:jar:4.7.1:compile
-[INFO] \- org.apache.jackrabbit:oak-solr-osgi:jar:1.2.0:compile
-[INFO] 
-[INFO] ------------------< org.apache.jackrabbit:oak-it-mk >-------------------
-[INFO] Building Oak Integration Tests for MicroKernel implementations 1.2.0 [18/23]
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-it-mk ---
-[INFO] org.apache.jackrabbit:oak-it-mk:jar:1.2.0
-[INFO] +- junit:junit:jar:4.10:compile
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:compile
-[INFO] +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] +- org.apache.jackrabbit:oak-mk:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] |  \- commons-io:commons-io:jar:1.4:compile
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
-[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:compile
-[INFO] +- org.mongodb:mongo-java-driver:jar:2.13.0:test
-[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1:compile
-[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
-[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
-[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
-[INFO] +- com.google.guava:guava:jar:15.0:compile
-[INFO] \- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:test
-[INFO]    \- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
+[INFO] +- org.apache.lucene:lucene-facet:jar:4.7.1:compile
+[INFO] \- org.apache.jackrabbit:oak-solr-osgi:jar:1.4.0:compile
 [INFO] 
 [INFO] -----------------< org.apache.jackrabbit:oak-it-osgi >------------------
-[INFO] Building Oak Integration Tests for OSGi deployments 1.2.0        [19/23]
+[INFO] Building Oak Integration Tests for OSGi deployments 1.4.0        [20/26]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-it-osgi ---
-[INFO] org.apache.jackrabbit:oak-it-osgi:jar:1.2.0
-[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.2.0:test
+[INFO] org.apache.jackrabbit:oak-it-osgi:jar:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:test
 [INFO] |  +- org.slf4j:slf4j-api:jar:1.7.6:test
 [INFO] |  +- com.google.guava:guava:jar:15.0:test
 [INFO] |  \- commons-io:commons-io:jar:2.4:test
-[INFO] +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:test
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:test
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:test
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:test
 [INFO] |  +- commons-codec:commons-codec:jar:1.5:test
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:test
 [INFO] |  +- javax.jcr:jcr:jar:2.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:test
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:test
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:test
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:test
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:test
-[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.2.0:test
-[INFO] |  \- org.apache.tika:tika-core:jar:1.5:test
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:test
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:test
+[INFO] +- org.apache.jackrabbit:oak-segment:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.4.0:test
+[INFO] |  +- org.apache.tika:tika-core:jar:1.5:test
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:test
+[INFO] |  |  +- org.apache.lucene:lucene-core:jar:4.7.1:test
+[INFO] |  |  \- org.apache.lucene:lucene-queries:jar:4.7.1:test
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:test
+[INFO] |  +- org.apache.lucene:lucene-misc:jar:4.7.1:test
+[INFO] |  \- org.apache.lucene:lucene-facet:jar:4.7.1:test
 [INFO] +- org.ops4j.pax.exam:pax-exam-junit4:jar:3.4.0:test
 [INFO] |  +- org.ops4j.pax.exam:pax-exam-spi:jar:3.4.0:test
 [INFO] |  |  +- org.ops4j.base:ops4j-base-spi:jar:1.4.0:test
 [INFO] |  |  \- org.ops4j.pax.tinybundles:tinybundles:jar:2.0.0:test
 [INFO] |  |     \- biz.aQute.bnd:bndlib:jar:2.2.0:test
 [INFO] |  +- org.ops4j.base:ops4j-base-lang:jar:1.4.0:test
-[INFO] |  \- junit:junit:jar:4.10:test
-[INFO] |     \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] |  \- junit:junit:jar:4.12:test
+[INFO] |     \- org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] +- org.apache.geronimo.specs:geronimo-atinject_1.0_spec:jar:1.0:test
 [INFO] +- org.ops4j.pax.exam:pax-exam-container-native:jar:3.4.0:test
 [INFO] |  +- org.ops4j.pax.exam:pax-exam:jar:3.4.0:test
@@ -1123,165 +1271,459 @@
 [INFO] |  +- org.codehaus.plexus:plexus-utils:jar:3.0:test
 [INFO] |  \- commons-httpclient:commons-httpclient:jar:3.1:test
 [INFO] |     \- commons-logging:commons-logging:jar:1.0.4:test
-[INFO] \- org.slf4j:slf4j-simple:jar:1.7.6:test
-[INFO] 
-[INFO] --------------------< org.apache.jackrabbit:oak-it >--------------------
-[INFO] Building Oak Integration Tests 1.2.0                             [20/23]
-[INFO] --------------------------------[ pom ]---------------------------------
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-it ---
-[INFO] org.apache.jackrabbit:oak-it:pom:1.2.0
+[INFO] \- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO]    \- ch.qos.logback:logback-core:jar:1.1.0:test
 [INFO] 
 [INFO] ------------------< org.apache.jackrabbit:oak-pojosr >------------------
-[INFO] Building Oak PojoSR 1.2.0                                        [21/23]
+[INFO] Building Oak PojoSR 1.4.0                                        [21/26]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-pojosr ---
-[INFO] org.apache.jackrabbit:oak-pojosr:jar:1.2.0
-[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.2.0:compile
+[INFO] org.apache.jackrabbit:oak-pojosr:jar:1.4.0
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:compile
 [INFO] |  +- javax.jcr:jcr:jar:2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] |  |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |  |     \- commons-pool:commons-pool:jar:1.5.4:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  |  \- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
 [INFO] |  +- com.google.guava:guava:jar:15.0:compile
 [INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] +- org.mongodb:mongo-java-driver:jar:2.13.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.10.0:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
 [INFO] +- commons-io:commons-io:jar:2.4:compile
-[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.6:compile
-[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
-[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:compile
-[INFO] +- org.apache.sling:org.apache.sling.commons.logservice:jar:1.0.2:compile
-[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:compile
-[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:compile
+[INFO] +- org.apache.sling:org.apache.sling.commons.logservice:jar:1.0.4:compile
 [INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] +- org.osgi:org.osgi.core:jar:4.3.1:compile
-[INFO] +- org.osgi:org.osgi.compendium:jar:4.3.1:compile
-[INFO] +- com.googlecode.pojosr:de.kalpatec.pojosr.framework.bare:jar:0.2.1:compile
-[INFO] |  \- com.googlecode.pojosr:de.kalpatec.pojosr.framework:jar:0.2.1:compile
+[INFO] +- org.apache.felix:org.apache.felix.connect:jar:0.1.0:compile
 [INFO] +- org.apache.felix:org.apache.felix.scr:jar:1.8.2:compile
-[INFO] |  \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.9:compile
-[INFO] +- org.apache.felix:org.apache.felix.configadmin:jar:1.8.0:compile
-[INFO] +- org.apache.felix:org.apache.felix.fileinstall:jar:3.2.8:compile
+[INFO] +- org.apache.felix:org.apache.felix.configadmin:jar:1.8.6:compile
+[INFO] +- org.apache.felix:org.apache.felix.fileinstall:jar:3.5.0:compile
+[INFO] +- org.apache.felix:org.apache.felix.metatype:jar:1.0.12:compile
 [INFO] +- org.apache.felix:org.apache.felix.jaas:jar:0.0.2:compile
 [INFO] +- org.apache.aries.jmx:org.apache.aries.jmx.whiteboard:jar:1.0.0:compile
 [INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] +- org.apache.tika:tika-core:jar:1.5:compile
-[INFO] +- org.apache.tika:tika-parsers:jar:1.5:compile
-[INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.1:compile
-[INFO] |  |  \- org.gagravarr:vorbis-java-core:jar:tests:0.1:test,provided
-[INFO] |  +- edu.ucar:netcdf:jar:4.2-min:compile
+[INFO] +- org.apache.tika:tika-core:jar:1.5:test
+[INFO] +- org.apache.tika:tika-parsers:jar:1.5:test
+[INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.1:test
+[INFO] |  |  \- org.gagravarr:vorbis-java-core:jar:tests:0.1:test
+[INFO] |  +- edu.ucar:netcdf:jar:4.2-min:test
+[INFO] |  +- org.apache.james:apache-mime4j-core:jar:0.7.2:test
+[INFO] |  +- org.apache.james:apache-mime4j-dom:jar:0.7.2:test
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.5:test
+[INFO] |  |  \- org.tukaani:xz:jar:1.2:test
+[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
+[INFO] |  +- org.apache.pdfbox:pdfbox:jar:1.8.4:test
+[INFO] |  |  +- org.apache.pdfbox:fontbox:jar:1.8.4:test
+[INFO] |  |  \- org.apache.pdfbox:jempbox:jar:1.8.4:test
+[INFO] |  +- org.bouncycastle:bcmail-jdk15:jar:1.45:test
+[INFO] |  +- org.bouncycastle:bcprov-jdk15:jar:1.45:test
+[INFO] |  +- org.apache.poi:poi:jar:3.10-beta2:test
+[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.10-beta2:test
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.10-beta2:test
+[INFO] |  |  +- org.apache.poi:poi-ooxml-schemas:jar:3.10-beta2:test
+[INFO] |  |  |  \- org.apache.xmlbeans:xmlbeans:jar:2.3.0:test
+[INFO] |  |  \- dom4j:dom4j:jar:1.6.1:test
+[INFO] |  +- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:test
+[INFO] |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:test
+[INFO] |  +- org.ow2.asm:asm-debug-all:jar:4.1:test
+[INFO] |  +- com.googlecode.mp4parser:isoparser:jar:1.0-RC-1:test
+[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.6.11:test
+[INFO] |  +- com.drewnoakes:metadata-extractor:jar:2.6.2:test
+[INFO] |  |  +- com.adobe.xmp:xmpcore:jar:5.1.2:test
+[INFO] |  |  \- xerces:xercesImpl:jar:2.8.1:test
+[INFO] |  |     \- xml-apis:xml-apis:jar:1.3.03:test
+[INFO] |  +- de.l3s.boilerpipe:boilerpipe:jar:1.1.0:test
+[INFO] |  +- rome:rome:jar:0.9:test
+[INFO] |  |  \- jdom:jdom:jar:1.0:test
+[INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.1:test
+[INFO] |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:test
+[INFO] |  \- com.uwyn:jhighlight:jar:1.0:test
+[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.4.0:test
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:test
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:test
+[INFO] |  +- org.apache.lucene:lucene-misc:jar:4.7.1:test
+[INFO] |  \- org.apache.lucene:lucene-facet:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:compile
+[INFO] +- org.apache.lucene:lucene-queryparser:jar:4.7.1:test
+[INFO] |  \- org.apache.lucene:lucene-sandbox:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-queries:jar:4.7.1:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- com.h2database:h2:jar:1.4.190:test
+[INFO] +- com.gmongo:gmongo:jar:1.1:test
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.3.1:test
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.6:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.6:test
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] \- org.mockito:mockito-all:jar:1.10.19:test
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-exercise >-----------------
+[INFO] Building Oak Exercises 1.4.0                                     [22/26]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-exercise ---
+[INFO] org.apache.jackrabbit:oak-exercise:bundle:1.4.0
+[INFO] +- javax.jcr:jcr:jar:2.0:compile
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:compile
+[INFO] |  \- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
+[INFO] |  \- commons-io:commons-io:jar:2.4:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
+[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
+[INFO] +- org.apache.felix:org.apache.felix.jaas:jar:0.0.2:provided
+[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
+[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
+[INFO] +- com.google.guava:guava:jar:15.0:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.6:test
+[INFO] +- com.h2database:h2:jar:1.4.190:test
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-tests:jar:2.12.1:compile
+[INFO] |  \- concurrent:concurrent:jar:1.3.4:compile
+[INFO] +- org.apache.jackrabbit:oak-commons:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-jcr:test-jar:tests:1.4.0:test
+[INFO] +- org.apache.jackrabbit:oak-core:test-jar:tests:1.4.0:test
+[INFO] \- org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.0.1:test
+[INFO] 
+[INFO] ------------------< org.apache.jackrabbit:oak-webapp >------------------
+[INFO] Building Oak Web Application Example 1.4.0                       [23/26]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-webapp ---
+[INFO] org.apache.jackrabbit:oak-webapp:war:1.4.0
+[INFO] +- javax.jcr:jcr:jar:2.0:compile
+[INFO] +- commons-io:commons-io:jar:2.4:compile
+[INFO] +- org.apache.tika:tika-parsers:jar:1.7:compile
+[INFO] |  +- org.apache.tika:tika-core:jar:1.7:compile
+[INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.6:compile
+[INFO] |  +- edu.ucar:netcdf:jar:4.2.20:compile
+[INFO] |  |  +- edu.ucar:unidataCommon:jar:4.2.20:compile
+[INFO] |  |  |  \- net.jcip:jcip-annotations:jar:1.0:compile
+[INFO] |  |  \- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  +- net.sourceforge.jmatio:jmatio:jar:1.0:compile
 [INFO] |  +- org.apache.james:apache-mime4j-core:jar:0.7.2:compile
 [INFO] |  +- org.apache.james:apache-mime4j-dom:jar:0.7.2:compile
-[INFO] |  +- org.apache.commons:commons-compress:jar:1.5:compile
-[INFO] |  |  \- org.tukaani:xz:jar:1.2:compile
-[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
-[INFO] |  +- org.apache.pdfbox:pdfbox:jar:1.8.4:compile
-[INFO] |  |  +- org.apache.pdfbox:fontbox:jar:1.8.4:compile
-[INFO] |  |  \- org.apache.pdfbox:jempbox:jar:1.8.4:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.8.1:compile
+[INFO] |  +- org.tukaani:xz:jar:1.5:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.9:compile
+[INFO] |  +- org.apache.pdfbox:pdfbox:jar:1.8.8:compile
+[INFO] |  |  +- org.apache.pdfbox:fontbox:jar:1.8.8:compile
+[INFO] |  |  \- org.apache.pdfbox:jempbox:jar:1.8.8:compile
 [INFO] |  +- org.bouncycastle:bcmail-jdk15:jar:1.45:compile
 [INFO] |  +- org.bouncycastle:bcprov-jdk15:jar:1.45:compile
-[INFO] |  +- org.apache.poi:poi:jar:3.10-beta2:compile
-[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.10-beta2:compile
-[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.10-beta2:compile
-[INFO] |  |  +- org.apache.poi:poi-ooxml-schemas:jar:3.10-beta2:compile
-[INFO] |  |  |  \- org.apache.xmlbeans:xmlbeans:jar:2.3.0:compile
-[INFO] |  |  \- dom4j:dom4j:jar:1.6.1:compile
-[INFO] |  +- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO] |  +- org.apache.poi:poi:jar:3.11:compile
+[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.11:compile
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.11:compile
+[INFO] |  |  \- org.apache.poi:poi-ooxml-schemas:jar:3.11:compile
+[INFO] |  |     \- org.apache.xmlbeans:xmlbeans:jar:2.6.0:compile
 [INFO] |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:compile
 [INFO] |  +- org.ow2.asm:asm-debug-all:jar:4.1:compile
-[INFO] |  +- com.googlecode.mp4parser:isoparser:jar:1.0-RC-1:compile
-[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.6.11:compile
+[INFO] |  +- com.googlecode.mp4parser:isoparser:jar:1.0.2:compile
+[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.8.0:compile
+[INFO] |  +- com.drewnoakes:metadata-extractor:jar:2.6.2:compile
+[INFO] |  |  \- com.adobe.xmp:xmpcore:jar:5.1.2:compile
+[INFO] |  +- de.l3s.boilerpipe:boilerpipe:jar:1.1.0:compile
+[INFO] |  +- rome:rome:jar:1.0:compile
+[INFO] |  |  \- jdom:jdom:jar:1.0:compile
+[INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.6:compile
+[INFO] |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:compile
+[INFO] |  +- com.uwyn:jhighlight:jar:1.0:compile
+[INFO] |  \- com.pff:java-libpst:jar:0.8.1:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-webdav:jar:2.12.1:compile
+[INFO] |  \- commons-fileupload:commons-fileupload:jar:1.2.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-servlet:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-rmi:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  |  \- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  \- com.google.guava:guava:jar:15.0:compile
+[INFO] +- org.apache.jackrabbit:oak-pojosr:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.logservice:jar:1.0.4:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.connect:jar:0.1.0:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.scr:jar:1.8.2:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.configadmin:jar:1.8.6:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.fileinstall:jar:3.5.0:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.metatype:jar:1.0.12:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.jaas:jar:0.0.2:compile
+[INFO] |  \- org.apache.aries.jmx:org.apache.aries.jmx.whiteboard:jar:1.0.0:compile
+[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.4.0:compile
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:compile
+[INFO] |  |  +- org.apache.lucene:lucene-core:jar:4.7.1:compile
+[INFO] |  |  \- org.apache.lucene:lucene-queries:jar:4.7.1:compile
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:compile
+[INFO] |  +- org.apache.lucene:lucene-misc:jar:4.7.1:compile
+[INFO] |  \- org.apache.lucene:lucene-facet:jar:4.7.1:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:compile
+[INFO] +- org.apache.tomcat:tomcat-servlet-api:jar:7.0.40:provided
+[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1:compile
+[INFO] +- org.apache.felix:org.apache.felix.http.proxy:jar:2.3.2:compile
+[INFO] +- org.apache.felix:org.apache.felix.http.bridge:jar:2.3.2:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.http.api:jar:2.3.2:compile
+[INFO] |  \- org.apache.felix:org.apache.felix.http.base:jar:2.3.2:compile
+[INFO] +- org.apache.felix:org.apache.felix.webconsole:jar:all:4.2.10:compile
+[INFO] +- org.apache.felix:org.apache.felix.webconsole.plugins.scriptconsole:jar:1.0.2:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.3.6:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.apache.tomcat:tomcat-catalina:jar:7.0.40:test
+[INFO] |  +- org.apache.tomcat:tomcat-juli:jar:7.0.40:test
+[INFO] |  +- org.apache.tomcat:tomcat-annotations-api:jar:7.0.40:test
+[INFO] |  +- org.apache.tomcat:tomcat-api:jar:7.0.40:test
+[INFO] |  \- org.apache.tomcat:tomcat-util:jar:7.0.40:test
+[INFO] +- org.apache.tomcat:tomcat-coyote:jar:7.0.40:test
+[INFO] +- org.apache.tomcat:tomcat-jasper:jar:7.0.40:test
+[INFO] |  +- org.apache.tomcat:tomcat-jsp-api:jar:7.0.40:test
+[INFO] |  +- org.apache.tomcat:tomcat-el-api:jar:7.0.40:test
+[INFO] |  +- org.eclipse.jdt.core.compiler:ecj:jar:4.2.2:test
+[INFO] |  \- org.apache.tomcat:tomcat-jasper-el:jar:7.0.40:test
+[INFO] +- net.sourceforge.htmlunit:htmlunit:jar:2.8:test
+[INFO] |  +- xalan:xalan:jar:2.7.1:test
+[INFO] |  |  \- xalan:serializer:jar:2.7.1:test
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:test
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.0.1:test
+[INFO] |  |  \- org.apache.httpcomponents:httpcore:jar:4.0.1:test
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.0.1:test
+[INFO] |  |  \- org.apache.james:apache-mime4j:jar:0.6:test
+[INFO] |  +- net.sourceforge.htmlunit:htmlunit-core-js:jar:2.8:test
+[INFO] |  +- xerces:xercesImpl:jar:2.9.1:compile
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.3.04:compile
+[INFO] |  +- net.sourceforge.nekohtml:nekohtml:jar:1.9.14:test
+[INFO] |  \- net.sourceforge.cssparser:cssparser:jar:0.9.5:test
+[INFO] |     \- org.w3c.css:sac:jar:1.3:test
+[INFO] \- org.slf4j:jul-to-slf4j:jar:1.7.6:test
+[INFO] 
+[INFO] ----------------< org.apache.jackrabbit:oak-standalone >----------------
+[INFO] Building Oak Standalone Example 1.4.0                            [24/26]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-standalone ---
+[INFO] org.apache.jackrabbit:oak-standalone:jar:1.4.0
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:1.3.0.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:1.3.0.RELEASE:compile
+[INFO] |  |  |  +- org.slf4j:jul-to-slf4j:jar:1.7.6:compile
+[INFO] |  |  |  \- org.slf4j:log4j-over-slf4j:jar:1.7.6:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.16:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-validation:jar:1.3.0.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.0.28:compile
+[INFO] |  |  \- org.hibernate:hibernate-validator:jar:5.2.2.Final:compile
+[INFO] |  |     +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  |     +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  |     \- com.fasterxml:classmate:jar:1.1.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.6.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.6.3:compile
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.6.3:compile
+[INFO] |  +- org.springframework:spring-web:jar:4.2.3.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:4.2.3.RELEASE:compile
+[INFO] |  |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:4.2.3.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:4.2.3.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:4.2.3.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-jetty:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.eclipse.jetty:jetty-servlets:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-continuation:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-http:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-util:jar:9.2.14.v20151106:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-io:jar:9.2.14.v20151106:compile
+[INFO] |  +- org.eclipse.jetty:jetty-webapp:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-xml:jar:9.2.14.v20151106:compile
+[INFO] |  |  \- org.eclipse.jetty:jetty-servlet:jar:9.2.14.v20151106:compile
+[INFO] |  |     \- org.eclipse.jetty:jetty-security:jar:9.2.14.v20151106:compile
+[INFO] |  |        \- org.eclipse.jetty:jetty-server:jar:9.2.14.v20151106:compile
+[INFO] |  +- org.eclipse.jetty.websocket:websocket-server:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty.websocket:websocket-common:jar:9.2.14.v20151106:compile
+[INFO] |  |  |  \- org.eclipse.jetty.websocket:websocket-api:jar:9.2.14.v20151106:compile
+[INFO] |  |  +- org.eclipse.jetty.websocket:websocket-client:jar:9.2.14.v20151106:compile
+[INFO] |  |  \- org.eclipse.jetty.websocket:websocket-servlet:jar:9.2.14.v20151106:compile
+[INFO] |  |     \- javax.servlet:javax.servlet-api:jar:3.1.0:compile
+[INFO] |  \- org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.2.14.v20151106:compile
+[INFO] |     +- org.eclipse.jetty:jetty-annotations:jar:9.2.14.v20151106:compile
+[INFO] |     |  +- org.eclipse.jetty:jetty-plus:jar:9.2.14.v20151106:compile
+[INFO] |     |  |  \- org.eclipse.jetty:jetty-jndi:jar:9.2.14.v20151106:compile
+[INFO] |     |  +- javax.annotation:javax.annotation-api:jar:1.2:compile
+[INFO] |     |  +- org.ow2.asm:asm:jar:5.0.1:compile
+[INFO] |     |  \- org.ow2.asm:asm-commons:jar:5.0.1:compile
+[INFO] |     |     \- org.ow2.asm:asm-tree:jar:5.0.1:compile
+[INFO] |     +- org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.2.14.v20151106:compile
+[INFO] |     \- javax.websocket:javax.websocket-api:jar:1.0:compile
+[INFO] +- org.springframework.boot:spring-boot-actuator:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:4.2.3.RELEASE:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  \- org.springframework:spring-context:jar:4.2.3.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:1.3.0.RELEASE:test
+[INFO] |  +- org.mockito:mockito-core:jar:1.10.19:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.1:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  \- org.springframework:spring-test:jar:4.2.3.RELEASE:test
+[INFO] +- org.springframework.boot:spring-boot-devtools:jar:1.3.0.RELEASE:compile
+[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
+[INFO] +- org.fusesource.jansi:jansi:jar:1.11:compile
+[INFO] +- io.dropwizard.metrics:metrics-core:jar:3.1.2:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:2.14.0:compile
+[INFO] +- javax.jcr:jcr:jar:2.0:compile
+[INFO] +- commons-io:commons-io:jar:2.4:compile
+[INFO] +- org.apache.tika:tika-parsers:jar:1.7:compile
+[INFO] |  +- org.apache.tika:tika-core:jar:1.7:compile
+[INFO] |  +- org.gagravarr:vorbis-java-tika:jar:0.6:compile
+[INFO] |  +- edu.ucar:netcdf:jar:4.2.20:compile
+[INFO] |  |  +- edu.ucar:unidataCommon:jar:4.2.20:compile
+[INFO] |  |  |  \- net.jcip:jcip-annotations:jar:1.0:compile
+[INFO] |  |  \- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  +- net.sourceforge.jmatio:jmatio:jar:1.0:compile
+[INFO] |  +- org.apache.james:apache-mime4j-core:jar:0.7.2:compile
+[INFO] |  +- org.apache.james:apache-mime4j-dom:jar:0.7.2:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.8.1:compile
+[INFO] |  +- org.tukaani:xz:jar:1.5:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.9:compile
+[INFO] |  +- org.apache.pdfbox:pdfbox:jar:1.8.8:compile
+[INFO] |  |  +- org.apache.pdfbox:fontbox:jar:1.8.8:compile
+[INFO] |  |  \- org.apache.pdfbox:jempbox:jar:1.8.8:compile
+[INFO] |  +- org.bouncycastle:bcmail-jdk15:jar:1.45:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk15:jar:1.45:compile
+[INFO] |  +- org.apache.poi:poi:jar:3.11:compile
+[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.11:compile
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.11:compile
+[INFO] |  |  \- org.apache.poi:poi-ooxml-schemas:jar:3.11:compile
+[INFO] |  |     \- org.apache.xmlbeans:xmlbeans:jar:2.6.0:compile
+[INFO] |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:compile
+[INFO] |  +- org.ow2.asm:asm-debug-all:jar:4.1:compile
+[INFO] |  +- com.googlecode.mp4parser:isoparser:jar:1.0.2:compile
+[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.8.7:compile
 [INFO] |  +- com.drewnoakes:metadata-extractor:jar:2.6.2:compile
 [INFO] |  |  +- com.adobe.xmp:xmpcore:jar:5.1.2:compile
 [INFO] |  |  \- xerces:xercesImpl:jar:2.8.1:compile
 [INFO] |  |     \- xml-apis:xml-apis:jar:1.3.03:compile
 [INFO] |  +- de.l3s.boilerpipe:boilerpipe:jar:1.1.0:compile
-[INFO] |  +- rome:rome:jar:0.9:compile
+[INFO] |  +- rome:rome:jar:1.0:compile
 [INFO] |  |  \- jdom:jdom:jar:1.0:compile
-[INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.1:compile
+[INFO] |  +- org.gagravarr:vorbis-java-core:jar:0.6:compile
 [INFO] |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:compile
-[INFO] |  \- com.uwyn:jhighlight:jar:1.0:compile
-[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.2.0:compile
-[INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:compile
-[INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:compile
-[INFO] +- org.apache.lucene:lucene-queryparser:jar:4.7.1:compile
-[INFO] |  \- org.apache.lucene:lucene-sandbox:jar:4.7.1:compile
-[INFO] +- org.apache.lucene:lucene-queries:jar:4.7.1:compile
-[INFO] +- junit:junit:jar:4.10:test
-[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
-[INFO] +- com.h2database:h2:jar:1.4.185:compile
-[INFO] +- com.gmongo:gmongo:jar:1.1:test
-[INFO] \- org.codehaus.groovy:groovy-all:jar:2.3.1:test
+[INFO] |  +- com.uwyn:jhighlight:jar:1.0:compile
+[INFO] |  \- com.pff:java-libpst:jar:0.8.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-server:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.12.1:compile
+[INFO] |  |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.12.1:compile
+[INFO] |  |  \- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.12.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-webdav:jar:2.12.1:compile
+[INFO] |  |  \- org.slf4j:jcl-over-slf4j:jar:1.7.6:compile
+[INFO] |  \- commons-fileupload:commons-fileupload:jar:1.2.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-servlet:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-rmi:jar:2.12.1:compile
+[INFO] +- org.apache.jackrabbit:oak-jcr:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-core:jar:1.4.0:compile
+[INFO] |  |  \- org.apache.jackrabbit:oak-blob:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-segment:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.12.1:compile
+[INFO] |  \- com.google.guava:guava:jar:15.0:compile
+[INFO] +- org.apache.jackrabbit:oak-pojosr:jar:1.4.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-data:jar:2.12.1:compile
+[INFO] |  +- org.apache.sling:org.apache.sling.commons.logservice:jar:1.0.4:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.connect:jar:0.1.0:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.scr:jar:1.8.2:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.configadmin:jar:1.8.6:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.fileinstall:jar:3.5.0:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.metatype:jar:1.0.12:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.jaas:jar:0.0.2:compile
+[INFO] |  \- org.apache.aries.jmx:org.apache.aries.jmx.whiteboard:jar:1.0.0:compile
+[INFO] +- org.apache.jackrabbit:oak-lucene:jar:1.4.0:compile
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:4.7.1:compile
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:4.7.1:compile
+[INFO] |  +- org.apache.lucene:lucene-misc:jar:4.7.1:compile
+[INFO] |  \- org.apache.lucene:lucene-facet:jar:4.7.1:compile
+[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
+[INFO] +- org.apache.felix:org.apache.felix.http.proxy:jar:2.3.2:compile
+[INFO] +- org.apache.felix:org.apache.felix.http.bridge:jar:2.3.2:compile
+[INFO] |  +- org.apache.felix:org.apache.felix.http.api:jar:2.3.2:compile
+[INFO] |  \- org.apache.felix:org.apache.felix.http.base:jar:2.3.2:compile
+[INFO] +- org.apache.felix:org.apache.felix.webconsole:jar:all:4.2.10:compile
+[INFO] +- org.apache.felix:org.apache.felix.webconsole.plugins.scriptconsole:jar:1.0.2:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.4.4:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] +- ch.qos.logback:logback-classic:jar:1.1.0:test
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.0:test
+[INFO] +- org.apache.lucene:lucene-core:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-analyzers-common:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-queryparser:jar:4.7.1:test
+[INFO] |  \- org.apache.lucene:lucene-sandbox:jar:4.7.1:test
+[INFO] +- org.apache.lucene:lucene-queries:jar:4.7.1:test
+[INFO] \- org.apache.lucene:lucene-suggest:jar:4.7.1:test
+[INFO] 
+[INFO] -----------------< org.apache.jackrabbit:oak-examples >-----------------
+[INFO] Building Oak Examples 1.4.0                                      [25/26]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-examples ---
+[INFO] org.apache.jackrabbit:oak-examples:pom:1.4.0
 [INFO] 
 [INFO] ----------------< org.apache.jackrabbit:jackrabbit-oak >----------------
-[INFO] Building Jackrabbit Oak 1.2.0                                    [22/23]
+[INFO] Building Jackrabbit Oak 1.4.0                                    [26/26]
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ jackrabbit-oak ---
-[INFO] org.apache.jackrabbit:jackrabbit-oak:pom:1.2.0
-[INFO] 
-[INFO] ------------< org.apache.jackrabbit:oak-authorization-cug >-------------
-[INFO] Building Oak CUG 1.2.0                                           [23/23]
-[INFO] -------------------------------[ bundle ]-------------------------------
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ oak-authorization-cug ---
-[INFO] org.apache.jackrabbit:oak-authorization-cug:bundle:1.2.0
-[INFO] +- org.apache.jackrabbit:oak-core:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-mk-api:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-commons:jar:1.2.0:compile
-[INFO] |  +- org.apache.jackrabbit:oak-blob:jar:1.2.0:compile
-[INFO] |  +- commons-codec:commons-codec:jar:1.5:compile
-[INFO] |  +- commons-io:commons-io:jar:2.4:compile
-[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
-[INFO] |  |  \- junit:junit:jar:4.10:compile
-[INFO] |  |     \- org.hamcrest:hamcrest-core:jar:1.1:compile
-[INFO] |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
-[INFO] |     \- commons-pool:commons-pool:jar:1.5.4:compile
-[INFO] +- com.google.guava:guava:jar:15.0:compile
-[INFO] +- javax.jcr:jcr:jar:2.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-api:jar:2.10.0:compile
-[INFO] +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.10.0:compile
-[INFO] +- org.slf4j:slf4j-api:jar:1.7.6:compile
-[INFO] +- org.osgi:org.osgi.core:jar:4.2.0:provided
-[INFO] +- org.osgi:org.osgi.compendium:jar:4.2.0:provided
-[INFO] +- org.apache.felix:org.apache.felix.scr.annotations:jar:1.9.6:provided
-[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.0:provided
-[INFO] \- org.apache.jackrabbit:oak-core:jar:tests:1.2.0:test
+[INFO] org.apache.jackrabbit:jackrabbit-oak:pom:1.4.0
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for Jackrabbit Oak 1.2.0:
+[INFO] Reactor Summary for Jackrabbit Oak 1.4.0:
 [INFO] 
-[INFO] Oak Parent POM ..................................... SUCCESS [  0.843 s]
-[INFO] Oak MicroKernel API (Deprecated) ................... SUCCESS [  0.545 s]
-[INFO] Oak Commons ........................................ SUCCESS [  0.080 s]
-[INFO] Oak Blob Store ..................................... SUCCESS [  0.120 s]
-[INFO] Oak Cloud Blob Store ............................... SUCCESS [  0.494 s]
-[INFO] Oak MicroKernel .................................... SUCCESS [  0.049 s]
-[INFO] Oak Core ........................................... SUCCESS [  0.264 s]
-[INFO] Oak JCR Binding .................................... SUCCESS [  0.190 s]
-[INFO] Oak upgrade ........................................ SUCCESS [  0.068 s]
-[INFO] Oak HTTP Binding ................................... SUCCESS [  0.073 s]
-[INFO] Oak Lucene ......................................... SUCCESS [  0.366 s]
-[INFO] Oak Solr core ...................................... SUCCESS [  0.492 s]
-[INFO] Oak Solr OSGi ...................................... SUCCESS [  0.175 s]
-[INFO] Oak External Authentication Support ................ SUCCESS [  0.057 s]
-[INFO] Oak LDAP Authentication Support .................... SUCCESS [  0.275 s]
-[INFO] Oak TarMK Standby .................................. SUCCESS [  0.109 s]
-[INFO] Oak Runnable Jar ................................... SUCCESS [  0.299 s]
-[INFO] Oak Integration Tests for MicroKernel implementations SUCCESS [  0.041 s]
-[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  0.424 s]
-[INFO] Oak Integration Tests .............................. SUCCESS [  0.009 s]
-[INFO] Oak PojoSR ......................................... SUCCESS [  0.231 s]
-[INFO] Jackrabbit Oak ..................................... SUCCESS [  0.005 s]
-[INFO] Oak CUG ............................................ SUCCESS [  0.042 s]
+[INFO] Oak Parent POM ..................................... SUCCESS [  1.022 s]
+[INFO] Oak Commons ........................................ SUCCESS [  0.806 s]
+[INFO] Oak Blob Store ..................................... SUCCESS [  0.169 s]
+[INFO] Oak Cloud Blob Store ............................... SUCCESS [  0.209 s]
+[INFO] Oak Core ........................................... SUCCESS [  0.258 s]
+[INFO] Oak Segment ........................................ SUCCESS [  0.114 s]
+[INFO] Oak Integration Tests .............................. SUCCESS [  0.058 s]
+[INFO] Oak JCR Binding .................................... SUCCESS [  0.210 s]
+[INFO] Oak upgrade ........................................ SUCCESS [  0.337 s]
+[INFO] Oak HTTP Binding ................................... SUCCESS [  0.075 s]
+[INFO] Oak Lucene ......................................... SUCCESS [  0.425 s]
+[INFO] Oak Solr core ...................................... SUCCESS [  0.512 s]
+[INFO] Oak Solr OSGi ...................................... SUCCESS [  0.145 s]
+[INFO] Oak External Authentication Support ................ SUCCESS [  0.054 s]
+[INFO] Oak LDAP Authentication Support .................... SUCCESS [  0.476 s]
+[INFO] Oak TarMK Standby .................................. SUCCESS [  0.126 s]
+[INFO] Oak Remote API ..................................... SUCCESS [  0.164 s]
+[INFO] Oak CUG Authorization .............................. SUCCESS [  0.044 s]
+[INFO] Oak Runnable Jar ................................... SUCCESS [  0.464 s]
+[INFO] Oak Integration Tests for OSGi deployments ......... SUCCESS [  0.468 s]
+[INFO] Oak PojoSR ......................................... SUCCESS [  0.198 s]
+[INFO] Oak Exercises ...................................... SUCCESS [  0.058 s]
+[INFO] Oak Web Application Example ........................ SUCCESS [  0.459 s]
+[INFO] Oak Standalone Example ............................. SUCCESS [  0.817 s]
+[INFO] Oak Examples ....................................... SUCCESS [  0.005 s]
+[INFO] Jackrabbit Oak ..................................... SUCCESS [  0.004 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.867 s
-[INFO] Finished at: 2022-11-21T14:35:55+01:00
+[INFO] Total time:  9.809 s
+[INFO] Finished at: 2022-11-21T14:41:07+01:00
 [INFO] ------------------------------------------------------------------------

@@ -1,8 +1,8 @@
-commit 8d6273e735e090a7ddb1227b593a6a0de570aa27
-Merge: 0d14d47020 baf3fe1e17
-Author: Marcel Reutegger <mreutegg@apache.org>
-Date:   Thu Apr 9 13:16:58 2015 +0000
+commit d01f3572c07bf39031f6a31e776ce8c2ff7bfa0a
+Merge: 77910b3e2f efe67d3003
+Author: Davide Giannella <davide@apache.org>
+Date:   Mon Mar 7 10:21:22 2016 +0000
 
-    [maven-release-plugin]  copy for tag jackrabbit-oak-1.2.0
+    [maven-release-plugin]  copy for tag jackrabbit-oak-1.4.0
     
-    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.2.0@1672335 13f79535-47bb-0310-9956-ffa450edef68
+    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.4.0@1733893 13f79535-47bb-0310-9956-ffa450edef68
