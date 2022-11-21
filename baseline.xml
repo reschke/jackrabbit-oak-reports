@@ -1,3 +1,2740 @@
 <?xml version="1.0"?>
 <root>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-auth-external" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication.external" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.security.auth.login,org.apache.jackrabbit.api.security.user</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-auth-ldap" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-blob-cloud" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-blob" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak.spi.blob" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.commons.cache</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.blob.AbstractBlobStore" delta="changed">
+        <method name="getBlobId(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getReference(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.blob.FileBlobStore" delta="changed">
+        <method name="getBlobId(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getReference(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.blob.MemoryBlobStore" delta="changed">
+        <method name="getBlobId(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getReference(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-commons" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak.commons" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.cache" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.jmx" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.management</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.json" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.mk" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.1.8</olderVersion>
+      <suggestedVersion>1.1.8</suggestedVersion>
+      <warning>Version has been increased but analysis detected no changes</warning>
+      <attributes>
+        <uses>org.apache.jackrabbit.mk.api</uses>
+        <version>1.2.0</version>
+      </attributes>
+      <version name="1.1.8" delta="removed"/>
+      <version name="1.2.0" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.sort" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-core" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.query,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.api" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.base,javax.annotation,javax.jcr,javax.security.auth.login</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.api.Type" delta="changed">
+        <method name="compareTo(Lorg/apache/jackrabbit/oak/api/Type&lt;*&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.api.jmx" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons.jmx</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.json" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons.json,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.kernel" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.mk.api,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.management" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx,org.apache.jackrabbit.oak.spi.whiteboard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.namepath" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.identifier,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.namepath.GlobalNameMapper" delta="changed">
+        <method name="getSessionLocalMappings()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.namepath.LocalNameMapper" delta="changed">
+        <method name="getJcrName(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getOakNameOrNull(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.namepath.NamePathMapper$Default" delta="changed">
+        <method name="getJcrName(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getOakNameOrNull(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getSessionLocalMappings()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.namepath.NamePathMapperImpl" delta="changed">
+        <method name="getJcrName(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getOakNameOrNull(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.osgi" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.whiteboard,org.osgi.framework,org.osgi.util.tracker</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.atomic" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.backup" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.commit" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.identifier" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.util</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.index.CompositeIndexEditorProvider" delta="changed">
+        <method name="getIndexEditor(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeBuilder,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.index.IndexUpdateCallback)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.aggregate" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.counter" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.nodetype" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.property" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.base,javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexEditorProvider" delta="changed">
+        <method name="getIndexEditor(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeBuilder,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.index.IndexUpdateCallback)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.property.jmx" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.plugins.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.reference" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.index.reference.ReferenceEditorProvider" delta="changed">
+        <method name="getIndexEditor(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeBuilder,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.index.IndexUpdateCallback)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.itemsave" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.lock" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>org.apache.jackrabbit</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.memory" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.hash,javax.annotation,javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.value,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.memory.EmptyNodeState" delta="changed">
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getStrings(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.plugins.memory.MemoryNodeBuilder" delta="changed">
+        <method name="child(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNodeNames()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperties()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="moveTo(org.apache.jackrabbit.oak.spi.state.NodeBuilder,java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="removeProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setChildNode(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;Lorg/apache/jackrabbit/oak/api/Type&lt;TT;&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(org.apache.jackrabbit.oak.api.PropertyState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.plugins.memory.ModifiedNodeState" delta="changed">
+        <method name="builder()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNodeEntries()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperties()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getStrings(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.name" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.nodetype" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.base,javax.annotation,javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.nodetype.ReadOnlyNodeTypeManager" delta="changed">
+        <method name="getDefinition(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.api.Tree)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getRootDefinition()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.nodetype.write" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.nodetype,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.nodetype.write.ReadWriteNodeTypeManager" delta="changed">
+        <method name="getDefinition(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.api.Tree)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getRootDefinition()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.observation" delta="major">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.observation.filter,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.observation.ContentChangeInfo" delta="added">
+        <method name="&lt;init&gt;(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.commit.CommitInfo)" delta="added">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+        <method name="clone()" delta="added">
+          <access name="protected" delta="added"/>
+        </method>
+        <method name="equals(java.lang.Object)" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="finalize()" delta="added">
+          <access name="protected" delta="added"/>
+        </method>
+        <method name="getAfter()" delta="added">
+          <return name="org.apache.jackrabbit.oak.spi.state.NodeState" delta="added"/>
+        </method>
+        <method name="getBefore()" delta="added">
+          <return name="org.apache.jackrabbit.oak.spi.state.NodeState" delta="added"/>
+        </method>
+        <method name="hashCode()" delta="added">
+          <return name="int" delta="added"/>
+        </method>
+        <method name="isLocalChange()" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="toString()" delta="added">
+          <return name="java.lang.String" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.plugins.observation.EventGenerator" delta="major">
+        <method name="&lt;init&gt;()" delta="removed"/>
+        <method name="&lt;init&gt;(org.apache.jackrabbit.oak.plugins.observation.ContentChangeInfo)" delta="added"/>
+        <method name="&lt;init&gt;(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.observation.ContentChangeInfo,org.apache.jackrabbit.oak.plugins.observation.EventHandler)" delta="added">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="&lt;init&gt;(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.observation.EventHandler)" delta="removed">
+          <annotated name="javax.annotation.Nonnull" delta="removed"/>
+          <annotated name="javax.annotation.Nonnull" delta="removed"/>
+          <annotated name="javax.annotation.Nonnull" delta="removed"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.plugins.observation.ContentChangeInfoProvider" delta="added">
+        <access name="abstract" delta="added"/>
+        <method name="getChangeInfo()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="org.apache.jackrabbit.oak.plugins.observation.ContentChangeInfo" delta="added"/>
+        </method>
+      </interface>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.observation.filter" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.base,javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.segment" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.1.0</newerVersion>
+      <olderVersion>1.1.0</olderVersion>
+      <suggestedVersion>1.1.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.memory,org.apache.jackrabbit.oak.spi.blob,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.util</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.segment.SegmentNodeBuilder" delta="changed">
+        <method name="child(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNodeNames()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getNodeState()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperties()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="moveTo(org.apache.jackrabbit.oak.spi.state.NodeBuilder,java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="removeProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setChildNode(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;Lorg/apache/jackrabbit/oak/api/Type&lt;TT;&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(org.apache.jackrabbit.oak.api.PropertyState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.plugins.segment.SegmentNodeState" delta="changed">
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getName(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getNames(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getStrings(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.segment.file" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.segment,org.apache.jackrabbit.oak.spi.blob,org.apache.jackrabbit.oak.spi.gc,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.stats</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.segment.http" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.segment,org.apache.jackrabbit.oak.spi.blob</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.tree" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.query,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.value" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.api,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.version" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.identifier,org.apache.jackrabbit.oak.plugins.nodetype,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.query.fulltext" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>org.apache.jackrabbit.oak.query</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.security" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication,org.apache.jackrabbit.oak.spi.security.authentication.token,org.apache.jackrabbit.oak.spi.security.authorization,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.security.privilege,org.apache.jackrabbit.oak.spi.security.user,org.apache.jackrabbit.oak.spi.whiteboard,org.osgi.framework</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.commit" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.state,org.slf4j</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.commit.CompositeHook" delta="changed">
+        <method name="processCommit(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.commit.CommitInfo)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.commit.EmptyHook" delta="changed">
+        <method name="processCommit(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.commit.CommitInfo)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.gc" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.spi.whiteboard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.lifecycle" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.query" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.plugins.index.aggregate,org.apache.jackrabbit.oak.query,org.apache.jackrabbit.oak.query.fulltext,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.query.PropertyStateValue" delta="changed">
+        <method name="compareTo(org.apache.jackrabbit.oak.api.PropertyValue)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.xml</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.CompositeConfiguration" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.ConfigurationBase" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.ConfigurationParameters" delta="changed">
+        <method name="entrySet()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="keySet()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="putAll(Ljava/util/Map&lt;+Ljava/lang/String;*&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="values()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.OpenSecurityProvider" delta="changed">
+        <method name="getConfiguration(Ljava/lang/Class&lt;TT;&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.SecurityConfiguration$Default" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.security.auth,javax.security.auth.callback,javax.security.auth.login,javax.security.auth.spi,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.whiteboard</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authentication.AuthInfoImpl" delta="changed">
+        <method name="getPrincipals()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.authentication.OpenAuthenticationConfiguration" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.spi.security.authentication.Authentication" delta="changed">
+        <method name="authenticate(javax.jcr.Credentials)" delta="changed">
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+      </interface>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication.callback" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.security.auth.callback,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication.token,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.whiteboard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.api.security.authentication.token,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authentication.token.CompositeTokenConfiguration" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr.security,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.security.authorization.restriction</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.OpenAuthorizationConfiguration" delta="changed">
+        <method name="getAccessControlManager(org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getPermissionProvider(Lorg/apache/jackrabbit/oak/api/Root;Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol" delta="changed">
+      <mismatch>false</mismatch>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.1.8</olderVersion>
+      <suggestedVersion>1.1.9</suggestedVersion>
+      <warning>Excessive version increase</warning>
+      <attributes>
+        <uses>javax.annotation,javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authorization,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.security.authorization.restriction,org.apache.jackrabbit.oak.spi.security.privilege</uses>
+        <version>1.2.0</version>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol.ImmutableACL" delta="changed">
+        <method name="getEntries()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getRestrictionProvider()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <version name="1.1.8" delta="removed"/>
+      <version name="1.2.0" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization.permission" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.security.privilege,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.permission.EmptyPermissionProvider" delta="changed">
+        <method name="getRepositoryPermission()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getTreePermission(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.spi.security.authorization.permission.TreePermission)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasPrivileges(org.apache.jackrabbit.oak.api.Tree,java.lang.String[])" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.permission.OpenPermissionProvider" delta="changed">
+        <method name="getRepositoryPermission()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getTreePermission(org.apache.jackrabbit.oak.api.Tree,org.apache.jackrabbit.oak.spi.security.authorization.permission.TreePermission)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasPrivileges(org.apache.jackrabbit.oak.api.Tree,java.lang.String[])" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authorization.restriction" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.jcr.security,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.restriction.AbstractRestrictionProvider" delta="changed">
+        <method name="createRestriction(java.lang.String,java.lang.String,javax.jcr.Value)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="createRestriction(java.lang.String,java.lang.String,javax.jcr.Value[])" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="readRestrictions(Ljava/lang/String;Lorg/apache/jackrabbit/oak/api/Tree;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="validateRestrictions(java.lang.String,org.apache.jackrabbit.oak.api.Tree)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.authorization.restriction.RestrictionDefinitionImpl" delta="changed">
+        <method name="getRequiredType()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.spi.security.authorization.restriction.RestrictionDefinition" delta="changed">
+        <method name="getRequiredType()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </interface>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.principal" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.api.security.principal,org.apache.jackrabbit.commons.iterator,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.principal.CompositePrincipalConfiguration" delta="changed">
+        <method name="getCommitHooks(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getContext()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getValidators(Ljava/lang/String;Ljava/util/Set&lt;Ljava/security/Principal;&gt;;Lorg/apache/jackrabbit/oak/spi/commit/MoveTracker;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.principal.CompositePrincipalProvider" delta="changed">
+        <method name="findPrincipals(I)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="findPrincipals(Ljava/lang/String;I)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+        <method name="getGroupMembership(Ljava/security/Principal;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getPrincipal(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getPrincipals(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.privilege" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr.security,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.user" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.user.action" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.AccessControlAction" delta="changed">
+        <method name="onCreate(org.apache.jackrabbit.api.security.user.Group,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="onCreate(org.apache.jackrabbit.api.security.user.User,java.lang.String,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.ClearMembershipAction" delta="changed">
+        <method name="onRemove(org.apache.jackrabbit.api.security.user.Authorizable,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.CompositeActionProvider" delta="changed">
+        <method name="getAuthorizableActions(Lorg/apache/jackrabbit/oak/spi/security/SecurityProvider;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider" delta="changed">
+        <method name="getAuthorizableActions(Lorg/apache/jackrabbit/oak/spi/security/SecurityProvider;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <annotated name="org.apache.felix.scr.annotations.Properties" delta="changed">
+          <property name="value=[org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=enabledActions, label=Authorizable Actions, description=The set of actions that is supported by this provider implementation., cardinality=4, options=[Ljava.lang.Object;@2db1891}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=userPrivilegeNames, label=Configure AccessControlAction: User Privileges, description=The name of the privileges that should be granted to a given user on it's home., cardinality=2147483647}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=groupPrivilegeNames, label=Configure AccessControlAction: Group Privileges, description=The name of the privileges that should be granted to a given group on it's home., cardinality=2147483647}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=constraint, label=Configure PasswordValidationAction: Password Constraint, description=A regular expression specifying the pattern that must be matched by a user's password.}]" delta="added"/>
+          <property name="value=[org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=enabledActions, label=Authorizable Actions, description=The set of actions that is supported by this provider implementation., cardinality=4, options=[Ljava.lang.Object;@50e66399}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=userPrivilegeNames, label=Configure AccessControlAction: User Privileges, description=The name of the privileges that should be granted to a given user on it's home., cardinality=2147483647}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=groupPrivilegeNames, label=Configure AccessControlAction: Group Privileges, description=The name of the privileges that should be granted to a given group on it's home., cardinality=2147483647}org.apache.felix.scr.annotations.Property:TYPE:CLASS:{name=constraint, label=Configure PasswordValidationAction: Password Constraint, description=A regular expression specifying the pattern that must be matched by a user's password.}]" delta="removed"/>
+        </annotated>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.PasswordChangeAction" delta="changed">
+        <method name="onPasswordChange(org.apache.jackrabbit.api.security.user.User,java.lang.String,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.security.user.action.PasswordValidationAction" delta="changed">
+        <method name="onCreate(org.apache.jackrabbit.api.security.user.User,java.lang.String,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+        <method name="onPasswordChange(org.apache.jackrabbit.api.security.user.User,java.lang.String,org.apache.jackrabbit.oak.api.Root,org.apache.jackrabbit.oak.namepath.NamePathMapper)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nullable" delta="added"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.spi.security.user.action.AuthorizableActionProvider" delta="changed">
+        <method name="getAuthorizableActions(Lorg/apache/jackrabbit/oak/spi/security/SecurityProvider;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </interface>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.user.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.user</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.state" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.1.0</newerVersion>
+      <olderVersion>1.1.0</olderVersion>
+      <suggestedVersion>1.1.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.1.0</version>
+        <uses>com.google.common.base,javax.annotation,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.commit</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.state.AbstractNodeState" delta="changed">
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getStrings(Ljava/lang/String;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasProperty(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.state.ReadOnlyBuilder" delta="changed">
+        <method name="child(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getBoolean(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getChildNodeNames()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="getProperties()" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="hasChildNode(java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="moveTo(org.apache.jackrabbit.oak.spi.state.NodeBuilder,java.lang.String)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setChildNode(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(Ljava/lang/String;TT;Lorg/apache/jackrabbit/oak/api/Type&lt;TT;&gt;;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+        <method name="setProperty(org.apache.jackrabbit.oak.api.PropertyState)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.whiteboard" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>com.google.common.base,javax.annotation,javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication,org.apache.jackrabbit.oak.spi.security.authorization.restriction,org.apache.jackrabbit.oak.spi.security.user,org.apache.jackrabbit.oak.spi.security.user.action,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.spi.whiteboard.WhiteboardAuthorizableActionProvider" delta="changed">
+        <method name="getAuthorizableActions(Lorg/apache/jackrabbit/oak/spi/security/SecurityProvider;)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <class name="org.apache.jackrabbit.oak.spi.whiteboard.WhiteboardIndexEditorProvider" delta="changed">
+        <method name="getIndexEditor(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeBuilder,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.index.IndexUpdateCallback)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.xml" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.plugins.nodetype,org.apache.jackrabbit.oak.spi.security</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.stats" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management.openmbean,org.apache.jackrabbit.api.stats,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jackrabbit.stats,org.slf4j</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.state,org.slf4j</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-http" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-jcr" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak.jcr" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.jcr,org.apache.jackrabbit.oak,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.plugins.observation,org.apache.jackrabbit.oak.query,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-lucene" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.oak.plugins.index.lucene" delta="major">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons.jmx,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.plugins.index.aggregate,org.apache.jackrabbit.oak.plugins.index.lucene.score,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.query,org.apache.jackrabbit.oak.spi.state,org.apache.lucene.analysis,org.apache.lucene.codecs,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorProvider" delta="changed">
+        <method name="getIndexEditor(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeBuilder,org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.plugins.index.IndexUpdateCallback)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+      <interface name="org.apache.jackrabbit.oak.plugins.index.lucene.CopyOnReadStatsMBean" delta="major">
+        <method name="getCopyInProgressCount()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="getCopyInProgressDetails()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="java.lang.String[]" delta="added"/>
+        </method>
+        <method name="getCopyInProgressSize()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="java.lang.String" delta="added"/>
+        </method>
+        <method name="getDeletedFilesCount()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="getGarbageCollectedSize()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="java.lang.String" delta="added"/>
+        </method>
+        <method name="getGarbageDetails()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="java.lang.String[]" delta="added"/>
+        </method>
+        <method name="getGarbageSize()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="java.lang.String" delta="added"/>
+        </method>
+        <method name="getMaxCopyInProgressCount()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="getMaxScheduledForCopyCount()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="getScheduledForCopyCount()" delta="added">
+          <access name="abstract" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+      </interface>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.lucene.score" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.1.8</olderVersion>
+      <suggestedVersion>1.1.8</suggestedVersion>
+      <warning>Version has been increased but analysis detected no changes</warning>
+      <attributes>
+        <uses>org.apache.lucene.queries,org.apache.lucene.search</uses>
+        <version>1.2.0</version>
+      </attributes>
+      <version name="1.1.8" delta="removed"/>
+      <version name="1.2.0" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.oak.plugins.index.lucene.util" delta="changed">
+      <mismatch>true</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <error>Version increase required</error>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.state,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.spell,org.apache.lucene.search.suggest,org.apache.lucene.util</uses>
+      </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.index.lucene.util.LuceneInitializerHelper" delta="changed">
+        <method name="initialize(org.apache.jackrabbit.oak.spi.state.NodeBuilder)" delta="changed">
+          <annotated name="javax.annotation.Nonnull" delta="added"/>
+        </method>
+      </class>
+    </package>
+    <package name="org.apache.lucene" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ar" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.bg" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.br" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ca" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.charfilter" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cjk" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ckb" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cn" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.commongrams" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.compound" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.compound.hyphenation,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.util,org.xml.sax</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.compound.hyphenation" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.xml.sax,org.xml.sax.helpers</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.core" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cz" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.da" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.de" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.el" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.en" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.es" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.eu" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fa" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fi" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fr" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ga" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.gl" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.pt,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hi" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hu" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hunspell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hy" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.id" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.in" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.it" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.lv" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.miscellaneous" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ngram" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.nl" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.no" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.path" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.pattern" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.charfilter,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.payloads" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.position" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.pt" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.reverse" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ro" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ru" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.shingle" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.sinks" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.snowball" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std31" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std34" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std36" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std40" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.sv" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.synonym" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.th" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.tokenattributes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.tr" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.wikipedia" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.compressing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene3x" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene40" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene41" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene42" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene45" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.packed</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene46" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.perfield" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.collation" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.collation.tokenattributes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.document" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.index" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.codecs,org.apache.lucene.document,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function.docvalues" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function.valuesource" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.queries.function.docvalues,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.mlt" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.analyzing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.classic" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.complexPhrase" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.ext" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.builders" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.config" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.messages" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.nodes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.parser</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.messages" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.flexible.standard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.standard.processors</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.builders" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.config" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.nodes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.processors</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.simple" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.surround.query</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.spans</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.xml" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>javax.xml.parsers,javax.xml.transform,org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.w3c.dom,org.xml.sax</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.xml.builders" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.queryparser.xml,org.apache.lucene.search,org.apache.lucene.search.spans,org.w3c.dom</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.packed</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.payloads" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.search.spans,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.similarities" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.spans" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.spell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.search.spell,org.apache.lucene.search.suggest.fst,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.analyzing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.fst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.jaspell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.tst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.store" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.automaton" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.fst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.mutable" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.packed" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-mk-api" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.mk.api" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:36Z" bundleName="oak-mk" currentVersion="1.2.0" previousVersion="(,1.2.0)">
+    <package name="org.apache.jackrabbit.mk.core" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+        <uses>javax.annotation,org.apache.jackrabbit.mk.api,org.apache.jackrabbit.oak.spi.blob</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.mk.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0</version>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-solr-core" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-solr-osgi" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2022-11-21T14:37Z" bundleName="oak-tarmk-standby" currentVersion="1.2.0" previousVersion="(,1.2.0)"/>
 </root>
