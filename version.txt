@@ -1,7 +1,7 @@
-commit 08d624d31623fba1592da2b16ac1ae5f2179e4fb
+commit 9184eb5f6bc043b74d3352b7551a33da73c4b6d7
 Author: Julian Reschke <reschke@apache.org>
-Date:   Tue Nov 19 20:28:41 2019 +0000
+Date:   Mon Jan 13 07:17:42 2020 +0000
 
-    [maven-release-plugin] copy for tag jackrabbit-oak-1.20.0
+    [maven-release-plugin] copy for tag jackrabbit-oak-1.22.0
     
-    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.20.0@1870029 13f79535-47bb-0310-9956-ffa450edef68
+    git-svn-id: https://svn.apache.org/repos/asf/jackrabbit/oak/tags/jackrabbit-oak-1.22.0@1872700 13f79535-47bb-0310-9956-ffa450edef68
