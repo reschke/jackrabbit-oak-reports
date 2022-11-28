@@ -1,7 +1,5 @@
-commit cf8c866673f07929f286957fa81a9fd9d0608902
-Author: Amit Jain <amitj@apache.org>
-Date:   Mon Nov 21 15:55:34 2022 +0530
+commit 0f5b6f3110d4cb193782179fcce69253a278c5f7
+Author: anchela <angela@apache.org>
+Date:   Thu Nov 24 16:24:19 2022 +0100
 
-    OAK-10008: Reduce heap requirement for test DocumentStoreIndexeIT#parallelReindexWithLZ4 (#761)
-    
-    - Reduce split size to 2
+    OAK-10011 : Configure SonarClould for Oak (add missing licence header) (#764)
