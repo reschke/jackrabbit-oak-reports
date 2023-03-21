@@ -1,5 +1,5 @@
-commit 0f5b6f3110d4cb193782179fcce69253a278c5f7
-Author: anchela <angela@apache.org>
-Date:   Thu Nov 24 16:24:19 2022 +0100
+commit fe33e8c23bd94fe866196a61f150ff3f46749caf
+Author: reschke <julian.reschke@gmx.de>
+Date:   Fri Mar 17 22:11:00 2023 +0100
 
-    OAK-10011 : Configure SonarClould for Oak (add missing licence header) (#764)
+    [maven-release-plugin] prepare for next development iteration
