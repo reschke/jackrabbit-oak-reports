@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <root>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-api" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-api" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.api" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>3.4.0</newerVersion>
@@ -32,7 +32,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:09Z" bundleName="oak-auth-external" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:05Z" bundleName="oak-auth-external" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.external" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>2.4.0</newerVersion>
@@ -54,8 +54,8 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:09Z" bundleName="oak-auth-ldap" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:10Z" bundleName="oak-authorization-cug" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:05Z" bundleName="oak-auth-ldap" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:06Z" bundleName="oak-authorization-cug" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.cug" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>2.0.2</newerVersion>
@@ -67,7 +67,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:10Z" bundleName="oak-authorization-principalbased" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:06Z" bundleName="oak-authorization-principalbased" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.0</newerVersion>
@@ -79,8 +79,8 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-blob-cloud-azure" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-blob-cloud" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:03Z" bundleName="oak-blob-cloud-azure" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:03Z" bundleName="oak-blob-cloud" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.blob.cloud.s3.stats" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -89,40 +89,29 @@
       <attributes/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-blob-plugins" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-blob-plugins" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.plugins.blob.datastore.directaccess" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
+      <newerVersion>1.0.1</newerVersion>
+      <olderVersion>1.0.1</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
       <attributes>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <uses>org.apache.jackrabbit.core.data,org.apache.jackrabbit.oak.api.blob</uses>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-blob" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-commons" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
-    <package name="org.apache.jackrabbit.oak.commons" delta="minor">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-blob" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-commons" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
+    <package name="org.apache.jackrabbit.oak.commons" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.8.0</newerVersion>
-      <olderVersion>1.7.0</olderVersion>
-      <suggestedVersion>1.8.0</suggestedVersion>
+      <newerVersion>2.0.0</newerVersion>
+      <olderVersion>2.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
       <attributes>
-        <version>1.8.0</version>
-        <uses>com.google.common.base,com.google.common.collect,org.apache.commons.io,org.slf4j</uses>
+        <version>2.0.0</version>
+        <uses>org.slf4j</uses>
       </attributes>
-      <class name="org.apache.jackrabbit.oak.commons.FileIOUtils$TransformingComparator" delta="minor">
-        <method name="&lt;init&gt;(java.util.Comparator,java.util.function.Function)" delta="added">
-          <return name="void" delta="added"/>
-        </method>
-      </class>
-      <annotated name="org.osgi.annotation.versioning.Version" delta="micro">
-        <property name="value='1.7.0'" delta="removed"/>
-        <property name="value='1.8.0'" delta="added"/>
-      </annotated>
-      <version name="1.7.0" delta="removed"/>
-      <version name="1.8.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.cache" delta="unchanged">
       <mismatch>false</mismatch>
@@ -144,12 +133,12 @@
     </package>
     <package name="org.apache.jackrabbit.oak.commons.io" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.1.0</newerVersion>
-      <olderVersion>1.1.0</olderVersion>
-      <suggestedVersion>1.1.0</suggestedVersion>
+      <newerVersion>2.0.0</newerVersion>
+      <olderVersion>2.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
       <attributes>
-        <version>1.1.0</version>
-        <uses>com.google.common.io,org.apache.commons.io</uses>
+        <version>2.0.0</version>
+        <uses>org.apache.commons.io</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.json" delta="unchanged">
@@ -171,36 +160,102 @@
         <uses>org.slf4j,org.slf4j.event</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.commons.sort" delta="unchanged">
+    <package name="org.apache.jackrabbit.oak.commons.sort" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>1.1.0</newerVersion>
+      <newerVersion>1.2.0</newerVersion>
       <olderVersion>1.1.0</olderVersion>
-      <suggestedVersion>1.1.0</suggestedVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
       <attributes>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <uses>org.apache.jackrabbit.oak.commons</uses>
       </attributes>
+      <class name="org.apache.jackrabbit.oak.commons.sort.ExternalSort" delta="minor">
+        <method name="sortAndSave(java.util.List,java.util.Comparator,java.nio.charset.Charset,java.io.File,boolean,boolean,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.io.File" delta="added"/>
+        </method>
+        <method name="sortAndSave(java.util.List,java.util.Comparator,java.nio.charset.Charset,java.io.File,boolean,boolean,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.io.File" delta="added"/>
+        </method>
+        <method name="sortAndSave(java.util.List,java.util.Comparator,java.nio.charset.Charset,java.io.File,boolean,org.apache.jackrabbit.oak.commons.Compression,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+          <return name="java.io.File" delta="added"/>
+        </method>
+        <method name="sortAndSave(java.util.List,java.util.Comparator,java.nio.charset.Charset,java.io.File,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.io.File" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.BufferedReader,long,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,boolean,java.util.function.Function,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.BufferedReader,long,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,org.apache.jackrabbit.oak.commons.Compression,java.util.function.Function,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,boolean,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,boolean,java.util.function.Function,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,boolean,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,org.apache.jackrabbit.oak.commons.Compression,java.util.function.Function,java.util.function.Function,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,int,org.apache.jackrabbit.oak.commons.Compression,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,int,long,java.nio.charset.Charset,java.io.File,boolean,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.Comparator,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+        <method name="sortInBatch(java.io.File,java.util.function.Predicate)" delta="added">
+          <access name="static" delta="added"/>
+          <return name="java.util.List" delta="added"/>
+        </method>
+      </class>
+      <annotated name="org.osgi.annotation.versioning.Version" delta="micro">
+        <property name="value='1.1.0'" delta="removed"/>
+        <property name="value='1.2.0'" delta="added"/>
+      </annotated>
+      <version name="1.1.0" delta="removed"/>
+      <version name="1.2.0" delta="added"/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-core-spi" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-core-spi" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.cache" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.1.1</newerVersion>
-      <olderVersion>1.1.1</olderVersion>
-      <suggestedVersion>1.1.1</suggestedVersion>
+      <newerVersion>2.0.0</newerVersion>
+      <olderVersion>2.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
       <attributes>
-        <version>1.1.1</version>
-        <uses>com.google.common.cache,com.google.common.collect,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx</uses>
+        <version>2.0</version>
+        <uses>org.apache.jackrabbit.guava.common.cache,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.jmx" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.0</newerVersion>
-      <olderVersion>1.2.0</olderVersion>
-      <suggestedVersion>1.2.0</suggestedVersion>
+      <newerVersion>2.0.0</newerVersion>
+      <olderVersion>2.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
       <attributes>
-        <version>1.2.0</version>
-        <uses>com.google.common.base,javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api.jmx</uses>
+        <version>2.0.0</version>
+        <uses>javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api.jmx</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.namepath" delta="unchanged">
@@ -312,12 +367,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.whiteboard" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.0</newerVersion>
-      <olderVersion>1.2.0</olderVersion>
-      <suggestedVersion>1.2.0</suggestedVersion>
+      <newerVersion>2.0.0</newerVersion>
+      <olderVersion>2.0.0</olderVersion>
+      <suggestedVersion>2.0.0</suggestedVersion>
       <attributes>
-        <version>1.2.0</version>
-        <uses>com.google.common.base</uses>
+        <version>2.0.0</version>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.stats" delta="unchanged">
@@ -331,7 +385,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-core" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:02Z" bundleName="oak-core" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.importer" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.3.0</newerVersion>
@@ -353,16 +407,16 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:10Z" bundleName="oak-exercise" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:08Z" bundleName="oak-http" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-jackrabbit-api" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:07Z" bundleName="oak-exercise" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:04Z" bundleName="oak-http" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-jackrabbit-api" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.api" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.8.0</newerVersion>
-      <olderVersion>2.8.0</olderVersion>
-      <suggestedVersion>2.8.0</suggestedVersion>
+      <newerVersion>2.8.1</newerVersion>
+      <olderVersion>2.8.1</olderVersion>
+      <suggestedVersion>2.8.1</suggestedVersion>
       <attributes>
-        <version>2.8.0</version>
+        <version>2.8.1</version>
         <uses>javax.jcr,javax.jcr.lock,javax.jcr.nodetype,javax.jcr.version,javax.transaction.xa,org.apache.jackrabbit.api.binary,org.apache.jackrabbit.api.management,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.api.security.principal,org.apache.jackrabbit.api.security.user,org.xml.sax</uses>
       </attributes>
     </package>
@@ -378,105 +432,115 @@
     </package>
     <package name="org.apache.jackrabbit.api.jmx" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.0</newerVersion>
-      <olderVersion>2.3.0</olderVersion>
-      <suggestedVersion>2.3.0</suggestedVersion>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
       <attributes>
-        <version>2.3.0</version>
+        <version>2.3.1</version>
         <uses>javax.jcr,javax.management.openmbean</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.management" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.1</newerVersion>
-      <olderVersion>2.3.1</olderVersion>
-      <suggestedVersion>2.3.1</suggestedVersion>
+      <newerVersion>2.3.2</newerVersion>
+      <olderVersion>2.3.2</olderVersion>
+      <suggestedVersion>2.3.2</suggestedVersion>
       <attributes>
-        <version>2.3.1</version>
+        <version>2.3.2</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.observation" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.1</newerVersion>
-      <olderVersion>2.3.1</olderVersion>
-      <suggestedVersion>2.3.1</suggestedVersion>
+      <newerVersion>2.3.2</newerVersion>
+      <olderVersion>2.3.2</olderVersion>
+      <suggestedVersion>2.3.2</suggestedVersion>
       <attributes>
-        <version>2.3.1</version>
+        <version>2.3.2</version>
         <uses>javax.jcr,javax.jcr.observation</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.query" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.13.5</newerVersion>
-      <olderVersion>2.13.5</olderVersion>
-      <suggestedVersion>2.13.5</suggestedVersion>
+      <newerVersion>2.13.6</newerVersion>
+      <olderVersion>2.13.6</olderVersion>
+      <suggestedVersion>2.13.6</suggestedVersion>
       <attributes>
-        <version>2.13.5</version>
+        <version>2.13.6</version>
         <uses>javax.jcr.query</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.6.0</newerVersion>
-      <olderVersion>2.6.0</olderVersion>
-      <suggestedVersion>2.6.0</suggestedVersion>
+      <newerVersion>2.7.0</newerVersion>
+      <olderVersion>2.7.0</olderVersion>
+      <suggestedVersion>2.7.0</suggestedVersion>
       <attributes>
-        <version>2.6.0</version>
+        <version>2.7.0</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security.authorization</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.authentication.token" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.1</newerVersion>
-      <olderVersion>2.3.1</olderVersion>
-      <suggestedVersion>2.3.1</suggestedVersion>
+      <newerVersion>2.3.2</newerVersion>
+      <olderVersion>2.3.2</olderVersion>
+      <suggestedVersion>2.3.2</suggestedVersion>
       <attributes>
-        <version>2.3.1</version>
+        <version>2.3.2</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.authorization" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.6.0</newerVersion>
-      <olderVersion>2.6.0</olderVersion>
-      <suggestedVersion>2.6.0</suggestedVersion>
+      <newerVersion>2.6.1</newerVersion>
+      <olderVersion>2.6.1</olderVersion>
+      <suggestedVersion>2.6.1</suggestedVersion>
       <attributes>
-        <version>2.6.0</version>
+        <version>2.6.1</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.principal" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.4.1</newerVersion>
-      <olderVersion>2.4.1</olderVersion>
-      <suggestedVersion>2.4.1</suggestedVersion>
+      <newerVersion>2.4.2</newerVersion>
+      <olderVersion>2.4.2</olderVersion>
+      <suggestedVersion>2.4.2</suggestedVersion>
       <attributes>
-        <version>2.4.1</version>
+        <version>2.4.2</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.api.security.user" delta="unchanged">
+    <package name="org.apache.jackrabbit.api.security.user" delta="micro">
       <mismatch>false</mismatch>
-      <newerVersion>2.4.3</newerVersion>
-      <olderVersion>2.4.3</olderVersion>
-      <suggestedVersion>2.4.3</suggestedVersion>
+      <newerVersion>2.4.5</newerVersion>
+      <olderVersion>2.4.4</olderVersion>
+      <suggestedVersion>2.4.5</suggestedVersion>
       <attributes>
-        <version>2.4.3</version>
+        <version>2.4.5</version>
         <uses>javax.jcr,javax.security.auth,org.apache.jackrabbit.api.security.principal</uses>
       </attributes>
+      <interface name="org.apache.jackrabbit.api.security.user.Query" delta="micro">
+        <annotated name="org.osgi.annotation.versioning.ConsumerType" delta="added"/>
+        <annotated name="org.osgi.annotation.versioning.ProviderType" delta="removed"/>
+      </interface>
+      <annotated name="org.osgi.annotation.versioning.Version" delta="micro">
+        <property name="value='2.4.4'" delta="removed"/>
+        <property name="value='2.4.5'" delta="added"/>
+      </annotated>
+      <version name="2.4.4" delta="removed"/>
+      <version name="2.4.5" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.api.stats" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.0</newerVersion>
-      <olderVersion>1.2.0</olderVersion>
-      <suggestedVersion>1.2.0</suggestedVersion>
+      <newerVersion>1.2.1</newerVersion>
+      <olderVersion>1.2.1</olderVersion>
+      <suggestedVersion>1.2.1</suggestedVersion>
       <attributes>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:08Z" bundleName="oak-jcr" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:03Z" bundleName="oak-jcr" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.jcr.observation.filter" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
@@ -488,7 +552,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:08Z" bundleName="oak-lucene" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:04Z" bundleName="oak-lucene" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.lucene.spi" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
@@ -1816,7 +1880,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-query-spi" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-query-spi" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.query.facet" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
@@ -1847,9 +1911,9 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:12Z" bundleName="oak-search-elastic" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:09Z" bundleName="oak-search-mt" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:08Z" bundleName="oak-search" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:08Z" bundleName="oak-search-elastic" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:05Z" bundleName="oak-search-mt" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:04Z" bundleName="oak-search" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.lucene.spi" delta="removed">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -2782,16 +2846,38 @@
       <attributes/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-security-spi" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
-    <package name="org.apache.jackrabbit.oak.plugins.tree" delta="unchanged">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-security-spi" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
+    <package name="org.apache.jackrabbit.oak.plugins.tree" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>3.3.0</newerVersion>
+      <newerVersion>3.4.0</newerVersion>
       <olderVersion>3.3.0</olderVersion>
-      <suggestedVersion>3.3.0</suggestedVersion>
+      <suggestedVersion>3.4.0</suggestedVersion>
       <attributes>
-        <version>3.3.0</version>
+        <version>3.4.0</version>
         <uses>javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
       </attributes>
+      <class name="org.apache.jackrabbit.oak.plugins.tree.TreeUtil" delta="minor">
+        <method name="addMixin(org.apache.jackrabbit.oak.api.Tree,java.util.function.Function,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)" delta="added">
+          <access name="static" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.NotNull" delta="added"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+          <annotated name="org.jetbrains.annotations.Nullable" delta="added"/>
+          <return name="void" delta="added"/>
+        </method>
+      </class>
+      <annotated name="org.osgi.annotation.versioning.Version" delta="micro">
+        <property name="value='3.3.0'" delta="removed"/>
+        <property name="value='3.4.0'" delta="added"/>
+      </annotated>
+      <version name="3.3.0" delta="removed"/>
+      <version name="3.4.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security" delta="unchanged">
       <mismatch>false</mismatch>
@@ -2835,11 +2921,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.8.0</newerVersion>
-      <olderVersion>1.8.0</olderVersion>
-      <suggestedVersion>1.8.0</suggestedVersion>
+      <newerVersion>1.9.0</newerVersion>
+      <olderVersion>1.9.0</olderVersion>
+      <suggestedVersion>1.9.0</suggestedVersion>
       <attributes>
-        <version>1.8.0</version>
+        <version>1.9.0</version>
         <uses>javax.jcr,javax.security.auth.login,org.apache.jackrabbit.api.security.authentication.token,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security</uses>
       </attributes>
     </package>
@@ -2855,11 +2941,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.10.0</newerVersion>
-      <olderVersion>1.10.0</olderVersion>
-      <suggestedVersion>1.10.0</suggestedVersion>
+      <newerVersion>1.12.0</newerVersion>
+      <olderVersion>1.12.0</olderVersion>
+      <suggestedVersion>1.12.0</suggestedVersion>
       <attributes>
-        <version>1.10.0</version>
+        <version>1.12.0</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authorization,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.security.authorization.restriction,org.apache.jackrabbit.oak.spi.security.privilege</uses>
       </attributes>
     </package>
@@ -2905,11 +2991,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.user" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.5.0</newerVersion>
-      <olderVersion>2.5.0</olderVersion>
-      <suggestedVersion>2.5.0</suggestedVersion>
+      <newerVersion>2.6.0</newerVersion>
+      <olderVersion>2.6.0</olderVersion>
+      <suggestedVersion>2.6.0</suggestedVersion>
       <attributes>
-        <version>2.5.0</version>
+        <version>2.6.0</version>
         <uses>javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication,org.apache.jackrabbit.oak.spi.security.principal</uses>
       </attributes>
     </package>
@@ -2944,14 +3030,157 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-segment-remote" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:03Z" bundleName="oak-segment-azure" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
+    <package name="com.microsoft.azure.storage" delta="minor">
+      <mismatch>false</mismatch>
+      <newerVersion>1.57.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.1.0</suggestedVersion>
+      <warning>Excessive version increase</warning>
+      <attributes>
+        <version>1.57.0</version>
+        <uses>com.microsoft.azure.storage.blob,com.microsoft.azure.storage.core,javax.crypto,javax.xml.parsers,javax.xml.stream,org.slf4j,org.xml.sax,org.xml.sax.helpers</uses>
+      </attributes>
+      <class name="com.microsoft.azure.storage.Constants$HeaderConstants" delta="changed">
+        <field name="USER_AGENT_VERSION" delta="changed">
+          <constant name="8.6.0" delta="removed"/>
+          <constant name="8.6.6" delta="added"/>
+        </field>
+      </class>
+      <class name="com.microsoft.azure.storage.RequestOptions" delta="minor">
+        <method name="disableHttpsSocketKeepAlive()" delta="added">
+          <return name="java.lang.Boolean" delta="added"/>
+        </method>
+        <method name="setDisableHttpsSocketKeepAlive(java.lang.Boolean)" delta="added">
+          <return name="void" delta="added"/>
+        </method>
+      </class>
+      <version name="1.57.0" delta="added"/>
+    </package>
+    <package name="com.microsoft.azure.storage.blob" delta="minor">
+      <mismatch>false</mismatch>
+      <newerVersion>1.57.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.1.0</suggestedVersion>
+      <warning>Excessive version increase</warning>
+      <attributes>
+        <version>1.57.0</version>
+        <uses>com.microsoft.azure.storage,com.microsoft.azure.storage.core,javax.xml.stream</uses>
+      </attributes>
+      <class name="com.microsoft.azure.storage.blob.BlobRequestOptions" delta="minor">
+        <method name="disableHttpsSocketKeepAlive()" delta="added">
+          <return name="java.lang.Boolean" delta="added"/>
+        </method>
+        <method name="getCommitWriteOnInputStreamException()" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="setCommitWriteOnInputStreamException(boolean)" delta="added">
+          <return name="void" delta="added"/>
+        </method>
+        <method name="setDisableHttpsSocketKeepAlive(java.lang.Boolean)" delta="added">
+          <return name="void" delta="added"/>
+        </method>
+      </class>
+      <version name="1.57.0" delta="added"/>
+    </package>
+    <package name="com.microsoft.azure.storage.core" delta="minor">
+      <mismatch>false</mismatch>
+      <newerVersion>1.57.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.1.0</suggestedVersion>
+      <warning>Excessive version increase</warning>
+      <attributes>
+        <version>1.57.0</version>
+        <uses>com.fasterxml.jackson.core,com.microsoft.azure.storage,com.microsoft.azure.storage.blob,javax.crypto,javax.net.ssl,javax.xml.parsers,javax.xml.stream,org.xml.sax</uses>
+      </attributes>
+      <class name="com.microsoft.azure.storage.core.KeepAliveSocketFactory" delta="added">
+        <extends name="javax.net.SocketFactory" delta="added"/>
+        <extends name="javax.net.ssl.SSLSocketFactory" delta="added"/>
+        <method name="clone()" delta="added">
+          <access name="protected" delta="added"/>
+          <annotated name="jdk.internal.HotSpotIntrinsicCandidate" delta="added"/>
+          <return name="java.lang.Object" delta="added"/>
+        </method>
+        <method name="createSocket()" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.lang.String,int)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.lang.String,int,java.net.InetAddress,int)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.net.InetAddress,int)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.net.InetAddress,int,java.net.InetAddress,int)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.net.Socket,java.io.InputStream,boolean)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="createSocket(java.net.Socket,java.lang.String,int,boolean)" delta="added">
+          <return name="java.net.Socket" delta="added"/>
+        </method>
+        <method name="equals(java.lang.Object)" delta="added">
+          <return name="boolean" delta="added"/>
+        </method>
+        <method name="finalize()" delta="added">
+          <access name="protected" delta="added"/>
+          <return name="void" delta="added"/>
+        </method>
+        <method name="getDefaultCipherSuites()" delta="added">
+          <return name="java.lang.String[]" delta="added"/>
+        </method>
+        <method name="getInstance()" delta="added">
+          <access name="static" delta="added"/>
+          <return name="com.microsoft.azure.storage.core.KeepAliveSocketFactory" delta="added"/>
+        </method>
+        <method name="getSupportedCipherSuites()" delta="added">
+          <return name="java.lang.String[]" delta="added"/>
+        </method>
+        <method name="hashCode()" delta="added">
+          <annotated name="jdk.internal.HotSpotIntrinsicCandidate" delta="added"/>
+          <return name="int" delta="added"/>
+        </method>
+        <method name="toString()" delta="added">
+          <return name="java.lang.String" delta="added"/>
+        </method>
+      </class>
+      <version name="1.57.0" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.oak.segment.azure" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.57.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.0.0</suggestedVersion>
+      <warning>Version has been increased but analysis detected no changes</warning>
+      <attributes>
+        <version>1.57.0</version>
+        <uses>com.microsoft.azure.storage,com.microsoft.azure.storage.blob,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.remote,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence,org.osgi.service.component</uses>
+      </attributes>
+      <version name="1.57.0" delta="added"/>
+    </package>
+    <package name="org.apache.jackrabbit.oak.segment.azure.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.57.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.0.0</suggestedVersion>
+      <warning>Version has been increased but analysis detected no changes</warning>
+      <attributes>
+        <version>1.57.0</version>
+      </attributes>
+      <version name="1.57.0" delta="added"/>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:03Z" bundleName="oak-segment-remote" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.segment.remote" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
+      <newerVersion>1.1.0</newerVersion>
+      <olderVersion>1.1.0</olderVersion>
+      <suggestedVersion>1.1.0</suggestedVersion>
       <attributes>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <uses>org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.remote.queue,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
       </attributes>
     </package>
@@ -2976,7 +3205,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-segment-tar" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:02Z" bundleName="oak-segment-tar" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.segment.spi" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -2988,12 +3217,12 @@
     </package>
     <package name="org.apache.jackrabbit.oak.segment.spi.persistence.persistentcache" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>3.0.0</newerVersion>
-      <olderVersion>3.0.0</olderVersion>
-      <suggestedVersion>3.0.0</suggestedVersion>
+      <newerVersion>4.1.0</newerVersion>
+      <olderVersion>4.1.0</olderVersion>
+      <suggestedVersion>4.1.0</suggestedVersion>
       <attributes>
-        <version>3.0.0</version>
-        <uses>com.google.common.cache,org.apache.jackrabbit.oak.cache,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
+        <version>4.1.0</version>
+        <uses>org.apache.jackrabbit.guava.common.cache,org.apache.jackrabbit.oak.cache,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.segment.spi.persistence.split" delta="unchanged">
@@ -3007,9 +3236,167 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:08Z" bundleName="oak-solr-core" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:09Z" bundleName="oak-solr-osgi" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-store-composite" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-shaded-guava" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
+    <package name="org.apache.jackrabbit.guava.common.annotations" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.base" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.cache" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.util.concurrent</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.collect" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.escape" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.eventbus" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.graph" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.collect</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.hash" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.html" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.escape</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.io" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.graph,org.apache.jackrabbit.guava.common.hash</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.math" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.net" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.escape</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.primitives" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.reflect" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.io</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.util.concurrent" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.util.concurrent.internal</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.guava.common.xml" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>32.1.2</newerVersion>
+      <olderVersion>32.1.2</olderVersion>
+      <suggestedVersion>32.1.2</suggestedVersion>
+      <attributes>
+        <version>32.1.2</version>
+        <uses>org.apache.jackrabbit.guava.common.escape</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:04Z" bundleName="oak-solr-core" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:04Z" bundleName="oak-solr-osgi" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:02Z" bundleName="oak-store-composite" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.composite" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.5.0</newerVersion>
@@ -3030,7 +3417,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:07Z" bundleName="oak-store-document" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:02Z" bundleName="oak-store-document" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0">
     <package name="org.apache.jackrabbit.oak.plugins.document.spi.lease" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.0</newerVersion>
@@ -3041,5 +3428,5 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-03-21T10:06Z" bundleName="oak-store-spi" currentVersion="1.51-SNAPSHOT" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2023-10-10T07:01Z" bundleName="oak-store-spi" currentVersion="1.57-SNAPSHOT" previousVersion="1.56.0"/>
 </root>

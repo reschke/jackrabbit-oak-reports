@@ -1,5 +1,5 @@
-commit fe33e8c23bd94fe866196a61f150ff3f46749caf
-Author: reschke <julian.reschke@gmx.de>
-Date:   Fri Mar 17 22:11:00 2023 +0100
+commit c747535b9274403f4d56a15ebf25aadd109700d0
+Author: Julian Reschke <julian.reschke@gmx.de>
+Date:   Mon Oct 9 11:49:34 2023 +0100
 
-    [maven-release-plugin] prepare for next development iteration
+    OAK-9922: segment-tar: parallel compaction - remove oak-core dependency
