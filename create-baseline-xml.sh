@@ -14,7 +14,7 @@ fi
 
 echo "<root>" >> $$.xml
 for i in $(find $REPO/*/target -name baseline.xml) ; do
-  cat $i >> $$.xml
+  cat $i | sed 's/ generatedOn="[^"]*"//g' >> $$.xml
 done
 echo "</root>" >> $$.xml
 
