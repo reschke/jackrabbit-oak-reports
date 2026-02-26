@@ -1,5 +1,5 @@
-commit c747535b9274403f4d56a15ebf25aadd109700d0
+commit 7b77f2da94c409385ea6eac5e251aeea260e1f52
 Author: Julian Reschke <julian.reschke@gmx.de>
-Date:   Mon Oct 9 11:49:34 2023 +0100
+Date:   Thu Feb 26 15:25:00 2026 +0100
 
-    OAK-9922: segment-tar: parallel compaction - remove oak-core dependency
+    [maven-release-plugin] prepare for next development iteration
