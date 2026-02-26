@@ -10,7 +10,7 @@ if [ ! -d repo ] ; then
   (cd repo && git clone git@github.com:apache/jackrabbit-oak.git)
 fi
 
-(cd $REPO && rm -rfv */target && git checkout trunk && mvn clean && git checkout . && git pull && git checkout $USETAG && mvn clean install -DskipTests && mvn dependency:tree && mvn dependency:tree > dependencies.txt && git log -n1 > version.txt)
+(cd $REPO && rm -rfv */target && git checkout trunk && mvn clean && git checkout . && git pull && git checkout $USETAG && mvn clean install -DskipTests && mvn dependency:tree && mvn dependency:tree | fgrep -v SUCCESS | fgrep -v "Total time" | fgrep -v "Finished at" > dependencies.txt && git log -n1 > version.txt)
 
 echo "<root>" >> $$.xml
 for i in $(find $REPO/*/target -name baseline.xml) ; do
