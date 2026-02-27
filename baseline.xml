@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <root>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-api" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-api" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.api" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>3.4.0</newerVersion>
@@ -23,39 +23,39 @@
     </package>
     <package name="org.apache.jackrabbit.oak.api.jmx" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>4.17.0</newerVersion>
-      <olderVersion>4.17.0</olderVersion>
-      <suggestedVersion>4.17.0</suggestedVersion>
+      <newerVersion>4.12.0</newerVersion>
+      <olderVersion>4.12.0</olderVersion>
+      <suggestedVersion>4.12.0</suggestedVersion>
       <attributes>
-        <version>4.17.0</version>
+        <version>4.12.0</version>
         <uses>javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api</uses>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-auth-external" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-auth-external" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.external" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.5.0</newerVersion>
-      <olderVersion>2.5.0</olderVersion>
-      <suggestedVersion>2.5.0</suggestedVersion>
+      <newerVersion>2.4.0</newerVersion>
+      <olderVersion>2.4.0</olderVersion>
+      <suggestedVersion>2.4.0</suggestedVersion>
       <attributes>
-        <version>2.5.0</version>
+        <version>2.4.0</version>
         <uses>javax.jcr,javax.security.auth.login,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.external.basic" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.8.1</newerVersion>
-      <olderVersion>1.8.1</olderVersion>
-      <suggestedVersion>1.8.1</suggestedVersion>
+      <newerVersion>1.8.0</newerVersion>
+      <olderVersion>1.8.0</olderVersion>
+      <suggestedVersion>1.8.0</suggestedVersion>
       <attributes>
-        <version>1.8.1</version>
+        <version>1.8.0</version>
         <uses>javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.spi.security.authentication.external</uses>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-auth-ldap" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-authorization-cug" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-auth-ldap" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-authorization-cug" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.cug" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>2.0.2</newerVersion>
@@ -67,7 +67,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-authorization-principalbased" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-authorization-principalbased" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.0</newerVersion>
@@ -79,8 +79,8 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-cloud-azure" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-cloud" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-cloud-azure" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-cloud" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.blob.cloud.s3.stats" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -89,31 +89,51 @@
       <attributes/>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-plugins" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob-plugins" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.plugins.blob.datastore.directaccess" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.0.1</newerVersion>
-      <olderVersion>1.0.1</olderVersion>
-      <suggestedVersion>1.0.1</suggestedVersion>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
       <attributes>
-        <version>1.0.1</version>
+        <version>1.0.0</version>
         <uses>org.apache.jackrabbit.core.data,org.apache.jackrabbit.oak.api.blob</uses>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-commons" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.oak.commons" delta="unchanged">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-blob" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-commons" currentVersion="1.50.0" previousVersion="1.48.0">
+    <package name="org.apache.jackrabbit.oak.commons" delta="minor">
       <mismatch>false</mismatch>
-      <newerVersion>2.4.0</newerVersion>
-      <olderVersion>2.4.0</olderVersion>
-      <suggestedVersion>2.4.0</suggestedVersion>
+      <newerVersion>1.8.0</newerVersion>
+      <olderVersion>1.7.0</olderVersion>
+      <suggestedVersion>1.8.0</suggestedVersion>
       <attributes>
-        <version>2.4.0</version>
-        <uses>org.slf4j</uses>
+        <version>1.8.0</version>
+        <uses>com.google.common.base,com.google.common.collect,org.apache.commons.io,org.slf4j</uses>
       </attributes>
+      <class name="org.apache.jackrabbit.oak.commons.FileIOUtils$TransformingComparator" delta="minor">
+        <method name="&lt;init&gt;(java.util.Comparator,java.util.function.Function)" delta="added">
+          <return name="void" delta="added"/>
+        </method>
+      </class>
+      <annotated name="org.osgi.annotation.versioning.Version" delta="micro">
+        <property name="value='1.7.0'" delta="removed"/>
+        <property name="value='1.8.0'" delta="added"/>
+      </annotated>
+      <version name="1.7.0" delta="removed"/>
+      <version name="1.8.0" delta="added"/>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.cache" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0.0</version>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.concurrent" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
       <olderVersion>1.0.1</olderVersion>
@@ -122,80 +142,14 @@
         <version>1.0.1</version>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.commons.collections" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>2.4.0</newerVersion>
-      <olderVersion>2.4.0</olderVersion>
-      <suggestedVersion>2.4.0</suggestedVersion>
-      <attributes>
-        <version>2.4.0</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.concurrent" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.2</newerVersion>
-      <olderVersion>1.0.2</olderVersion>
-      <suggestedVersion>1.0.2</suggestedVersion>
-      <attributes>
-        <version>1.0.2</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.conditions" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.internal.concurrent" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.3.0</newerVersion>
-      <olderVersion>1.3.0</olderVersion>
-      <suggestedVersion>1.3.0</suggestedVersion>
-      <attributes>
-        <version>1.3.0</version>
-        <uses>org.apache.jackrabbit.guava.common.util.concurrent</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.internal.function" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.internal.graph" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>org.apache.commons.collections4</uses>
-      </attributes>
-    </package>
     <package name="org.apache.jackrabbit.oak.commons.io" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.0.0</newerVersion>
-      <olderVersion>2.0.0</olderVersion>
-      <suggestedVersion>2.0.0</suggestedVersion>
+      <newerVersion>1.1.0</newerVersion>
+      <olderVersion>1.1.0</olderVersion>
+      <suggestedVersion>1.1.0</suggestedVersion>
       <attributes>
-        <version>2.0.0</version>
-        <uses>org.apache.commons.io</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.jdkcompat" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>javax.security.auth</uses>
+        <version>1.1.0</version>
+        <uses>com.google.common.io,org.apache.commons.io</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.json" delta="unchanged">
@@ -207,82 +161,55 @@
         <version>1.1.0</version>
       </attributes>
     </package>
-    <package name="org.apache.jackrabbit.oak.commons.log" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.pio" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-      </attributes>
-    </package>
     <package name="org.apache.jackrabbit.oak.commons.properties" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.1.0</newerVersion>
-      <olderVersion>2.1.0</olderVersion>
-      <suggestedVersion>2.1.0</suggestedVersion>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
       <attributes>
-        <version>2.1.0</version>
-        <uses>org.slf4j</uses>
+        <version>1.0.0</version>
+        <uses>org.slf4j,org.slf4j.event</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.commons.sort" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.3.0</newerVersion>
-      <olderVersion>1.3.0</olderVersion>
-      <suggestedVersion>1.3.0</suggestedVersion>
-      <attributes>
-        <version>1.3.0</version>
-        <uses>org.apache.jackrabbit.oak.commons</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.time" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-core-spi" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.oak.cache" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>2.0.0</newerVersion>
-      <olderVersion>2.0.0</olderVersion>
-      <suggestedVersion>2.0.0</suggestedVersion>
-      <attributes>
-        <version>2.0</version>
-        <uses>org.apache.jackrabbit.guava.common.cache,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.commons.jmx" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>2.0.0</newerVersion>
-      <olderVersion>2.0.0</olderVersion>
-      <suggestedVersion>2.0.0</suggestedVersion>
-      <attributes>
-        <version>2.0.0</version>
-        <uses>javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api.jmx</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.namepath" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
       <olderVersion>1.1.0</olderVersion>
       <suggestedVersion>1.1.0</suggestedVersion>
       <attributes>
         <version>1.1.0</version>
+        <uses>org.apache.jackrabbit.oak.commons</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-core-spi" currentVersion="1.50.0" previousVersion="1.48.0">
+    <package name="org.apache.jackrabbit.oak.cache" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.1.1</newerVersion>
+      <olderVersion>1.1.1</olderVersion>
+      <suggestedVersion>1.1.1</suggestedVersion>
+      <attributes>
+        <version>1.1.1</version>
+        <uses>com.google.common.cache,com.google.common.collect,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.commons.jmx" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.2.0</olderVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
+      <attributes>
+        <version>1.2.0</version>
+        <uses>com.google.common.base,javax.management,javax.management.openmbean,org.apache.jackrabbit.oak.api.jmx</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.namepath" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.1</newerVersion>
+      <olderVersion>1.0.1</olderVersion>
+      <suggestedVersion>1.0.1</suggestedVersion>
+      <attributes>
+        <version>1.0.1</version>
         <uses>javax.jcr,javax.jcr.nodetype</uses>
       </attributes>
     </package>
@@ -346,11 +273,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.nodetype" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.0</newerVersion>
-      <olderVersion>1.2.0</olderVersion>
-      <suggestedVersion>1.2.0</suggestedVersion>
+      <newerVersion>1.1.0</newerVersion>
+      <olderVersion>1.1.0</olderVersion>
+      <suggestedVersion>1.1.0</suggestedVersion>
       <attributes>
-        <version>1.2.0</version>
+        <version>1.1.0</version>
         <uses>javax.jcr,javax.jcr.nodetype,org.apache.jackrabbit,org.apache.jackrabbit.oak.api</uses>
       </attributes>
     </package>
@@ -385,32 +312,33 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.whiteboard" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.0.0</newerVersion>
-      <olderVersion>2.0.0</olderVersion>
-      <suggestedVersion>2.0.0</suggestedVersion>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.2.0</olderVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
       <attributes>
-        <version>2.0.0</version>
+        <version>1.2.0</version>
+        <uses>com.google.common.base</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.stats" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.3.0</newerVersion>
-      <olderVersion>1.3.0</olderVersion>
-      <suggestedVersion>1.3.0</suggestedVersion>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.2.0</olderVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
       <attributes>
-        <version>1.3.0</version>
+        <version>1.2.0</version>
         <uses>javax.management.openmbean,org.apache.jackrabbit.api.stats,org.apache.jackrabbit.oak.api.jmx,org.apache.jackrabbit.oak.commons.jmx,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jackrabbit.stats,org.slf4j</uses>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-core" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-core" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.importer" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>0.5.0</newerVersion>
-      <olderVersion>0.5.0</olderVersion>
-      <suggestedVersion>0.5.0</suggestedVersion>
+      <newerVersion>0.3.0</newerVersion>
+      <olderVersion>0.3.0</olderVersion>
+      <suggestedVersion>0.3.0</suggestedVersion>
       <attributes>
-        <version>0.5.0</version>
+        <version>0.3.0</version>
         <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.index,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.stats</uses>
       </attributes>
     </package>
@@ -425,16 +353,16 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-exercise" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-http" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-jackrabbit-api" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-exercise" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-http" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-jackrabbit-api" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.api" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.12.0</newerVersion>
-      <olderVersion>2.12.0</olderVersion>
-      <suggestedVersion>2.12.0</suggestedVersion>
+      <newerVersion>2.8.0</newerVersion>
+      <olderVersion>2.8.0</olderVersion>
+      <suggestedVersion>2.8.0</suggestedVersion>
       <attributes>
-        <version>2.12.0</version>
+        <version>2.8.0</version>
         <uses>javax.jcr,javax.jcr.lock,javax.jcr.nodetype,javax.jcr.version,javax.transaction.xa,org.apache.jackrabbit.api.binary,org.apache.jackrabbit.api.management,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.api.security.principal,org.apache.jackrabbit.api.security.user,org.xml.sax</uses>
       </attributes>
     </package>
@@ -450,105 +378,105 @@
     </package>
     <package name="org.apache.jackrabbit.api.jmx" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.1</newerVersion>
-      <olderVersion>2.3.1</olderVersion>
-      <suggestedVersion>2.3.1</suggestedVersion>
+      <newerVersion>2.3.0</newerVersion>
+      <olderVersion>2.3.0</olderVersion>
+      <suggestedVersion>2.3.0</suggestedVersion>
       <attributes>
-        <version>2.3.1</version>
+        <version>2.3.0</version>
         <uses>javax.jcr,javax.management.openmbean</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.management" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.2</newerVersion>
-      <olderVersion>2.3.2</olderVersion>
-      <suggestedVersion>2.3.2</suggestedVersion>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
       <attributes>
-        <version>2.3.2</version>
+        <version>2.3.1</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.observation" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.2</newerVersion>
-      <olderVersion>2.3.2</olderVersion>
-      <suggestedVersion>2.3.2</suggestedVersion>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
       <attributes>
-        <version>2.3.2</version>
+        <version>2.3.1</version>
         <uses>javax.jcr,javax.jcr.observation</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.query" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.13.6</newerVersion>
-      <olderVersion>2.13.6</olderVersion>
-      <suggestedVersion>2.13.6</suggestedVersion>
+      <newerVersion>2.13.5</newerVersion>
+      <olderVersion>2.13.5</olderVersion>
+      <suggestedVersion>2.13.5</suggestedVersion>
       <attributes>
-        <version>2.13.6</version>
+        <version>2.13.5</version>
         <uses>javax.jcr.query</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.7.0</newerVersion>
-      <olderVersion>2.7.0</olderVersion>
-      <suggestedVersion>2.7.0</suggestedVersion>
+      <newerVersion>2.6.0</newerVersion>
+      <olderVersion>2.6.0</olderVersion>
+      <suggestedVersion>2.6.0</suggestedVersion>
       <attributes>
-        <version>2.7.0</version>
+        <version>2.6.0</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security.authorization</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.authentication.token" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.3.2</newerVersion>
-      <olderVersion>2.3.2</olderVersion>
-      <suggestedVersion>2.3.2</suggestedVersion>
+      <newerVersion>2.3.1</newerVersion>
+      <olderVersion>2.3.1</olderVersion>
+      <suggestedVersion>2.3.1</suggestedVersion>
       <attributes>
-        <version>2.3.2</version>
+        <version>2.3.1</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.authorization" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.6.1</newerVersion>
-      <olderVersion>2.6.1</olderVersion>
-      <suggestedVersion>2.6.1</suggestedVersion>
+      <newerVersion>2.6.0</newerVersion>
+      <olderVersion>2.6.0</olderVersion>
+      <suggestedVersion>2.6.0</suggestedVersion>
       <attributes>
-        <version>2.6.1</version>
+        <version>2.6.0</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.principal" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.4.2</newerVersion>
-      <olderVersion>2.4.2</olderVersion>
-      <suggestedVersion>2.4.2</suggestedVersion>
+      <newerVersion>2.4.1</newerVersion>
+      <olderVersion>2.4.1</olderVersion>
+      <suggestedVersion>2.4.1</suggestedVersion>
       <attributes>
-        <version>2.4.2</version>
+        <version>2.4.1</version>
         <uses>javax.jcr</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.security.user" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.4.5</newerVersion>
-      <olderVersion>2.4.5</olderVersion>
-      <suggestedVersion>2.4.5</suggestedVersion>
+      <newerVersion>2.4.3</newerVersion>
+      <olderVersion>2.4.3</olderVersion>
+      <suggestedVersion>2.4.3</suggestedVersion>
       <attributes>
-        <version>2.4.5</version>
+        <version>2.4.3</version>
         <uses>javax.jcr,javax.security.auth,org.apache.jackrabbit.api.security.principal</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.api.stats" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.2.1</newerVersion>
-      <olderVersion>1.2.1</olderVersion>
-      <suggestedVersion>1.2.1</suggestedVersion>
+      <newerVersion>1.2.0</newerVersion>
+      <olderVersion>1.2.0</olderVersion>
+      <suggestedVersion>1.2.0</suggestedVersion>
       <attributes>
-        <version>1.2.1</version>
+        <version>1.2.0</version>
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-jcr" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-jcr" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.jcr.observation.filter" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
@@ -560,7 +488,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-lucene" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-lucene" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.plugins.index.lucene.spi" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.1</newerVersion>
@@ -571,8 +499,1324 @@
         <uses>org.apache.jackrabbit.oak.spi.state,org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.search</uses>
       </attributes>
     </package>
+    <package name="org.apache.lucene" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ar" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.bg" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.br" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ca" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.charfilter" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cjk" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ckb" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cn" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.commongrams" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.compound" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.compound.hyphenation,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.util,org.xml.sax</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.compound.hyphenation" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.xml.sax,org.xml.sax.helpers</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.core" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.cz" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.da" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.de" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.el" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.en" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.es" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.eu" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fa" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fi" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.fr" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ga" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.gl" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.pt,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hi" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hu" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hunspell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.hy" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.id" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.in" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.it" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.lv" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.miscellaneous" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ngram" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.nl" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.no" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.path" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.pattern" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.charfilter,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.payloads" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.position" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.pt" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.reverse" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ro" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.ru" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.shingle" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.sinks" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.snowball" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std31" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std34" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std36" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std40" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.standard,org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.sv" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.synonym" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.th" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.tokenattributes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.tr" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.analysis.wikipedia" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.compressing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene3x" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene40" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene41" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene42" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene45" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.packed</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene46" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.codecs.perfield" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.codecs,org.apache.lucene.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.collation" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.collation.tokenattributes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis.tokenattributes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.document" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.facet.sortedset,org.apache.lucene.facet.taxonomy,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet.range" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.facet,org.apache.lucene.queries.function,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet.sortedset" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.index</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.facet.taxonomy.directory,org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy.directory" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.facet.taxonomy,org.apache.lucene.facet.taxonomy.writercache,org.apache.lucene.index,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy.writercache" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.facet.taxonomy</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.index" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.codecs,org.apache.lucene.document,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.index.memory" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.index.sorter" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.misc" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function.docvalues" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.function.valuesource" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.queries.function.docvalues,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.mutable</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queries.mlt" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.analyzing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.classic" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.complexPhrase" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.ext" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.builders" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.config" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.messages" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.nodes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.parser</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core.nodes</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.messages" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.queryparser.flexible.standard</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.standard.processors</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.builders" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.config" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.search</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.nodes" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.messages</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.processors" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.processors</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.simple" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.parser" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.queryparser.surround.query</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.query" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.spans</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.packed</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.highlight" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.spans</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.payloads" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.search.spans,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.postingshighlight" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.similarities" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.spans" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.spell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.search.spell,org.apache.lucene.search.suggest.fst,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.analyzing" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.fst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.fst</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.jaspell" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.suggest.tst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.search.suggest,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.search.vectorhighlight" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.highlight</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.store" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.automaton" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.fst" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.mutable" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.util</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.lucene.util.packed" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>4.7.1</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <suggestedVersion>4.7.1</suggestedVersion>
+      <attributes>
+        <version>4.7.1</version>
+        <uses>org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util</uses>
+      </attributes>
+    </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-query-spi" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-query-spi" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.query.facet" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.1.0</newerVersion>
@@ -585,54 +1829,987 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.query" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>3.2.0</newerVersion>
-      <olderVersion>3.2.0</olderVersion>
-      <suggestedVersion>3.2.0</suggestedVersion>
-      <attributes>
-        <version>3.2.0</version>
-        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.query.fulltext,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard,org.slf4j</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.spi.query.fulltext" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.1.0</newerVersion>
-      <olderVersion>1.1.0</olderVersion>
-      <suggestedVersion>1.1.0</suggestedVersion>
-      <attributes>
-        <version>1.1.0</version>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-search-elastic" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-search" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-security-spi" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.oak.plugins.tree" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>3.4.0</newerVersion>
-      <olderVersion>3.4.0</olderVersion>
-      <suggestedVersion>3.4.0</suggestedVersion>
-      <attributes>
-        <version>3.4.0</version>
-        <uses>javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.spi.security" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>2.4.0</newerVersion>
-      <olderVersion>2.4.0</olderVersion>
-      <suggestedVersion>2.4.0</suggestedVersion>
-      <attributes>
-        <version>2.4.0</version>
-        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.xml,org.apache.jackrabbit.oak.stats</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="unchanged">
-      <mismatch>false</mismatch>
       <newerVersion>1.7.0</newerVersion>
       <olderVersion>1.7.0</olderVersion>
       <suggestedVersion>1.7.0</suggestedVersion>
       <attributes>
         <version>1.7.0</version>
+        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.query.fulltext,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard,org.slf4j.event</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.query.fulltext" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
+      <attributes>
+        <version>1.0.0</version>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-search-elastic" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-search-mt" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-search" currentVersion="1.50.0" previousVersion="1.48.0">
+    <package name="org.apache.jackrabbit.oak.plugins.index.lucene.spi" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>1.0.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ar" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.bg" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.br" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ca" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.charfilter" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.cjk" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ckb" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.cn" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.commongrams" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.compound" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.compound.hyphenation" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.core" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.cz" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.da" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.de" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.el" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.en" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.es" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.eu" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.fa" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.fi" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.fr" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ga" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.gl" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.hi" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.hu" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.hunspell" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.hy" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.id" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.in" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.it" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.lv" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.miscellaneous" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ngram" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.nl" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.no" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.path" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.pattern" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.payloads" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.position" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.pt" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.query" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.reverse" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ro" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.ru" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.shingle" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.sinks" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.snowball" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.standard" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std31" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std34" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std36" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.standard.std40" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.sv" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.synonym" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.th" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.tokenattributes" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.tr" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.util" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.analysis.wikipedia" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.compressing" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene3x" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene40" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene41" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene42" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene45" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.lucene46" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.codecs.perfield" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.collation" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.collation.tokenattributes" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.document" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet.range" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet.sortedset" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy.directory" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.facet.taxonomy.writercache" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.index" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.index.memory" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.index.sorter" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.misc" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queries" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queries.function" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queries.function.docvalues" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queries.function.valuesource" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queries.mlt" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.analyzing" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.classic" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.complexPhrase" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.ext" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.builders" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.config" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.messages" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.nodes" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.parser" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.processors" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.core.util" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.messages" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.precedence.processors" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.builders" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.config" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.nodes" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.parser" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.flexible.standard.processors" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.simple" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.parser" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.queryparser.surround.query" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.highlight" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.payloads" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.postingshighlight" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.similarities" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.spans" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.spell" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.suggest" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.suggest.analyzing" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.suggest.fst" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.suggest.jaspell" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.suggest.tst" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.search.vectorhighlight" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.store" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.util" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.util.automaton" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.util.fst" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.util.mutable" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+    <package name="org.apache.lucene.util.packed" delta="removed">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>4.7.1</olderVersion>
+      <info>Package removed</info>
+      <attributes/>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-security-spi" currentVersion="1.50.0" previousVersion="1.48.0">
+    <package name="org.apache.jackrabbit.oak.plugins.tree" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>3.3.0</newerVersion>
+      <olderVersion>3.3.0</olderVersion>
+      <suggestedVersion>3.3.0</suggestedVersion>
+      <attributes>
+        <version>3.3.0</version>
+        <uses>javax.jcr,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.state</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>2.3.0</newerVersion>
+      <olderVersion>2.3.0</olderVersion>
+      <suggestedVersion>2.3.0</suggestedVersion>
+      <attributes>
+        <version>2.3.0</version>
+        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.plugins.tree,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.xml,org.apache.jackrabbit.oak.stats</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>1.6.0</newerVersion>
+      <olderVersion>1.6.0</olderVersion>
+      <suggestedVersion>1.6.0</suggestedVersion>
+      <attributes>
+        <version>1.6.0</version>
         <uses>javax.jcr,javax.management.openmbean,javax.security.auth,javax.security.auth.callback,javax.security.auth.login,javax.security.auth.spi,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jackrabbit.oak.stats</uses>
       </attributes>
     </package>
@@ -658,11 +2835,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.9.0</newerVersion>
-      <olderVersion>1.9.0</olderVersion>
-      <suggestedVersion>1.9.0</suggestedVersion>
+      <newerVersion>1.8.0</newerVersion>
+      <olderVersion>1.8.0</olderVersion>
+      <suggestedVersion>1.8.0</suggestedVersion>
       <attributes>
-        <version>1.9.0</version>
+        <version>1.8.0</version>
         <uses>javax.jcr,javax.security.auth.login,org.apache.jackrabbit.api.security.authentication.token,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.spi.security</uses>
       </attributes>
     </package>
@@ -678,11 +2855,11 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>1.12.0</newerVersion>
-      <olderVersion>1.12.0</olderVersion>
-      <suggestedVersion>1.12.0</suggestedVersion>
+      <newerVersion>1.10.0</newerVersion>
+      <olderVersion>1.10.0</olderVersion>
+      <suggestedVersion>1.10.0</suggestedVersion>
       <attributes>
-        <version>1.12.0</version>
+        <version>1.10.0</version>
         <uses>javax.jcr,javax.jcr.security,org.apache.jackrabbit.api.security,org.apache.jackrabbit.api.security.authorization,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authorization,org.apache.jackrabbit.oak.spi.security.authorization.permission,org.apache.jackrabbit.oak.spi.security.authorization.restriction,org.apache.jackrabbit.oak.spi.security.privilege</uses>
       </attributes>
     </package>
@@ -728,12 +2905,12 @@
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.user" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.9.0</newerVersion>
-      <olderVersion>2.9.0</olderVersion>
-      <suggestedVersion>2.9.0</suggestedVersion>
+      <newerVersion>2.5.0</newerVersion>
+      <olderVersion>2.5.0</olderVersion>
+      <suggestedVersion>2.5.0</suggestedVersion>
       <attributes>
-        <version>2.9.0</version>
-        <uses>javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication,org.apache.jackrabbit.oak.spi.security.principal,org.apache.jackrabbit.oak.spi.security.user.cache</uses>
+        <version>2.5.0</version>
+        <uses>javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security,org.apache.jackrabbit.oak.spi.security.authentication,org.apache.jackrabbit.oak.spi.security.principal</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.user.action" delta="unchanged">
@@ -744,16 +2921,6 @@
       <attributes>
         <version>1.3.0</version>
         <uses>javax.jcr,org.apache.jackrabbit.api.security.user,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.namepath,org.apache.jackrabbit.oak.spi.security</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.spi.security.user.cache" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.0.0</newerVersion>
-      <olderVersion>0.0.0</olderVersion>
-      <suggestedVersion>0.0.0</suggestedVersion>
-      <attributes>
-        <version>0.0.0</version>
-        <uses>org.apache.jackrabbit.oak.api</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.spi.security.user.util" delta="unchanged">
@@ -777,245 +2944,24 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-aws" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="com.amazonaws" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws.auth,com.amazonaws.client,com.amazonaws.endpoints,com.amazonaws.event,com.amazonaws.handlers,com.amazonaws.http,com.amazonaws.internal.auth,com.amazonaws.metrics,com.amazonaws.monitoring,com.amazonaws.regions,com.amazonaws.retry,com.amazonaws.util,org.apache.http.conn.socket</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.arn" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.auth" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth.internal,com.amazonaws.internal,com.amazonaws.internal.auth,com.amazonaws.log,com.amazonaws.util,com.amazonaws.util.endpoint,javax.crypto,org.joda.time</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.auth.profile.internal" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws.auth,com.amazonaws.auth.profile.internal.securitytoken,com.amazonaws.profile.path</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.handlers" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.client.builder,com.amazonaws.endpoints,com.amazonaws.http,com.amazonaws.util</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.http" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.endpoints,com.amazonaws.handlers,com.amazonaws.http.apache.client.impl,com.amazonaws.http.timers.client,com.amazonaws.http.timers.request,com.amazonaws.internal,com.amazonaws.internal.auth,com.amazonaws.internal.http,com.amazonaws.metrics,com.amazonaws.retry.internal,com.amazonaws.retry.v2,com.amazonaws.transform,com.amazonaws.transform.rpcv2cbor,com.amazonaws.util,com.fasterxml.jackson.core,com.fasterxml.jackson.dataformat.cbor,javax.net.ssl,org.apache.commons.logging,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.entity,org.apache.http.protocol,org.w3c.dom</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.http.apache.request.impl" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.http.request,com.amazonaws.http.settings,com.amazonaws.util,org.apache.http.client.methods</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.internal" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.event,com.amazonaws.metrics,com.amazonaws.regions,com.amazonaws.retry,com.amazonaws.retry.internal,com.amazonaws.retry.v2,com.amazonaws.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,javax.net.ssl,org.joda.time</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.internal.config" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.protocol" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.http,com.amazonaws.util</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.protocol.json" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.http,com.amazonaws.internal.http,com.amazonaws.protocol,com.amazonaws.protocol.json.internal,com.amazonaws.transform,com.amazonaws.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.protocol.json.internal" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>com.amazonaws,com.amazonaws.protocol,com.amazonaws.protocol.json</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.regions" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.internal.config,com.amazonaws.util.endpoint</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.dynamodbv2" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.client,com.amazonaws.client.builder,com.amazonaws.handlers,com.amazonaws.metrics,com.amazonaws.regions</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.dynamodbv2.util" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.services.dynamodbv2</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.s3" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>com.amazonaws,com.amazonaws.arn,com.amazonaws.auth,com.amazonaws.client,com.amazonaws.client.builder,com.amazonaws.http,com.amazonaws.internal,com.amazonaws.internal.auth,com.amazonaws.metrics,com.amazonaws.regions,com.amazonaws.services.kms,com.amazonaws.services.s3.internal,com.amazonaws.services.s3.model</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.s3.internal" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.arn,com.amazonaws.auth,com.amazonaws.auth.internal,com.amazonaws.http,com.amazonaws.internal,com.amazonaws.profile.path,com.amazonaws.regions,com.amazonaws.retry,com.amazonaws.retry.internal,com.amazonaws.services.s3,com.amazonaws.services.s3.model,com.amazonaws.transform,com.amazonaws.util,javax.xml.stream,org.apache.http.client.methods</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.s3.model" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>com.amazonaws,com.amazonaws.event,com.amazonaws.http,com.amazonaws.internal,com.amazonaws.regions,com.amazonaws.services.s3,com.amazonaws.services.s3.internal,javax.crypto,org.apache.commons.logging,org.apache.http.client.methods</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.s3.model.transform" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.http,com.amazonaws.services.s3.internal,com.amazonaws.services.s3.model,com.amazonaws.transform,org.xml.sax,org.xml.sax.helpers</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.services.s3.transfer" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.1.0</newerVersion>
-      <olderVersion>0.1.0</olderVersion>
-      <suggestedVersion>0.1.0</suggestedVersion>
-      <attributes>
-        <version>0.1.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.client.builder,com.amazonaws.event,com.amazonaws.services.s3,com.amazonaws.services.s3.model,com.fasterxml.jackson.annotation</uses>
-      </attributes>
-    </package>
-    <package name="com.amazonaws.util" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.0.0</newerVersion>
-      <olderVersion>1.0.0</olderVersion>
-      <suggestedVersion>1.0.0</suggestedVersion>
-      <attributes>
-        <version>1.0.0</version>
-        <uses>com.amazonaws,com.amazonaws.auth,com.amazonaws.auth.policy,com.amazonaws.internal,com.amazonaws.metrics,com.amazonaws.protocol,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind,javax.xml.parsers,javax.xml.stream,javax.xml.xpath,org.apache.commons.logging,org.joda.time,org.joda.time.format,org.w3c.dom,org.xml.sax</uses>
-      </attributes>
-    </package>
-    <package name="com.fasterxml.jackson.dataformat.cbor" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>3.0.0</newerVersion>
-      <olderVersion>3.0.0</olderVersion>
-      <suggestedVersion>3.0.0</suggestedVersion>
-      <attributes>
-        <version>3.0.0</version>
-        <uses>com.fasterxml.jackson.core,com.fasterxml.jackson.core.base,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.sym,com.fasterxml.jackson.core.util</uses>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-azure" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-remote" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-remote" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.segment.remote" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>3.0.0</newerVersion>
-      <olderVersion>3.0.0</olderVersion>
-      <suggestedVersion>3.0.0</suggestedVersion>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
       <attributes>
-        <version>3.0.0</version>
+        <version>1.0.0</version>
         <uses>org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.remote.queue,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.segment.remote.persistentcache" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>2.0.0</newerVersion>
-      <olderVersion>2.0.0</olderVersion>
-      <suggestedVersion>2.0.0</suggestedVersion>
+      <newerVersion>1.0.0</newerVersion>
+      <olderVersion>1.0.0</olderVersion>
+      <suggestedVersion>1.0.0</suggestedVersion>
       <attributes>
-        <version>2.0.0</version>
+        <version>1.0.0</version>
         <uses>org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence.persistentcache,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jackrabbit.oak.stats,org.osgi.service.component</uses>
       </attributes>
     </package>
@@ -1030,7 +2976,7 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-tar" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-segment-tar" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.segment.spi" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>0.0.0</newerVersion>
@@ -1042,119 +2988,49 @@
     </package>
     <package name="org.apache.jackrabbit.oak.segment.spi.persistence.persistentcache" delta="unchanged">
       <mismatch>false</mismatch>
-      <newerVersion>6.1.0</newerVersion>
-      <olderVersion>6.1.0</olderVersion>
-      <suggestedVersion>6.1.0</suggestedVersion>
+      <newerVersion>3.0.0</newerVersion>
+      <olderVersion>3.0.0</olderVersion>
+      <suggestedVersion>3.0.0</suggestedVersion>
       <attributes>
-        <version>6.1.0</version>
-        <uses>org.apache.jackrabbit.guava.common.cache,org.apache.jackrabbit.oak.cache,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
+        <version>3.0.0</version>
+        <uses>com.google.common.cache,org.apache.jackrabbit.oak.cache,org.apache.jackrabbit.oak.commons,org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
       </attributes>
     </package>
     <package name="org.apache.jackrabbit.oak.segment.spi.persistence.split" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>1.1.0</newerVersion>
-      <olderVersion>1.1.0</olderVersion>
-      <suggestedVersion>1.1.0</suggestedVersion>
-      <attributes>
-        <version>1.1.0</version>
-        <uses>org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-shaded-guava" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.guava.common.base" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>34.0.0</newerVersion>
-      <olderVersion>34.0.0</olderVersion>
-      <suggestedVersion>34.0.0</suggestedVersion>
-      <attributes>
-        <version>34.0.0</version>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.guava.common.cache" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>33.4.2</newerVersion>
-      <olderVersion>33.4.2</olderVersion>
-      <suggestedVersion>33.4.2</suggestedVersion>
-      <attributes>
-        <version>33.4.2</version>
-        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.util.concurrent</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.guava.common.collect" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>34.0.1</newerVersion>
-      <olderVersion>34.0.1</olderVersion>
-      <suggestedVersion>34.0.1</suggestedVersion>
-      <attributes>
-        <version>34.0.1</version>
-        <uses>org.apache.jackrabbit.guava.common.base</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.guava.common.graph" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>33.4.1</newerVersion>
-      <olderVersion>33.4.1</olderVersion>
-      <suggestedVersion>33.4.1</suggestedVersion>
-      <attributes>
-        <version>33.4.1</version>
-        <uses>org.apache.jackrabbit.guava.common.collect</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.guava.common.hash" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>33.5.0</newerVersion>
-      <olderVersion>33.5.0</olderVersion>
-      <suggestedVersion>33.5.0</suggestedVersion>
-      <attributes>
-        <version>33.5.0</version>
-        <uses>org.apache.jackrabbit.guava.common.base</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.guava.common.util.concurrent" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>33.5.0</newerVersion>
-      <olderVersion>33.5.0</olderVersion>
-      <suggestedVersion>33.5.0</suggestedVersion>
-      <attributes>
-        <version>33.5.0</version>
-        <uses>org.apache.jackrabbit.guava.common.base,org.apache.jackrabbit.guava.common.collect,org.apache.jackrabbit.guava.common.util.concurrent.internal,org.apache.jackrabbit.guava.common.primitives</uses>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-composite" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.oak.composite" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.5.1</newerVersion>
-      <olderVersion>0.5.1</olderVersion>
-      <suggestedVersion>0.5.1</suggestedVersion>
-      <attributes>
-        <version>0.5.1</version>
-        <uses>javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons.jmx,org.apache.jackrabbit.oak.composite.checks,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.mount,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.stats,org.osgi.framework,org.osgi.service.component</uses>
-      </attributes>
-    </package>
-    <package name="org.apache.jackrabbit.oak.composite.checks" delta="unchanged">
-      <mismatch>false</mismatch>
-      <newerVersion>0.0.1</newerVersion>
-      <olderVersion>0.0.1</olderVersion>
-      <suggestedVersion>0.0.1</suggestedVersion>
-      <attributes>
-        <version>0.0.1</version>
-        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.composite,org.apache.jackrabbit.oak.plugins.nodetype,org.apache.jackrabbit.oak.spi.mount,org.apache.jackrabbit.oak.spi.state,org.osgi.service.component</uses>
-      </attributes>
-    </package>
-  </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-document" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0">
-    <package name="org.apache.jackrabbit.oak.plugins.document.init" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.0</newerVersion>
       <olderVersion>1.0.0</olderVersion>
       <suggestedVersion>1.0.0</suggestedVersion>
       <attributes>
         <version>1.0.0</version>
-        <uses>org.apache.jackrabbit.oak.spi.lifecycle,org.apache.jackrabbit.oak.spi.state</uses>
+        <uses>org.apache.jackrabbit.oak.segment.spi.monitor,org.apache.jackrabbit.oak.segment.spi.persistence</uses>
       </attributes>
     </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-solr-core" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-solr-osgi" currentVersion="1.50.0" previousVersion="1.48.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-composite" currentVersion="1.50.0" previousVersion="1.48.0">
+    <package name="org.apache.jackrabbit.oak.composite" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>0.5.0</newerVersion>
+      <olderVersion>0.5.0</olderVersion>
+      <suggestedVersion>0.5.0</suggestedVersion>
+      <attributes>
+        <version>0.5.0</version>
+        <uses>javax.management.openmbean,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.commons.jmx,org.apache.jackrabbit.oak.composite.checks,org.apache.jackrabbit.oak.spi.commit,org.apache.jackrabbit.oak.spi.mount,org.apache.jackrabbit.oak.spi.state,org.apache.jackrabbit.oak.stats,org.osgi.framework,org.osgi.service.component</uses>
+      </attributes>
+    </package>
+    <package name="org.apache.jackrabbit.oak.composite.checks" delta="unchanged">
+      <mismatch>false</mismatch>
+      <newerVersion>0.0.0</newerVersion>
+      <olderVersion>0.0.0</olderVersion>
+      <suggestedVersion>0.0.0</suggestedVersion>
+      <attributes>
+        <uses>org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.composite,org.apache.jackrabbit.oak.plugins.nodetype,org.apache.jackrabbit.oak.spi.mount,org.apache.jackrabbit.oak.spi.state,org.osgi.service.component</uses>
+      </attributes>
+    </package>
+  </baseline>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-document" currentVersion="1.50.0" previousVersion="1.48.0">
     <package name="org.apache.jackrabbit.oak.plugins.document.spi.lease" delta="unchanged">
       <mismatch>false</mismatch>
       <newerVersion>1.0.0</newerVersion>
@@ -1165,5 +3041,5 @@
       </attributes>
     </package>
   </baseline>
-  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-spi" currentVersion="1.93-SNAPSHOT" previousVersion="1.92.0"/>
+  <baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" bundleName="oak-store-spi" currentVersion="1.50.0" previousVersion="1.48.0"/>
 </root>

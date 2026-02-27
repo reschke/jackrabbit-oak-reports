@@ -1,5 +1,5 @@
-commit 7b77f2da94c409385ea6eac5e251aeea260e1f52
-Author: Julian Reschke <julian.reschke@gmx.de>
-Date:   Thu Feb 26 15:25:00 2026 +0100
+commit cba5bb6c68063b9d1375db76895cae981df729e3
+Author: reschke <julian.reschke@gmx.de>
+Date:   Fri Mar 17 22:10:50 2023 +0100
 
-    [maven-release-plugin] prepare for next development iteration
+    [maven-release-plugin] prepare release jackrabbit-oak-1.50.0
