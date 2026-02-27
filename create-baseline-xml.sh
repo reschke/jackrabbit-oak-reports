@@ -2,6 +2,7 @@
 
 REPO=repo/jackrabbit-oak
 USETAG=${TAG-trunk}
+
 set -x
  
 if [ ! -d repo ] ; then
@@ -21,7 +22,7 @@ echo "</root>" >> $$.xml
 xmllint --format $$.xml -o baseline.xml
 rm -f $$.xml
  
-mv $REPO/dependencies.txt .
+cat $REPO/dependencies.txt | sed -E 's/(apache\.jackrabbit\:[^0-9]*)([0-9]+(\.[0-9]+)+)/\1THIS/g' | fgrep -vi BUILDING | fgrep -v " from " | fgrep -v "Reactor" > dependencies.txt
 mv $REPO/version.txt .
 
 COMMENT=$(printf "%s - %s" $USETAG $(head -1 version.txt))
