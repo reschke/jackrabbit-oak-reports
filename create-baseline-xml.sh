@@ -14,7 +14,7 @@ fi
 
 echo "<root>" >> $$.xml
 for i in $(find $REPO/*/target -name baseline.xml) ; do
-  cat $i | sed 's/ generatedOn="[^"]*"//g' >> $$.xml
+  cat $i | sed 's/ generatedOn="[^"]*"//g' | sed 's/ currentVersion="[^"]*"//g' | sed 's/ previousVersion="[^"]*"//g' >> $$.xml
 done
 echo "</root>" >> $$.xml
 
